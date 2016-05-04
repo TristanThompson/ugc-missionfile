@@ -52,7 +52,8 @@ switch(_craft) do
 				["life_inv_nothammer", ["life_inv_ironr",1,"life_inv_holz",2,"life_inv_copperr",3]],
 				["life_inv_brotteig", ["life_inv_mehl",3,"life_inv_water",1]],
 				["life_inv_panzerglas", ["life_inv_glass",20]],
-				["life_inv_stahlschild", ["life_inv_ironr",12,"life_inv_kohle",2]]
+				["life_inv_stahlschild", ["life_inv_ironr",12,"life_inv_kohle",2]],
+				["life_inv_tracker", ["life_inv_elektroteile",10,"life_inv_ironr",2]]
 		];
 	};
 };

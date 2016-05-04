@@ -463,7 +463,7 @@ sell_array =
 	["augenbinde",12],
 	["panzerglas",5],
 	["stahlschild",10],
-	["junk",2], //Schon wieder das Brain von Justin...
+	["junk",2],
 	["tracker",30]
 ];
 __CONST__(sell_array,sell_array);
@@ -531,7 +531,8 @@ buy_array =
 	["permdriverformular",5000],
 	["sos",150],
 	["blaulicht",100],
-	["augenbinde",50]
+	["augenbinde",50],
+	["tracker",300]
 ];
 __CONST__(buy_array,buy_array);
 

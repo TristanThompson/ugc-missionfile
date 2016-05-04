@@ -169,6 +169,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_fuelE", life_inv_fuelE],
 
     ["life_inv_pickaxe", life_inv_pickaxe],
+    ["life_inv_axt", life_inv_axt],
     ["life_inv_tbacon", life_inv_tbacon],
     ["life_inv_lockpick", life_inv_lockpick],
     ["life_inv_redgull", life_inv_redgull],
@@ -190,6 +191,7 @@ if(count (handGunItems player) > 0) then
 //Polizei Gegenstände
 	["life_inv_sos", life_inv_sos],
 	["life_inv_blaulicht", life_inv_blaulicht]
+	["life_inv_tracker", life_inv_tracker]
 ];
 
 _return pushBack _uItems;

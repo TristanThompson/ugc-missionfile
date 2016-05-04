@@ -72,8 +72,8 @@ switch (_filter) do
 			["Campaign_Hat_Dark","LVPD Swat Hut",17],
 			["TRYK_H_PASGT_OD","SERT Helm",20],
 			["RPIMA_Balaclava2","SERT Balaclava",20],
-			["Headgear_H_Beret_blk",nil,20],
-			["Headgear_H_Beret_Colonel",nil,20],
+			["H_Beret_blk",nil,20],
+			["H_Beret_Colonel",nil,20],
 			["H_Watchcap_blk","Wollmütze Headset (Schwarz)",20],
 			["TRYK_H_woolhat","Wollmütze (Schwarz)",20],
 			["H_Watchcap_camo","Wollmütze Headset (grün)",20]

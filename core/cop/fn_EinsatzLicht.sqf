@@ -69,7 +69,7 @@ if(_state) then {
 					case "shounka_a3_rs5_civ_grise": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 					case "shounka_a3_rs5_civ_bleufonce": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 					
-					case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34];};
+					case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34]];};
 					case "Mrshounka_bmwm6_bleufonce": {_light attachto [_veh,[-0.5,0,1.34]];};
 					case "Mrshounka_bmwm6_grise": {_light attachto [_veh,[-0.5,0,1.34]];};
 					
@@ -80,7 +80,7 @@ if(_state) then {
 					case "Mrshounka_raptor2_noir": {_light attachto [_veh,[0,1.2,1.1]];};
 					
 					case "Mrshounka_mustang_noircase": {_light attachto [_veh,[-0.55,0,1.38]];};
-					case "Mrshounka_mustang_grise": {_light attachto [_veh,[-0.55,0,1.38];};
+					case "Mrshounka_mustang_grise": {_light attachto [_veh,[-0.55,0,1.38]];};
 					
 					case "Mrshounka_Volkswagen_Touareg_noir": {_light attachto [_veh,[-0.55,0.46,1.55]];};
 					case "Mrshounka_Volkswagen_Touareg_grise": {_light attachto [_veh,[-0.55,0.46,1.55]];};
@@ -162,7 +162,7 @@ if(_state) then {
 					case "shounka_a3_rs5_civ_grise": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 					case "shounka_a3_rs5_civ_bleufonce": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 					
-					case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34];};
+					case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34]];};
 					case "Mrshounka_bmwm6_bleufonce": {_light attachto [_veh,[-0.5,0,1.34]];};
 					case "Mrshounka_bmwm6_grise": {_light attachto [_veh,[-0.5,0,1.34]];};
 					
@@ -173,7 +173,7 @@ if(_state) then {
 					case "Mrshounka_raptor2_noir": {_light attachto [_veh,[0,1.2,1.1]];};
 					
 					case "Mrshounka_mustang_noircase": {_light attachto [_veh,[-0.55,0,1.38]];};
-					case "Mrshounka_mustang_grise": {_light attachto [_veh,[-0.55,0,1.38];};
+					case "Mrshounka_mustang_grise": {_light attachto [_veh,[-0.55,0,1.38]];};
 					
 					case "Mrshounka_Volkswagen_Touareg_noir": {_light attachto [_veh,[-0.55,0.46,1.55]];};
 					case "Mrshounka_Volkswagen_Touareg_grise": {_light attachto [_veh,[-0.55,0.46,1.55]];};

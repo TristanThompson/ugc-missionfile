@@ -39,9 +39,8 @@ if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
 
 _state = 0;
 if(playerSide != civilian) then {
-	//_newPrice = round(_basePrice / 10);
-	//c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
-	c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _basePrice; //<- Preis direkt über fn_vehicleShopLBChange.sqf
+	_newPrice = round(_basePrice / 10);
+	c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
 	_state = 1;
 } else {
 	c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _basePrice;

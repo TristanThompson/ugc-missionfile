@@ -331,6 +331,15 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "taktikformular"):
+	{
+		if(playerSide != west) exitWith {hint "Nur Polizisten können das Taktikformular ausfüllen!"};
+		if([false,_item,1] call life_fnc_handleInv) then {
+			license_cop_taktik = true;
+			hint parseText format["Du hast nun die Taktiklizent!"];
+		};
+	};
+	
 	case (_item == "taxischein"):
 	{
 		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können den Taxi-Schein ausfüllen!"};

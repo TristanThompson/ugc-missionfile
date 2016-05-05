@@ -280,7 +280,8 @@ life_inv_items =
 	"life_inv_panzerglas",
 	"life_inv_junk",
 	"life_inv_tracker",
-	"life_inv_flugscheinformular"
+	"life_inv_flugscheinformular",
+	"life_inv_taktikformular"
 ];
 
 //Setup variable inv vars.
@@ -462,6 +463,7 @@ sell_array =
 	["pizza",3],
 	["permdriverformular",3000],
 	["flugscheinformular",500],
+	["taktikformular",500],
 	["sos",100],
 	["blaulicht",50],
 	["augenbinde",12],
@@ -534,6 +536,7 @@ buy_array =
 	["pizza",5],
 	["permdriverformular",5000],
 	["flugscheinformular",2500],
+	["taktikformular",2500],
 	["sos",150],
 	["blaulicht",100],
 	["augenbinde",50],

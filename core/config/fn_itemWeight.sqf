@@ -98,6 +98,8 @@ switch (_item) do
 	case "grillkohle":{1};
 	case "presseformular":{0.5};
 	case "taxischeinformular":{0.5};
+	case "flugscheinformular":{0.5};
+	case "taktikformular":{0.5};
 	case "permdriverformular":{0.5};
 	case "bohrmaschine":{5};
 	case "nothammer":{3};

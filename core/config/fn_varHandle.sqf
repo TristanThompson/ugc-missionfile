@@ -124,6 +124,7 @@ switch (_mode) do
 			case "junk": {"life_inv_junk"};
 			case "tracker": {"life_inv_tracker"};
 			case "flugscheinformular": {"life_inv_flugscheinformular"};
+			case "taktikformular": {"life_inv_taktikformular"};
 		};
 	};
 	
@@ -231,6 +232,7 @@ switch (_mode) do
 			case "life_inv_taxischeinformular": {"taxischeinformular"};
 			case "life_inv_permdriverformular": {"permdriverformular"};
 			case "life_inv_flugscheinformular": {"flugscheinformular"};
+			case "life_inv_taktikformular": {"taktikformular"};
 
 			case "life_inv_bohrmaschine": {"bohrmaschine"};
 			case "life_inv_nothammer": {"nothammer"};

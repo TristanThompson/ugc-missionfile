@@ -114,6 +114,7 @@ switch (_var) do
 	case "life_inv_presseformular": {(localize "STR_Item_PresseForm")};
 	case "life_inv_taxischeinformular": {(localize "STR_Item_TaxiForm")};
 	case "life_inv_permdriverformular": {(localize "STR_Item_PermDrivingForm")};
+	case "life_inv_taktikformular": {(localize "STR_Item_Taktikformular")};
 
 	case "life_inv_bohrmaschine": {(localize "STR_Item_Bohrmaschine")};
 	case "life_inv_nothammer": {(localize "STR_Item_Nothammer")};

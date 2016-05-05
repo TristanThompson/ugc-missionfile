@@ -1346,6 +1346,9 @@
 		<Key ID="STR_Item_Sunflower">
 			<Original>Sonnenblumen</Original>
 		</Key>
+		<Key ID="STR_Item_Taktikformular">
+			<Original>Taktiklizenzformular</Original>
+		</Key>
 		<Key ID="STR_Item_Sunflowerseeds">
 			<Original>Sonnenblumensamen</Original>
 		</Key>

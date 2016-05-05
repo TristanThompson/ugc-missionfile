@@ -348,7 +348,7 @@ switch (typeOf _veh) do{
 	case "shounka_a3_rs5_civ_grise": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 	case "shounka_a3_rs5_civ_bleufonce": {_light attachto [_veh,[-0.48,-0.05,0.26]];};
 					
-	case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34];};
+	case "Mrshounka_bmwm6_noir": {_light attachto [_veh,[-0.5,0,1.34]];};
 	case "Mrshounka_bmwm6_bleufonce": {_light attachto [_veh,[-0.5,0,1.34]];};
 	case "Mrshounka_bmwm6_grise": {_light attachto [_veh,[-0.5,0,1.34]];};
 					

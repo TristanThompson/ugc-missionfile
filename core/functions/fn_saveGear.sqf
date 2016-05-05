@@ -190,7 +190,7 @@ if(count (handGunItems player) > 0) then
 	["life_inv_nothammer", life_inv_nothammer],
 //Polizei Gegenstände
 	["life_inv_sos", life_inv_sos],
-	["life_inv_blaulicht", life_inv_blaulicht]
+	["life_inv_blaulicht", life_inv_blaulicht],
 	["life_inv_tracker", life_inv_tracker]
 ];
 

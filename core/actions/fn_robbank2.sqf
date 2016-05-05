@@ -8,7 +8,7 @@
 	Executes the rob shob action!
 	Idea developed by PEpwnzya v2.0
 */ 
-private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm"];
+private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm","_bankpos"];
 params[
 	["_shop",ObjNull,[ObjNull]],
 	["_robber",ObjNull,[ObjNull]],

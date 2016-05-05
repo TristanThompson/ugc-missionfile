@@ -280,7 +280,7 @@ life_inv_items =
 	"life_inv_panzerglas",
 	"life_inv_junk",
 	"life_inv_tracker",
-	"flugscheinformular"
+	"life_inv_flugscheinformular"
 ];
 
 //Setup variable inv vars.

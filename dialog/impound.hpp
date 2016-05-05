@@ -71,7 +71,7 @@ class Life_impound_menu
 
 		class RentCar : Life_RscButtonMenu
 		{
-			idc = -1;
+			idc = 7777;
 			text = "$STR_Global_Retrieve";
 			onButtonClick = "[] call life_fnc_unimpound;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
@@ -96,7 +96,7 @@ class Life_impound_menu
 		//next line added for insureance
 		class InsureCar : life_RscButtonMenu
         {
-            idc = -1;
+            idc = 8888;
             text = "Versichern";
             onButtonClick = "[true] call life_fnc_unimpound;";
 			tooltip = "Sollte dein Fahrzeug zerstört werden, steht es nach Matrix-Neustart wieder in der Garage. Ausparkgebühr inkl. Ausparkkosten.";

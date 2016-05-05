@@ -1488,8 +1488,6 @@ switch (_shop) do
 			["DRPG_14Explorer_Black",35000],
 			["DRPG_14Explorer_White",35000],
 			["DRPG_14Explorer_blue",35000],
-		//Raptor
-			["Mrshounka_raptor2_noir",27000],
 		//Mustang
 			["Mrshounka_mustang_noircase",25000],
 			["Mrshounka_mustang_grise",25000],

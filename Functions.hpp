@@ -212,6 +212,8 @@ class Life_Client_Core
 		class clothing_ems {};
 		class clothing_bruce {};
 		class clothing_fbi {};
+		class clothing_ausbilder {};
+		class clothing_taktik {};
 		class clothing_state {};
 		class clothing_reb {};
 		class clothing_dive {};

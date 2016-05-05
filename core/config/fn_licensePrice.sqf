@@ -21,6 +21,8 @@ switch (_type) do
 	case "dive": {150}; //Diving license cost
 	case "oil": {6500}; //Oil processing license cost
 	case "cair": {2500}; //Cop Pilot License cost
+	case "ausbilder": {5000}; //Nicht Kaufbar - Dennoch Preis, Logic? Welcome to sqf
+	case "taktik": {5000}; //Nicht Kaufbar - Dennoch Preis, Logic? Welcome to sqf
 	case "swat": {4000}; //Swat License cost
 	case "cg": {1000}; //Coast guard license cost
 	case "heroin": {9000}; //Heroin processing license cost

@@ -279,7 +279,8 @@ life_inv_items =
 	"life_inv_stahlschild",
 	"life_inv_panzerglas",
 	"life_inv_junk",
-	"life_inv_tracker"
+	"life_inv_tracker",
+	"flugscheinformular"
 ];
 
 //Setup variable inv vars.
@@ -291,6 +292,8 @@ life_licenses =
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
+	["license_cop_ausbilder","cop"],
+	["license_cop_taktik","cop"],
 
 //Medic Licenses
 	["license_med_air","med"],
@@ -458,6 +461,7 @@ sell_array =
 	["pizzabrot",2],
 	["pizza",3],
 	["permdriverformular",3000],
+	["flugscheinformular",500],
 	["sos",100],
 	["blaulicht",50],
 	["augenbinde",12],
@@ -529,6 +533,7 @@ buy_array =
 	["pizzabrot",3],
 	["pizza",5],
 	["permdriverformular",5000],
+	["flugscheinformular",2500],
 	["sos",150],
 	["blaulicht",100],
 	["augenbinde",50],

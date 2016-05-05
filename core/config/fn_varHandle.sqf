@@ -123,6 +123,7 @@ switch (_mode) do
 			case "panzerglas": {"life_inv_panzerglas"};
 			case "junk": {"life_inv_junk"};
 			case "tracker": {"life_inv_tracker"};
+			case "flugscheinformular": {"life_inv_flugscheinformular"};
 		};
 	};
 	
@@ -229,6 +230,7 @@ switch (_mode) do
 			case "life_inv_presseformular": {"presseformular"};
 			case "life_inv_taxischeinformular": {"taxischeinformular"};
 			case "life_inv_permdriverformular": {"permdriverformular"};
+			case "life_inv_flugscheinformular": {"flugscheinformular"};
 
 			case "life_inv_bohrmaschine": {"bohrmaschine"};
 			case "life_inv_nothammer": {"nothammer"};

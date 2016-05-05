@@ -125,6 +125,7 @@ switch (_var) do
 //Cops
 	case "life_inv_sos": {(localize "STR_Item_sos")};
 	case "life_inv_blaulicht": {(localize "STR_Item_blaulicht")};
+	case "life_inv_flugscheinformular": {(localize "STR_Item_FlugForm")};
 	
 
 	//License Block
@@ -140,6 +141,8 @@ switch (_var) do
 	case "license_civ_ilgun": {(localize "STR_License_IllegalFirearm")};
 	case "license_cop_air": {(localize "STR_License_Pilot")};
 	case "license_cop_swat": {(localize "STR_License_Swat")};
+	case "license_cop_ausbilder": {(localize "STR_License_Polizeiausbilder")};
+	case "license_cop_taktik": {(localize "STR_License_CopTaktik")};
 	case "license_cop_cg": {(localize "STR_License_CG")};
 	case "license_civ_rebel": {(localize "STR_License_Rebel")};
 	case "license_civ_truck": {(localize "STR_License_Truck")};

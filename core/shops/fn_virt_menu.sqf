@@ -22,6 +22,9 @@ if(_shop == "adacdriver" && ((__GETC__(life_adaclevel) < 2) OR playerSide != eas
 if(_shop == "itemfbi" && ((__GETC__(life_donator) < 4) OR playerSide != west)) exitWith {hint "Du gehoerst nicht zum FBI!"};
 if(_shop == "coppresse" && ((__GETC__(life_coplevel) < 4) OR playerSide != west)) exitWith {hint "Du musst mindestens Dienstgrad 4 erreicht haben!"};
 if(_shop == "fishmarket" && !license_civ_fischerei) exitWith {hint "Du besitzt die benötige Lizenz nicht! Fischereischein benötigt."};
+if(_shop == "copausbilder" && !license_cop_ausbilder && playerSide != west) exitWith {hint "Du besitzt die benötige Lizenz nicht! Ausbilderlizenz benötigt."};
+if(_shop == "coptaktik" && !license_cop_taktik && playerSide != west) exitWith {hint "Du besitzt die benötige Lizenz nicht! Taktiklizenz benötigt."};
+
 
 createDialog "shops_menu";
 

@@ -52,6 +52,8 @@ switch (_mode) do
 			case "fischerei": {_var = "license_civ_fischerei"};
 			case "mehlmahl": {_var = "license_civ_mehlmahl"};
 			case "permdriver": {_var = "license_civ_permdriver"};
+			case "ausbilder": {_var = "license_cop_ausbilder"};
+			case "taktik": {_var = "license_cop_taktik"};
 			default {_var = ""};
 		};
 	};
@@ -96,6 +98,8 @@ switch (_mode) do
 			case "license_civ_fischerei": {_var = "fischerei"};
 			case "license_civ_mehlmahl": {_var = "mehlmahl"};
 			case "license_civ_permdriver": {_var = "permdriver"};
+			case "license_cop_ausbilder": {_var = "ausbilder"};
+			case "license_cop_taktik": {_var = "taktik"};
 			default {_var = ""};
 		};
 	};

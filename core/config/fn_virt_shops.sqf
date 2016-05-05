@@ -35,5 +35,5 @@ switch (_shop) do
 	case "adac": {["LAC Werkbank",["water","rabbit","apple","redgull","tbacon","lockpick","nothammer","fuelE","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "adacdriver": {["LAC Formular Druck",["permdriverformular"]]};
 	case "coppresse": {["Firmen-Lizenzen",["presseformular","taxischeinformular"]]};
-	case "junk": {["Kevins Mülldeponie",["junk"]]};
+	case "copausbilder": {["Ausbilder Shop",["flugscheinformular"]]};
 };

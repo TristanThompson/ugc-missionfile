@@ -17,6 +17,8 @@ if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR
 if((_this select 3) == "lakeistani" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 //if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley FBI-Abteilung!"; closeDialog 0;};
+if((_this select 3) in ["ausbilder"] && playerSide != west && !license_cop_ausbilder) exitWith {hint localize "Du gehörst nicht zum Ausbilderteam des LakesideValley Police Departments!"; closeDialog 0;};
+if((_this select 3) in ["taktik"] && playerSide != west && !license_cop_taktik) exitWith {hint localize "Du gehörst nicht zum Taktikteam des LakesideValley Police Departments!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zum LakesideValley Police Department!"; closeDialog 0;};
 if((_this select 3) in ["state"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley SWAT-Einheit!"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};

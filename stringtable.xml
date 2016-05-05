@@ -1616,6 +1616,9 @@
 		<Key ID="STR_Item_blaulicht">
 			<Original>Blaulicht</Original>
 		</Key>
+		<Key ID="STR_Item_FlugForm">
+			<Original>Flugscheinformular</Original>
+		</Key>
 		<Key ID="STR_Item_Adrenalin">
 			<Original>Adrenalin</Original>
 		</Key>
@@ -1647,6 +1650,12 @@
 		</Key>
 		<Key ID="STR_License_Pilot">
 			<Original>Pilotenschein</Original>
+		</Key>
+		<Key ID="STR_License_Polizeiausbilder">
+			<Original>Polizeiausbilder</Original>
+		</Key>
+		<Key ID="STR_License_CopTaktik">
+			<Original>Taktische Lizenz</Original>
 		</Key>
 		<Key ID="STR_License_Heroin">
 			<Original>Heroinausbildung</Original>

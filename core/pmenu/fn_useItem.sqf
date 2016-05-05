@@ -352,6 +352,15 @@ switch (true) do
 			titleText ["Du benötigst einen gültigen FÜHRERSCHEIN A, B, C und D um das Formular auszufüllen!","PLAIN"];
 		};
 	};
+	
+	case (_item == "flugscheinformular"):
+	{
+		if(playerSide != west) exitWith {hint "Nur Polizisten können das Führerscheinformular ausfüllen!"};
+			if([false,_item,1] call life_fnc_handleInv) then {
+				license_cop_air = true;
+				hint parseText format["Du hast nun offiziell den Flugschein."];
+			};
+	};
 
 	
 	default

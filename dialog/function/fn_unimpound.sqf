@@ -12,13 +12,8 @@
 private["_vehicle","_vid","_pid","_unit","_price","_isInsured","_newPrice","_display","_BtnVersichern","_BtnAusparken"];
 disableSerialization;
 
-//Sichern gegen das mehrfache Zahlen der Gebühr
-_display = findDisplay 2800;
-_BtnVersichern = _display displayCtrl BtnVersichern;
-_BtnAusparken = _display displayCtrl BtnAusparken;
-_BtnVersichern ctrlEnable false;
-_BtnAusparken ctrlEnable false;
-
+//Schließt die Schaltfläche...
+closeDialog 0; 
 //next line added for insureance
 _isInsured = [_this,0,false,[false]] call BIS_fnc_param;
 if(lbCurSel 2802 == -1) exitWith {hint localize "STR_Global_NoSelection"};
@@ -75,8 +70,3 @@ if(_state == 1) then {
 };
 
 [_format,6] remoteExecCall ["UGC_fnc_sendToYourMom",2];
-
-//Schaltflächen wieder einschalten...
-sleep 2;
-_BtnVersichern ctrlEnable true;
-_BtnAusparken ctrlEnable true;

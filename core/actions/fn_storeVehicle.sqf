@@ -34,7 +34,7 @@ if(isNil "_vehicle") exitWith {hint localize "STR_Garage_NoNPC"};
 if(isNull _vehicle) exitWith {};
 
 //Blaulicht FBI Entfernen
-{if(typeOf _x == "Land_Camping_Light_off_F") then { 
+{if(typeOf _x == "UGC_Einsatzlicht_Blau") then { 
 		detach _x;
 		deleteVehicle _x;
 	};

@@ -1489,7 +1489,7 @@ switch (_shop) do
 			["DRPG_14Explorer_White",35000],
 			["DRPG_14Explorer_blue",35000],
 		//Raptor
-			//["Mrshounka_raptor2_noir",27000],
+			["Mrshounka_raptor2_noir",27000],
 		//Mustang
 			["Mrshounka_mustang_noircase",25000],
 			["Mrshounka_mustang_grise",25000],
@@ -1499,6 +1499,7 @@ switch (_shop) do
 		//Grand Cherokee
 			["Mrshounka_cherokee_noir_blanc_mat",25000],
 			["Mrshounka_cherokee_noir_bleu_mat",25000],
+			["Mrshounka_cherokee_noir",25000],
 		//Cayenne
 			["Mrshounka_cayenne_p_noir",70000],
 		//Hummer H1

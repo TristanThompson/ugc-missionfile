@@ -71,7 +71,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle i
 		life_impound_inuse = true;
 		
 		//Blaulicht FBI Entfernen
-		{if(typeOf _x == "Land_Camping_Light_off_F")then{
+		{if(typeOf _x == "UGC_Einsatzlicht_Blau")then{
 				detach _x;
 				deleteVehicle _x;
 			};

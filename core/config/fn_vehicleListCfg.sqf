@@ -1210,7 +1210,7 @@ switch (_shop) do
 		
 		if(__GETC__(life_mediclevel) > 2) then
 		{
-			_return pushBack ["A3L_Laddertruck",20000];
+			//_return pushBack ["A3L_Laddertruck",20000];
 			_return pushBack ["RR_FireTruck",20000];
 			_return pushBack ["DRPG_06Suburban_EMS",30000];
 			_return pushBack ["mercedes_atego_pompier_ingame",40000];
@@ -1220,16 +1220,18 @@ switch (_shop) do
 		{
 			//_return pushBack ["A3L_CVPILBFD", 25000];
 			_return pushBack ["DRPG_06Victoria_EMS", 25000];
-			_return pushBack ["cl3_dodge_charger_emt",30000];
+			_return pushBack ["DRPG_09Tahoe_EMS",35000];
+			_return pushBack ["DRPG_12Charger_EMS",30000];
+			//_return pushBack ["cl3_dodge_charger_emt",30000];
 			//_return pushBack ["charger_ems", 40000];
 			//_return pushBack ["AM_2015C_EMS",40000];
 		};
 		
 		if(__GETC__(life_mediclevel) > 4) then
 		{
-			_return pushBack ["cl3_xr_1000_emt",15000];
+			//_return pushBack ["cl3_xr_1000_emt",15000];
+			_return pushBack ["DRPG_15Charger_EMS",30000];
 			_return pushBack ["DRPG_12M5_EMS",45000];
-			_return pushBack ["DRPG_09Tahoe_EMS",35000];
 		};
 	};
 	
@@ -1260,36 +1262,38 @@ switch (_shop) do
 		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist in der Justiz tätig, nicht im LAC!"};
 
 		if(__GETC__(life_adaclevel) > 0) then {
-			_return pushBack ["C_Offroad_01_F",10000];
+			//_return pushBack ["C_Offroad_01_F",10000];
+			_return pushBack ["DRPG_11Transit_LAC",35000];
 			//_return pushBack ["A3L_CVLac",25000];
-			_return pushBack ["Jonzie_Tow_Truck",25000];
+			//_return pushBack ["Jonzie_Tow_Truck",25000];
 		};
 
 		if(__GETC__(life_adaclevel) > 1) then {
-			_return pushBack ["cl3_enduro_yellow",7500];
+			_return pushBack ["DRPG_09Tahoe_LAC",30000];
+			//_return pushBack ["cl3_enduro_yellow",7500];
 			_return pushBack ["ivory_isf",15000];
-			_return pushBack ["DRPG_10F150_Yellow",14000];
+			//_return pushBack ["DRPG_10F150_Yellow",14000];
 		};
 
 		if(__GETC__(life_adaclevel) > 2) then {
 			//_return pushBack ["A3l_evoxADAC",35000];
-			_return pushBack ["DRPG_06Victoria_Yellow",15000];
+			_return pushBack ["DRPG_06Victoria_LAC",15000];
 			_return pushBack ["B_Heli_Light_01_F",60000];
 			_return pushBack ["shounka_a3_mantgs",35000];
 		};
 
 		if(__GETC__(life_adaclevel) > 3) then {
-			_return pushBack ["DRPG_12M5_Yellow",45000];
+			_return pushBack ["DRPG_12M5_LAC",45000];
 			_return pushBack ["EC635_ADAC",10000];
 		};
 
 		if(__GETC__(life_adaclevel) > 5) then {
-			_return pushBack ["cl3_dodge_charger_f_yellow",30000];
+			//_return pushBack ["cl3_dodge_charger_f_yellow",30000];
 		};
 
 		if(__GETC__(life_adaclevel) > 6) then {
-			_return pushBack ["S_PorscheRS_Yellow",60000];
-			_return pushBack ["cl3_carrera_gt_light_yellow",75000];
+			//_return pushBack ["S_PorscheRS_Yellow",60000];
+			//_return pushBack ["cl3_carrera_gt_light_yellow",75000];
 		};
 	};
 	

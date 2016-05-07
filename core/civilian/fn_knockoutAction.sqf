@@ -1,4 +1,4 @@
-if(!(playerSide in [civilian,west])) exitWith {};
+//if(!(playerSide in [civilian,west])) exitWith {};
 if(player getVariable "ace_captives_isHandcuffed") exitWith {};
 
 _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;

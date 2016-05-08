@@ -38,12 +38,12 @@ hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
 		playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_shop,false,getPosASL _shop,3,1,600];
 		sleep 15.5;
 	};
-};
-*/
+};*/
 
-//Alarmsound
-_bankpos = getMarkerPos "fed_reserve";
+
+_bankpos = getMarkerPos "fed_reserve_1";
 playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_bankpos,false,getPosASL _bankpos,3,1,600];
+
 
 _alarm = true;
 

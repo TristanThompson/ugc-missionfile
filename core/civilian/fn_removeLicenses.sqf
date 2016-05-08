@@ -85,6 +85,12 @@ switch (_state) do
 		license_civ_gun = false;
 		hint localize "STR_Civ_RevokeLicense_Firearm";
 	};
+	//Gun Lizenz - Fix
+	case 15:
+	{
+		license_civ_gun = false;
+		hint localize "STR_Civ_RevokeLicense_Firearm";
+	};
 	//Presseausweis --TODO: Cop Interaktionsmenü
 	//Führerscheine A und D Cop Interaktionsmenü
 	case 19:

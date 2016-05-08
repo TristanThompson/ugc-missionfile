@@ -21,7 +21,7 @@ _rip = true;
 //Ausraubbares Geld
 _cops = [2] call life_fnc_copCounter;
 private _bankBase = 87500;
-private _maxVal = random(300000);
+private _maxVal = random(200000);
 private _ran = _maxVal * ((_cops / 100) + 1);
 private _kassa = ceil(90000 + _ran);
 [_shop,_robber,_action,-1] remoteExec ["TON_fnc_shopStateBank",2]; 

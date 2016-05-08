@@ -1,14 +1,12 @@
 /*         
 	file: fn_robShops.sqf
 	Author: MrKraken
-		edited: Bastian "Janl1.DE" Schumacher
-		Server: lakeside-reallife.de
 	Made from MrKrakens bare-bones shop robbing tutorial on www.altisliferpg.com forums
 	Description:
 	Executes the rob shob action!
 	Idea developed by PEpwnzya v2.0
 */ 
-private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm","_shopName","_bankpos"];
+private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm","_shopName"];
 params[
 	["_shop",ObjNull,[ObjNull]],
 	["_robber",ObjNull,[ObjNull]],
@@ -24,7 +22,7 @@ _rip = true;
 //Ausraubbares Geld
 _cops = [2] call life_fnc_copCounter;
 private _bankBase = 93000;
-private _maxVal = random(200000);
+private _maxVal = random(300000);
 private _ran = _maxVal * ((_cops / 100) + 1);
 private _kassa = ceil(90000 + _ran);
 [_shop,_robber,_action,-1] remoteExec ["TON_fnc_shopStateBank",2]; 
@@ -40,11 +38,8 @@ hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
 	};
 };
 
-/*Alarmsound
-_bankpos = getMarkerPos "fed_reserve_1";
-playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_bankpos,false,getPosASL _bankpos,3,1,600];
-*/
 _alarm = true;
+
 
 //Setup our progress bar.
 disableSerialization;

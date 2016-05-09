@@ -23,22 +23,22 @@ _Btn7 = _display displayCtrl 41008;
 life_pInact_curTarget = _curTarget;
 
 //Driver License
-_Btn1 buttonSetAction "[10] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn1 buttonSetAction "[10,1] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Truck License
-_Btn2 buttonSetAction "[11] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn2 buttonSetAction "[11,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Pilot License
-_Btn3 buttonSetAction "[12] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn3 buttonSetAction "[12,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Boating License
-_Btn4 buttonSetAction "[13] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn4 buttonSetAction "[13,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Diving License
-_Btn5 buttonSetAction "[14] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn5 buttonSetAction "[14,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Firearm License
-_Btn6 buttonSetAction "[15] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn6 buttonSetAction "[15,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Perm Führerschein
-_Btn7 buttonSetAction "[16] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn7 buttonSetAction "[16,1] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";

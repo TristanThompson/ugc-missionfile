@@ -1,12 +1,18 @@
 /*
 	File: fn_removeLicenses.sqf
 	Author: Bryan "Tonic" Boardwine
+		edited: Bastian "Janl1.DE" Schumacher
 	
 	Description:
 	Used for stripping certain licenses off of civilians as punishment.
 */
 private["_state"];
 _state = [_this,0,1,[0]] call BIS_fnc_param;
+_mode = [_this,1,1,[0]] call BIS_fnc_param;
+
+if(_mode = 1) then {
+	lrl_licenseGotRemoved = true;
+};
 
 switch (_state) do
 {

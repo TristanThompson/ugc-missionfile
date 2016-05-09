@@ -976,8 +976,8 @@ switch(_shop) do
 			{
 				["Billy Joe's Feuerwaffen",
 					[
-						["arifle_SDAR_F","Gummigeschoss-Waffe",6250],
-						["30Rnd_556x45_Stanag_Tracer_Red","Gummigeschosse",70],
+						//["arifle_SDAR_F","Gummigeschoss-Waffe",6250],
+						//["30Rnd_556x45_Stanag_Tracer_Red","Gummigeschosse",70],
 						["RH_gsh18",nil,1250],
 						["RH_18Rnd_9x19_gsh",nil,50],
 						["RH_g17",nil,1150],

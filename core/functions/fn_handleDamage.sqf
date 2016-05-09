@@ -15,7 +15,7 @@ if(!isNull _source) then {
 				};
 			};
 			
-			if(_projectile == "B_556x45_Ball_Tracer_Red" && currentWeapon _source == "arifle_SDAR_F") then {
+			if(_projectile == "30Rnd_556x45_Stanag_Tracer_Red" && currentWeapon _source == "arifle_SDAR_F") then {
 				_damage = false;
 				if(_source distance _unit < 75) then {
 					if(!lrl_gummit) then {

@@ -127,6 +127,8 @@ switch (_var) do
 	case "life_inv_sos": {(localize "STR_Item_sos")};
 	case "life_inv_blaulicht": {(localize "STR_Item_blaulicht")};
 	case "life_inv_flugscheinformular": {(localize "STR_Item_FlugForm")};
+	case "life_inv_swatformular": {(localize "STR_Item_SWATFormular")};
+	case "life_inv_fbiformular": {(localize "STR_Item_FBIFormular")};
 	
 
 	//License Block
@@ -165,4 +167,6 @@ switch (_var) do
 	case "license_civ_fischerei": {(localize "STR_License_Fischerei")};
 	case "license_civ_mehlmahl": {(localize "STR_License_Mehlmahl")};
 	case "license_civ_permdriver": {(localize "STR_License_permdriver")};
+	case "license_cop_swat": {(localize "STR_License_SWAT")};
+	case "license_cop_fbi": {(localize "STR_License_FBI")};
 };

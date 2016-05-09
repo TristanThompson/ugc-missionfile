@@ -1640,6 +1640,12 @@
 		<Key ID="STR_Item_tracker">
 			<Original>GPS-Tracker</Original>
 		</Key>
+		<Key ID="STR_Item_FBIFormular">
+			<Original>FBI-Formular</Original>
+		</Key>
+		<Key ID="STR_Item_SWATFormular">
+			<Original>SWAT-Formular</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -1740,6 +1746,12 @@
 		</Key>
 		<Key ID="STR_License_Mehlmahl">
 			<Original>Weizenverarbeitung</Original>
+		</Key>
+		<Key ID="STR_License_SWAT">
+			<Original>SWAT-Lizenz</Original>
+		</Key>
+		<Key ID="STR_License_FBI">
+			<Original>FBI-Lizenz</Original>
 		</Key>
 		<Key ID="STR_License_permdriver">
 			<Original>Permanenter Führerschein</Original>

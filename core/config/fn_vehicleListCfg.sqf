@@ -1070,20 +1070,20 @@ switch (_shop) do
 		];
 	};
 	
-//	//IVECO LKW
-//	case "ivecolkw":
-//	{
-//		_return = [
-//			["shounka_ivceco_noir",80000],
-//			["shounka_ivceco_bleufonce",80000],
-//			["shounka_ivceco_rouge",80000],
-//			["shounka_ivceco_jaune",80000],
-//			["shounka_ivceco_rose",80000],
-//			["shounka_ivceco_grise",80000],
-//			["shounka_ivceco_violet",80000],
-//			["shounka_ivceco_orange",80000]
-//		];
-//	};
+	//IVECO LKW
+	case "ivecolkw":
+	{
+		_return = [
+			["shounka_ivceco_noir",80000],
+			["shounka_ivceco_bleufonce",80000],
+			["shounka_ivceco_rouge",80000],
+			["shounka_ivceco_jaune",80000],
+			["shounka_ivceco_rose",80000],
+			["shounka_ivceco_grise",80000],
+			["shounka_ivceco_violet",80000],
+			["shounka_ivceco_orange",80000]
+		];
+	};
 	
 	//Volvo LKW
 	case "volvolkw":

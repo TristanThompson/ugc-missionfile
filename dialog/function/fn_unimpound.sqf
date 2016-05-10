@@ -35,8 +35,9 @@ if (_isInsured) then {
 	if(license_civ_driver || license_civ_permdriver) then {
 		_price = _basePrice * 3;
 		_insuredstate = "(VERSICHERT)";
-		_insureinfo = "nolicense";
+		_unit setVariable ["keinenLappen", "no", true];
 	} else {
+		_unit setVariable ["keinenLappen", "yes", true];
 		_insuredstate = "(RAW [FAILED])";
 		_price = _basePrice;
 	};
@@ -47,12 +48,12 @@ if (_isInsured) then {
 if(c00l3_b4Nck3h13R < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
-[_vid,_pid,life_garage_sp select 0,_unit,_price,_isInsured,life_garage_sp select 1,_insureinfo] remoteExec ["TON_fnc_spawnVehicle",2];
+[_vid,_pid,life_garage_sp select 0,_unit,_price,_isInsured,life_garage_sp select 1] remoteExec ["TON_fnc_spawnVehicle",2];
 } else {
 	if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
-[_vid,_pid,life_garage_sp,_unit,_price,_isInsured,_insureinfo] remoteExec ["TON_fnc_spawnVehicle",2];
+[_vid,_pid,life_garage_sp,_unit,_price,_isInsured] remoteExec ["TON_fnc_spawnVehicle",2];
 	} else {
-[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,_isInsured,markerDir life_garage_sp,_insureinfo] remoteExec ["TON_fnc_spawnVehicle",2];
+[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,_isInsured,markerDir life_garage_sp] remoteExec ["TON_fnc_spawnVehicle",2];
 	};
 };
 

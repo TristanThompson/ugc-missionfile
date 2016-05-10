@@ -10,7 +10,7 @@ private["_state"];
 _state = [_this,0,1,[0]] call BIS_fnc_param;
 _mode = [_this,1,1,[0]] call BIS_fnc_param;
 
-if(_mode = 1) then {
+if(_mode == 1) then {
 	lrl_licenseGotRemoved = true;
 };
 

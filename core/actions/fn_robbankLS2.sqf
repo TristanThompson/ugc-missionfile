@@ -1,5 +1,5 @@
 /*         
-	file: fn_robBankLS2.sqf
+	file: fn_robShops.sqf
 	Author: MrKraken
 	Made from MrKrakens bare-bones shop robbing tutorial on www.altisliferpg.com forums
 	Description:

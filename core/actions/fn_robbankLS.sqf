@@ -9,7 +9,7 @@ _action = [_this,2] call BIS_fnc_param;
 _shop = "LakesideBank";
 
 //if(playersNumber west < 7) exitWith { hint "Das Zeitschloss des Tresors ist derzeit noch aktiv!"};
-if(isNull _shop OR isNull _robber) exitWith {};
+if(isNull _shop OR isNull _robber) exitWith {hint "Lel das ist Null??! Wie geht das?";};
 if(side _robber != civilian) exitWith { hint "Korruptes Schwein verschwinde!" };// We do not want anyone but civilianz to rob the stations.
 if (vehicle player != _robber) exitWith { hint "Wie bist du mit dem Auto in die Bank gekommen? Verschwinde!" };
 if(currentWeapon _robber in lrl_noWeapons) exitWith {hint "Ohne Waffe nix los. Wenn nix los, gibt's kein Moos."}; //Ausrauben ohne gueltige Waffe

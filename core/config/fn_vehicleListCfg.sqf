@@ -1410,9 +1410,10 @@ switch (_shop) do
 			//_return pushBack ["A3L_ChargerUC_White_New",40000];
 			//_return pushBack ["A3L_ChargerUC_Blue_New",40000];
 			//_return pushBack ["A3L_ChargerUC_Black_New",40000];
-			_return pushBack ["DAR_SWATPolice",40000];
+			//_return pushBack ["DAR_SWATPolice",40000];
+			_return pushBack ["UGC_Swat_Van",40000];
 			//_return pushBack ["DAR_ExplorerPoliceStealth",35000];
-			_return pushBack ["shounka_a3_brinks_noir",35000];
+			//_return pushBack ["shounka_a3_brinks_noir",35000];
 			_return pushBack ["shounka_a3_suburbangign",35000];
 			//Chevrolet Tahoe
 			_return pushBack ["DRPG_09Tahoe_P_FBI",20000];

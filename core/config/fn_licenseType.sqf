@@ -54,8 +54,6 @@ switch (_mode) do
 			case "permdriver": {_var = "license_civ_permdriver"};
 			case "ausbilder": {_var = "license_cop_ausbilder"};
 			case "taktik": {_var = "license_cop_taktik"};
-			case "swat": {_var = "license_cop_swat"};
-			case "fbi": {_var = "license_cop_fbi"};
 			default {_var = ""};
 		};
 	};
@@ -102,8 +100,6 @@ switch (_mode) do
 			case "license_civ_permdriver": {_var = "permdriver"};
 			case "license_cop_ausbilder": {_var = "ausbilder"};
 			case "license_cop_taktik": {_var = "taktik"};
-			case "license_cop_fbi": {_var = "fbi"};
-			case "license_cop_swat": {_var = "swat"};
 			default {_var = ""};
 		};
 	};

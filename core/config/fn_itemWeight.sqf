@@ -101,8 +101,6 @@ switch (_item) do
 	case "flugscheinformular":{0.5};
 	case "taktikformular":{0.5};
 	case "permdriverformular":{0.5};
-	case "fbiformular":{0.5};
-	case "swatformular":{0.5};
 	case "bohrmaschine":{5};
 	case "nothammer":{3};
 	case "mehl":{2};

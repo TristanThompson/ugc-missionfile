@@ -49,6 +49,4 @@ switch (_type) do
 	case "mehlmahl": {3750};
 	case "permdriver": {5000};
 	case "rebelbase": {25000}; //Rebellen Grundlizenz
-	case "swat": {2500};
-	case "fbi": {2500};
 };

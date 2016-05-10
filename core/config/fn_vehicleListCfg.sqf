@@ -1028,7 +1028,7 @@ switch (_shop) do
 			["shounka_limo_civ_noir",125000],
 			["shounka_limo_civ_bleufonce",125000],
 			["shounka_limo_civ_rouge",125000],
-			["shounka_limo_civ_jaune",125000],
+			//["shounka_limo_civ_jaune",125000],
 			["shounka_limo_civ_rose",125000],
 			["shounka_limo_civ_grise",125000],
 			["shounka_limo_civ_violet",125000],

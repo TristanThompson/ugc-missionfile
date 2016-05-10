@@ -186,8 +186,9 @@ if(playerSide == civilian) then
 	_presse = if(license_civ_presse) then {"<img image='images\idcards\civ\id_presse.paa' size='8'/>";} else {"<br/>"};
 	_pkw = if(license_civ_driver) then {"<img image='images\idcards\civ\id_pkw.paa' size='8'/>";} else {"<br/>"}; 
 	_lkw = if(license_civ_truck) then {"<img image='images\idcards\civ\id_lkw.paa' size='8'/>";} else {"<br/>"};
+	_gun = if(license_civ_gun) then {"<img image='images\idcards\civ\Waffenschein.paa' size='8'/>";} else {"<br/>"};
 	
-	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/>%3<br/>%4<br/>%5",name player,_id,_pkw,_lkw,_presse];
+	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/>%3<br/>%4<br/>%5<br/>%6<br/>",name player,_id,_pkw,_lkw,_presse,_gun];
 //	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
 	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 };

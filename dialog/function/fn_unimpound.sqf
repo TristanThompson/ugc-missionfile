@@ -35,10 +35,9 @@ if (_isInsured) then {
 	if(license_civ_driver || license_civ_permdriver) then {
 		_price = _basePrice * 3;
 		_insuredstate = "(VERSICHERT)";
-		_unit setVariable ["keinenLappen", "no", true];
 	} else {
-		_unit setVariable ["keinenLappen", "yes", true];
-		_insuredstate = "(RAW [FAILED])";
+		_isInsured = false;
+		_insuredstate = "(RAW)";
 		_price = _basePrice;
 	};
 } else {

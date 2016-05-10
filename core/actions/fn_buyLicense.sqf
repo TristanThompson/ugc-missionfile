@@ -11,13 +11,13 @@ _type = _this select 3;
 _price = [_type] call life_fnc_licensePrice;
 _license = [_type,0] call life_fnc_licenseType;
 
-if(_license select 0 == "license_civ_driver" || _license select 0 == "driver") then
+/*if(_license select 0 == "license_civ_driver" || _license select 0 == "driver") then
 {
 	if(lrl_licenseGotRemoved) then {
 		closeDialog 0;
 		hint "Dein Führerschein wurde dir doch von der Polizei entzogen!";
 	};
-};
+};*/
 
 if(v4r14t0X_isTc00L < _price) exitWith {hint format[localize "STR_NOTF_NE_1",[_price] call life_fnc_numberText,_license select 1];};
 

@@ -6,7 +6,7 @@
 	Executes the rob shob action!
 	Idea developed by PEpwnzya v2.0
 */ 
-private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm"];
+private["_kassa","_ui","_progress","_pgText","_cP","_rip","_alarm","_sound"];
 params[
 	["_shop",ObjNull,[ObjNull]],
 	["_robber",ObjNull,[ObjNull]],
@@ -30,12 +30,13 @@ hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
 [2,format["Los-Diablos Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",-2];
 [1,format["Los-Diablos Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",west];
 
-[] spawn {
+_shop spawn {
 	for "_i" from 1 to 6 do {
-		playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_shop,false,getPosASL _shop,2.5,1,600];
+		playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_this,false,getPosASL _this,3,1,600];
 		sleep 15.5;
 	};
 };
+
 
 _alarm = true;
 

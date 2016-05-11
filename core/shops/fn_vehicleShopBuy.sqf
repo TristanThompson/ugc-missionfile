@@ -39,19 +39,47 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
 
 _state = 0;
-if(playerSide != civilian) then {
+
+switch (playerSide) do {
+    case west: {
+		_newPrice = round(_basePrice / 10);
+		c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
+		_state = 1;
+		hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_newPrice] call life_fnc_numberText];		
+	};
+    case east: {
+		_newPrice = round(_basePrice / 10);
+		c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
+		_state = 1;
+		hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_newPrice] call life_fnc_numberText];
+    };
+	case independent: {
+		_newPrice = round(_basePrice / 10);
+		c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
+		_state = 1;   
+		hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_newPrice] call life_fnc_numberText];
+	};
+	case civilian: {
+		c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _basePrice;
+		_state = 0;
+		hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+	};
+};
+
+/*if(playerSide != civilian) then {
 	_newPrice = round(_basePrice / 10);
 	c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _newPrice;
 	_state = 1;
 } else {
 	c00l3_b4Nck3h13R = c00l3_b4Nck3h13R - _basePrice;
 	_state = 0;
-};
-if(playerSide != civilian) then {
+};*/
+
+/*if(playerSide != civilian) then {
 	hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_newPrice] call life_fnc_numberText];
 } else {
 	hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
-};
+};*/
 	
 [[player,"buycarniggah"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 

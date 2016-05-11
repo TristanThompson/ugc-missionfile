@@ -47,4 +47,4 @@ if(_state == 1) then {
 
 life_action_inUse = false;
 closeDialog 0;
-life_cgar_inUse = time
+life_cgar_inUse = time;

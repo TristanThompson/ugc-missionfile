@@ -31,9 +31,9 @@ hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
 [2,format["Morrison Town Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",-2];
 [1,format["Morrison Town Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",west];
 
-[] spawn {
+_shop spawn {
 	for "_i" from 1 to 6 do {
-		playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_shop,false,getPosASL _shop,3,1,600];
+		playSound3D [KF_CHICKEN + "sounds\bankalarm.ogg",_this,false,getPosASL _this,3,1,600];
 		sleep 15.5;
 	};
 };

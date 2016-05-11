@@ -1,10 +1,11 @@
 /*
     Sending robbery-request to server 
 */
-private["_shop","_robber"];
-_shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; 
-_action = [_this,2] call BIS_fnc_param;
+params[
+	["_shop",ObjNull,[ObjNull]],
+	["_robber",ObjNull,[ObjNull]],
+	"_action"
+];
 
 if(playersNumber west < 7) exitWith { hint "Das Zeitschloss des Tresors ist derzeit noch aktiv!"};
 if(isNull _shop OR isNull _robber) exitWith {};

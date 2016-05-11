@@ -1265,7 +1265,7 @@ switch (_shop) do
 			//_return pushBack ["C_Offroad_01_F",10000];
 			_return pushBack ["DRPG_11Transit_LAC",35000];
 			//_return pushBack ["A3L_CVLac",25000];
-			//_return pushBack ["Jonzie_Tow_Truck",25000];
+			_return pushBack ["Jonzie_Tow_Truck",25000];
 		};
 
 		if(__GETC__(life_adaclevel) > 1) then {

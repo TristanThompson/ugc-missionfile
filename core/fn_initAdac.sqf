@@ -66,5 +66,7 @@ if(!(str(player) in ["ADAC_3"])) then {
 player setVariable ["copLevel",1,true];
 [] call life_fnc_spawnMenu;
 [] execVM "core\initJVM.sqf";
+//Init Placeables
+[] spawn life_fnc_placeablesInit;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

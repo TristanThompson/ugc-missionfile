@@ -2,13 +2,13 @@
 /*
 	File: fn_initMedic.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initializes the medic..
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = false; 
+tf_no_auto_long_range_radio = false;
 
 private["_end"];
 
@@ -44,6 +44,8 @@ if((str(player) in ["MEDIC_2"])) then {
 player setVariable ["copLevel",1,true];
 lrl_liegeActive = false;
 [] call life_fnc_spawnMenu;
+//Init Placeables
+[] spawn life_fnc_placeablesInit;
 [] execVM "core\initJVM.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

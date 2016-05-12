@@ -63,9 +63,37 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 
 switch (_code) do
 {
+	//Oe Taste
+	case 39:
+	{
+		switch (playerSide) do {
+		  case west: {
+				[] spawn life_fnc_placeablesMenu;
+				_handled = true;
+			};
+
+			case independent: {
+				[] spawn life_fnc_placeablesMenu;
+				_handled = true;
+			};
+
+			case east: {
+				_adaclevel = call life_adaclevel;
+				if(_adaclevel < 9) then {
+					[] spawn life_fnc_placeablesMenu;
+					_handled = true;
+				};
+			};
+		};
+		_handled = true;
+	};
+
 	//Space key for Jumping
 	case 57:
 	{
+		if(life_barrier_active) then {
+			[] spawn life_fnc_placeablesPlaceComplete;
+		};
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
 			jumpActionTime = time; //Update the time.
@@ -322,7 +350,7 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	
+
 	// R Key
 	case 19: {
 		if( _copPlayer) then {
@@ -336,7 +364,7 @@ switch (_code) do
 				if(isNil {_veh getVariable "copyelp"}) then {
 					_veh setVariable["copyelp",false,true];
 				};
-				
+
 				if((_veh getVariable "copyelp")) then {
 					_veh setVariable["copyelp",false,true];
 					titleText ["= Yelp-Sirene AUS =","PLAIN"];
@@ -407,7 +435,7 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	
+
 	case 24: {
 		if(vehicle player != player) then {
 			if(!life_action_inUse) then {
@@ -428,7 +456,7 @@ switch (_code) do
 					lrl_copSiren_vehPlease_active = true;
 					_veh = vehicle player;
 					[_veh] remoteExec ["life_fnc_copSirenVehPlease",-2];
-					
+
 					[] spawn {
 						sleep 20;
 						lrl_copSiren_vehPlease_active = false;
@@ -468,10 +496,10 @@ switch (_code) do
 				};
 			} else {
 				if(_copPlayer && !lrl_copSiren_vehNormal_active) then {
-					lrl_copSiren_vehNormal_active = true;	
+					lrl_copSiren_vehNormal_active = true;
 					_veh = vehicle player;
 					[_veh] remoteExec ["life_fnc_copSirenVehNormal",-2];
-					
+
 					[] spawn {
 						sleep 20;
 						lrl_copSiren_vehNormal_active = false;

@@ -47,3 +47,5 @@
 #include "craft.hpp"
 #include "farming.hpp"
 #include "spawnPicture.hpp"
+//Objekte
+#include "placeables.hpp"

@@ -2,13 +2,13 @@
 /*
 	File: fn_initCop.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Cop Initialization file.
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = false; 
+tf_no_auto_long_range_radio = false;
 
 private["_end"];
 player addRating 9999999;
@@ -78,6 +78,8 @@ player setVariable["rank",(__GETC__(life_coplevel)),true];
 player setVariable ["copLevel",1,true];
 player setVariable ["inSOS",false,true]; //Muss initialisiert werden, sonst gehen cop marker nicht
 [] spawn life_fnc_copCards;
+//Init Placeables
+[] spawn life_fnc_placeablesInit;
 [] call life_fnc_spawnMenu;
 [] execVM "core\initJVM.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.

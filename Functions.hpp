@@ -55,6 +55,17 @@ class Life_Client_Core
 		class initAdac {};
 	};
 
+	class CopPlaceables
+	{
+		file = "core\cop\placeables";
+		class placeablesInit {};
+		class placeablesMenu {};
+		class placeablesRemoveAll {};
+		class placeablePlace {};
+		class placeableCancel {};
+		class placeablesPlaceComplete {};
+	};
+
 	class Admin
 	{
 		file = "core\admin";

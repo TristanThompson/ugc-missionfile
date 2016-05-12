@@ -1,7 +1,7 @@
 /*
 	File: fn_vehicleWeightCfg.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration for vehicle weight.
 */
@@ -44,7 +44,7 @@ switch (_className) do
 	case "Jonzie_VE": {45};
 	case "Jonzie_Ute": {45};
 	case "Jonzie_Quattroporte": {45};
-	
+
 	//Vw
 	case "RDS_Golf4_Civ_01": {40};
 	case "cl3_golf_mk2_white": {45};
@@ -76,7 +76,7 @@ switch (_className) do
 	case "Mrshounka_Volkswagen_Touareg_grise": {60};
 	case "Mrshounka_Volkswagen_Touareg_violet": {60};
 	case "Mrshounka_Volkswagen_Touareg_orange": {60};
-	
+
 	//Honda
 	case "cl3_civic_vti_white": {45};
 	case "cl3_civic_vti_purple": {45};
@@ -88,7 +88,7 @@ switch (_className) do
 	case "cl3_civic_vti_gold": {45};
 	case "cl3_civic_vti_burgundy": {45};
 	case "cl3_civic_vti_black": {45};
-	
+
 	//Renault
 	case "Mrshounka_megane_rs_2015_noir": {40};
 	case "Mrshounka_megane_rs_2015_bleufonce": {40};
@@ -122,7 +122,7 @@ switch (_className) do
 	case "shounka_a3_cliors_civ_grise": {40};
 	case "shounka_a3_cliors_civ_violet": {40};
 	case "shounka_a3_cliors_civ_orange": {40};
-	
+
 	//Mitsubishi
 	case "Mrshounka_evox_noir": {50};
 	case "Mrshounka_evox_bleufonce": {50};
@@ -132,7 +132,7 @@ switch (_className) do
 	case "Mrshounka_evox_grise": {50};
 	case "Mrshounka_evox_violet": {50};
 	case "Mrshounka_evox_orange": {50};
-	
+
 	//GMC Vandura
 	case "Mrshounka_Vandura_civ_noir": {85};
 	case "Mrshounka_Vandura_civ_bleufonce": {85};
@@ -142,7 +142,7 @@ switch (_className) do
 	case "Mrshounka_Vandura_civ_grise": {85};
 	case "Mrshounka_Vandura_civ_violet": {85};
 	case "Mrshounka_Vandura_civ_orange": {85};
-	
+
 	//Lincoln
 	case "Mrshounka_lincoln_noir": {50};
 	case "Mrshounka_lincoln_bleufonce": {50};
@@ -152,7 +152,7 @@ switch (_className) do
 	case "Mrshounka_lincoln_grise": {50};
 	case "Mrshounka_lincoln_violet": {50};
 	case "Mrshounka_lincoln_orange": {50};
-	
+
 	//Lykan
 	case "Mrshounka_lykan_c_noir": {25};
 	case "Mrshounka_lykan_c_bleufonce": {25};
@@ -162,7 +162,7 @@ switch (_className) do
 	case "Mrshounka_lykan_c_grise": {25};
 	case "Mrshounka_lykan_c_violet": {25};
 	case "Mrshounka_lykan_c_orange": {25};
-	
+
 	//Jeep
 	case "A3L_Jeep": {50};
 	case "cl3_range_rover_white": {50};
@@ -248,11 +248,11 @@ switch (_className) do
 	case "Mrshounka_cherokee_noir_violet_mat": {65};
 	case "Mrshounka_cherokee_noir_rouge": {65};
 	case "Mrshounka_cherokee_noir_rouge_mat": {65};
-	
+
 	//Leichenwagen
 	case "Mrshounka_corbillard_c_grise": {25};
 	case "Mrshounka_corbillard_c_noir": {25};
-	
+
 	//Motorrad
 	case "cl3_enduro_yellow": {1};
 	case "cl3_enduro_black": {5};
@@ -270,7 +270,7 @@ switch (_className) do
 	case "cl3_xr_1000_red": {15};
 	case "cl3_xr_1000_lime": {15};
 	case "cl3_xr_1000_flame": {15};
-	
+
 	//Citroen
 	case "Mrshounka_a3_ds3_civ_noir": {35};
 	case "Mrshounka_a3_ds3_civ_bleufonce": {35};
@@ -296,7 +296,7 @@ switch (_className) do
 	case "shounka_a3_ds4_grise": {35};
 	case "shounka_a3_ds4_violet": {35};
 	case "shounka_a3_ds4_orange": {35};
-	
+
 	//Alfa
 	case "Mrshounka_Alfa_Romeo_noir": {45};
 	case "Mrshounka_Alfa_Romeo_bleufonce": {45};
@@ -306,16 +306,16 @@ switch (_className) do
 	case "Mrshounka_Alfa_Romeo_grise": {45};
 	case "Mrshounka_Alfa_Romeo_violet": {45};
 	case "Mrshounka_Alfa_Romeo_orange": {45};
-	
+
 	//Agera
 	case "Mrshounka_agera_p_noir": {35};
 	case "Mrshounka_agera_p_bleu": {35};
 	case "Mrshounka_agera_p_jaune": {35};
-	
+
 	//Smart
 	case "Mrshounka_a3_smart_civ_noir": {25};
 	case "Mrshounka_a3_smart_civ_bleu": {25};
-	
+
 	//Peugeot
 	case "Mrshounka_207_noir": {35};
 	case "Mrshounka_207_bleufonce": {35};
@@ -349,7 +349,7 @@ switch (_className) do
 	case "shounka_a3_peugeot508_civ_grise": {35};
 	case "shounka_a3_peugeot508_civ_violet": {35};
 	case "shounka_a3_peugeot508_civ_orange": {35};
-	
+
 	//Ford
 	case "Jonzie_Transit": {90};
 	case "Jonzie_Raptor": {60};
@@ -439,7 +439,7 @@ switch (_className) do
 	case "Mrshounka_raptor2_grise": {60};
 	case "Mrshounka_raptor2_violet": {60};
 	case "Mrshounka_raptor2_orange": {60};
-	
+
 	//Opel
 	case "cl3_insignia_white": {50};
 	case "cl3_insignia_purple": {50};
@@ -451,7 +451,7 @@ switch (_className) do
 	case "cl3_insignia_gold": {50};
 	case "cl3_insignia_burgundy": {50};
 	case "cl3_insignia_black": {50};
-	
+
 	//Dodge
 	case "A3L_GrandCaravan": {70};
 	case "A3L_GrandCaravanBlk": {70};
@@ -519,7 +519,7 @@ switch (_className) do
 	case "DRPG_08Viper_Pink": {60};
 	case "DRPG_08Viper_Purple": {60};
 	case "DRPG_08Viper_Yellow": {60};
-	
+
 	//Nissan
 	case "S_Skyline_Red": {50};
 	case "S_Skyline_Blue": {50};
@@ -533,7 +533,7 @@ switch (_className) do
 	case "Mrshounka_a3_gtr_civ_grau": {60};
 	case "Mrshounka_a3_gtr_civ_gruen": {60};
 	case "Mrshounka_a3_gtr_civ_violet": {60};
-	
+
 	//Mercedes
 	case "cl3_e63_amg_white": {55};
 	case "cl3_e63_amg_purple": {55};
@@ -579,7 +579,7 @@ switch (_className) do
 	case "shounka_a3_spr_civ_grise": {150};
 	case "shounka_a3_spr_civ_violet": {150};
 	case "shounka_a3_spr_civ_orange": {150};
-	
+
 	//Audi
 	case "SAL_AudiCivSilver": {50};
 	case "shounka_a3_rs5_civ_noir": {55};
@@ -626,7 +626,8 @@ switch (_className) do
 	case "shounka_rs6_grise": {55};
 	case "shounka_rs6_violet": {55};
 	case "shounka_rs6_orange": {55};
-	
+	case "shounka_a3_audiq7_bleu": {55};
+
 	//BMW
 	case "DAR_M3CivBlack": {40};
 	case "DAR_M3CivWhite": {40};
@@ -680,7 +681,7 @@ switch (_className) do
 	case "DRPG_12M5_Pink": {55};
 	case "DRPG_12M5_Purple": {55};
 	case "DRPG_12M5_Yellow": {55};
-	
+
 	//Subaru
 	case "Jonzie_STI": {45};
 	case "ivory_wrx": {45};
@@ -701,7 +702,7 @@ switch (_className) do
 	case "Mrshounka_subaru08_grise": {45};
 	case "Mrshounka_subaru08_violet": {45};
 	case "Mrshounka_subaru08_orange": {45};
-	
+
 	//Transam
 	case "shounka_transam_noir": {35};
 	case "shounka_transam_bleufonce": {35};
@@ -711,7 +712,7 @@ switch (_className) do
 	case "shounka_transam_grise": {35};
 	case "shounka_transam_violet": {35};
 	case "shounka_transam_orange": {35};
-	
+
 	//Aston Martin
 	case "S_Vantage_Red": {35};
 	case "S_Vantage_Blue": {35};
@@ -726,11 +727,11 @@ switch (_className) do
 	case "cl3_dbs_volante_lime": {40};
 	case "cl3_dbs_volante_light_yellow": {40};
 	case "cl3_dbs_volante_light_blue": {40};
-	case "cl3_dbs_volante_grey": {v};
+	case "cl3_dbs_volante_grey": {40};
 	case "cl3_dbs_volante_gold": {40};
 	case "cl3_dbs_volante_burgundy": {40};
 	case "cl3_dbs_volante_black": {40};
-	
+
 	//Porsche
 	case "S_PorscheRS_Black": {30};
 	case "S_PorscheRS_White": {30};
@@ -769,7 +770,7 @@ switch (_className) do
 	case "mrshounka_92_civ_grise": {35};
 	case "mrshounka_92_civ_violet": {35};
 	case "mrshounka_92_civ_orange": {35};
-	
+
 	//Ferrari
 	case "cl3_458_white": {35};
 	case "cl3_458_purple": {35};
@@ -789,7 +790,7 @@ switch (_className) do
 	case "shounka_f430_spider_grise": {35};
 	case "shounka_f430_spider_violet": {35};
 	case "shounka_f430_spider_orange": {35};
-	
+
 	//Mclaren
 	case "S_McLarenP1_Black": {35};
 	case "S_McLarenP1_Blue": {35};
@@ -806,7 +807,7 @@ switch (_className) do
 	case "shounka_mp4_grise": {40};
 	case "shounka_mp4_violet": {40};
 	case "shounka_mp4_orange": {40};
-	
+
 	//Lambo
 	case "mrshounka_huracan_c_noir": {30};
 	case "mrshounka_huracan_c_bleufonce": {30};
@@ -865,7 +866,7 @@ switch (_className) do
 	case "cl3_lamborghini_gt1_gold": {40};
 	case "cl3_lamborghini_gt1_burgundy": {40};
 	case "cl3_lamborghini_gt1_black": {40};
-	
+
 	// Luxushändler
 	case "ivory_c": {35};
 	case "ivory_c_livery1": {35};
@@ -911,15 +912,15 @@ switch (_className) do
 	case "shounka_limo_civ_grise": {40};
 	case "shounka_limo_civ_violet": {40};
 	case "shounka_limo_civ_orange": {40};
-	
+
 	//LkW
 	case "C_Van_01_box_F": {150};
 	case "C_Van_01_transport_F": {175};
 //	case "Jonzie_Western": {200};
-	
+
 	//Scania LKW
 	case "A3L_Dumptruck": {325};
-	
+
 	//Zamak LKW
 	case "CL3_Zamak_Transport_open_01": {225};
 	case "CL3_Zamak_Transport_covered_01": {325};
@@ -929,13 +930,13 @@ switch (_className) do
 	case "CL3_Zamak_Transport_covered_03": {325};
 	case "CL3_Zamak_Transport_open_04": {225};
 	case "CL3_Zamak_Transport_covered_04": {325};
-	
+
 	//Renault LKW
 	case "shounka_a3_renaultmagnum_f": {350};
-	
+
 	//Volvo LKW
 	case "ALFR_GeK_Volvo_FH16_2012": {350};
-	
+
 	//IVECO LKW
 	case "shounka_ivceco_noir": {380};
 	case "shounka_ivceco_bleufonce": {380};
@@ -945,19 +946,19 @@ switch (_className) do
 	case "shounka_ivceco_grise": {380};
 	case "shounka_ivceco_violet": {380};
 	case "shounka_ivceco_orange": {380};
-	
+
 	//Man LKW
 	case "Jonzie_Flat_Bed": {300};
 	case "Jonzie_Log_Truck": {325};
 	case "Jonzie_Box_Truck": {350};
-	
-	
+
+
 	//Mack LKW
 	case "cl3_mackr_blue": {225};
 	case "Jonzie_Superliner": {200};
 	case "cl3_mackr_flat_blue": {300};
 	case "cl3_mackr_del_blue": {350};
-	
+
 	//Bus
 	case "A3L_Bus": {40};
 	case "A3L_SchoolBus": {40};
@@ -969,7 +970,7 @@ switch (_className) do
 	case "CL3_bus_cl_purple": {50};
 	case "CL3_bus_cl_grey": {50};
 	case "CL3_bus_cl_black": {50};
-	
+
 	//Illegal
 	//case "B_Heli_Light_01_F": {10};
 	case "A3L_Atom": {35};
@@ -983,9 +984,9 @@ switch (_className) do
 	case "cl3_arielatom_race_gold": {35};
 	case "cl3_arielatom_race_burgundy": {35};
 	case "cl3_arielatom_race_black": {35};
-	
-	
-	
+
+
+
 	//Boot
 	case "Cl3MOD_C_Rubberboat_civilian": {20};
 	case "A3L_Jetski": {20};
@@ -994,14 +995,14 @@ switch (_className) do
 	case "A3L_SpeedYacht": {50};
 	case "A3L_Ship": {50};
 	case "B_SDV_01_F": {50};
-	
+
 	//Kart
 	case "C_Kart_01_Blu_F": {15};
 	case "C_Kart_01_Fuel_F": {15};
 	case "C_Kart_01_Red_F": {15};
 	case "C_Kart_01_Vrana_F": {15};
-	
-	
+
+
 	case "C_Boat_Civil_01_rescue_F": {20};
 	case "B_Boat_Transport_01_F": {20};
 	case "C_Boat_Civil_01_police_F": {20};
@@ -1020,11 +1021,11 @@ switch (_className) do
 	case "IVORY_T6A_1": {10};
 	case "IVORY_CRJ200_1": {10};
 	case "IVORY_YAK42D_1": {10};
-	
-	
-	
-	
-	
+
+
+
+
+
 	*/
 	case "A3l_TaurusFPBLBCSO": {55};
 	case "A3l_TaurusFPBLBPD": {55};

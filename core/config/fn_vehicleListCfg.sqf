@@ -19,7 +19,7 @@ switch (_shop) do
 			["RDS_S1203_Civ_01",150],
 			["cl3_s1203_blue",150],
 			["cl3_volha_black",300],
-			["cl3_volha_grey",300],		
+			["cl3_volha_grey",300],
 			["RDS_Lada_Civ_01",400],
 			["RDS_Lada_Civ_02",400],
 			["RDS_Lada_Civ_03",400],
@@ -77,7 +77,7 @@ switch (_shop) do
 			["Mrshounka_Vandura_civ_orange",22500]
 		];
 	};
-	
+
 	//Vw
 	case "vw":
 	{
@@ -114,7 +114,7 @@ switch (_shop) do
 			["Mrshounka_Volkswagen_Touareg_orange",65000]
 		];
 	};
-	
+
 	//Lykan
 	case "lykan":
 	{
@@ -129,7 +129,7 @@ switch (_shop) do
 			["Mrshounka_lykan_c_orange",120000]
 		];
 	};
-	
+
 	//Peugeot
 	case "peugeot":
 	{
@@ -172,7 +172,7 @@ switch (_shop) do
 			["shounka_a3_peugeot508_civ_orange",17500]
 		];
 	};
-	
+
 	//Citroen
 	case "citroen":
 	{
@@ -206,7 +206,7 @@ switch (_shop) do
 			["Mrshounka_c4_p_orange",17500]
 		];
 	};
-	
+
 	//Smart
 	case "smart":
 	{
@@ -216,7 +216,7 @@ switch (_shop) do
 			["Mrshounka_a3_smart_civ_bleu",12500]
 		];
 	};
-	
+
 	//Honda
 	case "honda":
 	{
@@ -233,7 +233,7 @@ switch (_shop) do
 			["cl3_civic_vti_black",15000]
 		];
 	};
-	
+
 	//Renault
 	case "renault":
 	{
@@ -272,7 +272,7 @@ switch (_shop) do
 			["shounka_a3_cliors_civ_orange",15500]
 		];
 	};
-	
+
 	//Jeep
 	case "jeep":
 	{
@@ -333,10 +333,10 @@ switch (_shop) do
 			["Mrshounka_cherokee_noir_violet",25000],
 			["Mrshounka_cherokee_noir_violet_mat",25000],
 			["Mrshounka_cherokee_noir_rouge",25000],
-			["Mrshounka_cherokee_noir_rouge_mat",25000]			
+			["Mrshounka_cherokee_noir_rouge_mat",25000]
 		];
 	};
-	
+
 	//Mitsubishi
 	case "mitsubishi":
 	{
@@ -348,10 +348,10 @@ switch (_shop) do
 			["Mrshounka_evox_rose",30000],
 			["Mrshounka_evox_grise",30000],
 			["Mrshounka_evox_violet",30000],
-			["Mrshounka_evox_orange",30000]			
+			["Mrshounka_evox_orange",30000]
 		];
 	};
-	
+
 	//Hummer
 	case "hummer":
 	{
@@ -371,10 +371,10 @@ switch (_shop) do
 			["shounka_h2_rose",30000],
 			["shounka_h2_grise",30000],
 			["shounka_h2_violet",30000],
-			["shounka_h2_orange",30000]			
+			["shounka_h2_orange",30000]
 		];
 	};
-	
+
 	//Motorrad
 	case "motorrad":
 	{
@@ -394,10 +394,10 @@ switch (_shop) do
 			["cl3_xr_1000_babypink",15000],
 			["cl3_xr_1000_red",15000],
 			["cl3_xr_1000_lime",15000],
-			["cl3_xr_1000_flame",15000]	
+			["cl3_xr_1000_flame",15000]
 		];
 	};
-	
+
 	//Ford
 	case "ford":
 	{
@@ -485,7 +485,7 @@ switch (_shop) do
 			["Mrshounka_raptor2_orange",27000]
 		];
 	};
-	
+
 	//Opel
 	case "opel":
 	{
@@ -499,10 +499,10 @@ switch (_shop) do
 			["cl3_insignia_grey",27500],
 			["cl3_insignia_gold",27500],
 			["cl3_insignia_burgundy",27500],
-			["cl3_insignia_black",27500]	
+			["cl3_insignia_black",27500]
 		];
 	};
-	
+
 	//Dodge
 	case "dodge":
 	{
@@ -567,10 +567,10 @@ switch (_shop) do
 			["DRPG_08Viper_Orange",40000],
 			["DRPG_08Viper_Pink",40000],
 			["DRPG_08Viper_Purple",40000],
-			["DRPG_08Viper_Yellow",40000]				
+			["DRPG_08Viper_Yellow",40000]
 		];
 	};
-	
+
 	//Nissan
 	case "nissan":
 	{
@@ -589,7 +589,7 @@ switch (_shop) do
 			//["Mrshounka_a3_gtr_civ_violet",35000]
 		];
 	};
-	
+
 	//Mercedes
 	case "mercedes":
 	{
@@ -632,7 +632,7 @@ switch (_shop) do
 			["shounka_a3_spr_civ_orange",60000]
 		];
 	};
-	
+
 	//Audi
 	case "audi":
 	{
@@ -681,10 +681,11 @@ switch (_shop) do
 			["shounka_rs6_rose",42000],
 			["shounka_rs6_grise",42000],
 			["shounka_rs6_violet",42000],
-			["shounka_rs6_orange",42000]
+			["shounka_rs6_orange",42000],
+			["shounka_a3_audiq7_bleu",36000]
 		];
 	};
-	
+
 	//BMW
 	case "bmw":
 	{
@@ -738,7 +739,7 @@ switch (_shop) do
 			["DRPG_12M5_Yellow",45000]
 		];
 	};
-	
+
 	//Subaru
 	case "subaru":
 	{
@@ -766,7 +767,7 @@ switch (_shop) do
 			["ivory_supra",45000]
 		];
 	};
-	
+
 	//Transam
 	case "transam":
 	{
@@ -781,7 +782,7 @@ switch (_shop) do
 			["shounka_transam_orange",51000]
 		];
 	};
-	
+
 	//Agera
 	case "agera":
 	{
@@ -791,7 +792,7 @@ switch (_shop) do
 			["Mrshounka_agera_p_jaune",120000]
 		];
 	};
-	
+
 	//Alfa Romeo
 	case "alfa":
 	{
@@ -806,7 +807,7 @@ switch (_shop) do
 			["Mrshounka_Alfa_Romeo_orange",30000]
 		];
 	};
-	
+
 	//Aston Martin
 	case "astonmartin":
 	{
@@ -830,7 +831,7 @@ switch (_shop) do
 			["cl3_dbs_volante_black",60000]
 		];
 	};
-	
+
 	//Porsche
 	case "porsche":
 	{
@@ -874,7 +875,7 @@ switch (_shop) do
 			["mrshounka_92_civ_orange",52500]
 		];
 	};
-	
+
 	//Ferrari
 	case "ferrari":
 	{
@@ -899,7 +900,7 @@ switch (_shop) do
 			["shounka_f430_spider_orange",85000]
 		];
 	};
-	
+
 	//Mclaren
 	case "mclaren":
 	{
@@ -921,7 +922,7 @@ switch (_shop) do
 //			["ALFR_GeK_MF1",85000]
 		];
 	};
-	
+
 	//Lambo
 	case "lambo":
 	{
@@ -985,7 +986,7 @@ switch (_shop) do
 			["cl3_lamborghini_gt1_black",100000]
 		];
 	};
-	
+
 	//Luxushändler
 	case "luxus":
 	{
@@ -1035,7 +1036,7 @@ switch (_shop) do
 			["shounka_limo_civ_orange",125000]
 		];
 	};
-	
+
 	//LkW
 	case "lkw":
 	{
@@ -1053,7 +1054,7 @@ switch (_shop) do
 	//		["Jonzie_Western",75000]	fps bug
 		];
 	};
-	
+
 	//Scania LKW
 	//case "scanialkw":
 	//{
@@ -1061,7 +1062,7 @@ switch (_shop) do
 	//		["A3L_Dumptruck",75000]
 	//	];
 	//};
-	
+
 	//Renault LKW
 	case "renaultlkw":
 	{
@@ -1069,7 +1070,7 @@ switch (_shop) do
 			["shounka_a3_renaultmagnum_f",80000]
 		];
 	};
-	
+
 	//IVECO LKW
 	case "ivecolkw":
 	{
@@ -1084,7 +1085,7 @@ switch (_shop) do
 			["shounka_ivceco_orange",80000]
 		];
 	};
-	
+
 	//Volvo LKW
 	case "volvolkw":
 	{
@@ -1092,7 +1093,7 @@ switch (_shop) do
 			//["ALFR_GeK_Volvo_FH16_2012",80000]
 		];
 	};
-	
+
 	//Man LKW
 	case "manlkw":
 	{
@@ -1102,7 +1103,7 @@ switch (_shop) do
 			["Jonzie_Log_Truck",80000]
 		];
 	};
-	
+
 	//Mack LKW
 	case "macklkw":
 	{
@@ -1113,7 +1114,7 @@ switch (_shop) do
 			["cl3_mackr_del_blue",80000]
 		];
 	};
-	
+
 	//Bus
 	case "bus":
 	{
@@ -1130,7 +1131,7 @@ switch (_shop) do
 			["CL3_bus_cl_black",15000]
 		];
 	};
-	
+
 	//Illegal
 	case "reb_car":
 	{
@@ -1150,7 +1151,7 @@ switch (_shop) do
 			["cl3_arielatom_race_black",75000]
 		];
 	};
-	
+
 	//Heli
 	case "civ_air":
 	{
@@ -1169,7 +1170,7 @@ switch (_shop) do
 			//["IVORY_YAK42D_1",200000]
 		];
 	};
-	
+
 	//Boot
 	case "civ_ship":
 	{
@@ -1195,10 +1196,10 @@ switch (_shop) do
 			["C_Kart_01_Vrana_F",1000]
 		];
 	};
-	
+
 	case "med_shop":
 	{
-		
+
 		if(__GETC__(life_mediclevel) > 1) then
 		{
 			//_return pushBack ["IVORY_PRIUS",10000];
@@ -1207,7 +1208,7 @@ switch (_shop) do
 			_return pushBack ["Mrshounka_corbillard_c_noir",12500];
 			_return pushBack ["Mrshounka_corbillard_c_grise",12500];
 		};
-		
+
 		if(__GETC__(life_mediclevel) > 2) then
 		{
 			//_return pushBack ["A3L_Laddertruck",20000];
@@ -1215,7 +1216,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_06Suburban_EMS",30000];
 			_return pushBack ["mercedes_atego_pompier_ingame",40000];
 		};
-		
+
 		if(__GETC__(life_mediclevel) > 3) then
 		{
 			//_return pushBack ["A3L_CVPILBFD", 25000];
@@ -1226,7 +1227,7 @@ switch (_shop) do
 			//_return pushBack ["charger_ems", 40000];
 			//_return pushBack ["AM_2015C_EMS",40000];
 		};
-		
+
 		if(__GETC__(life_mediclevel) > 4) then
 		{
 			//_return pushBack ["cl3_xr_1000_emt",15000];
@@ -1234,27 +1235,27 @@ switch (_shop) do
 			_return pushBack ["DRPG_12M5_EMS",45000];
 		};
 	};
-	
-	case "med_air_hs": 
+
+	case "med_air_hs":
 	{
 		if(__GETC__(life_mediclevel) > 1) then
 		{
 			_return pushBack ["B_Heli_Light_01_F",60000];
 		};
-		
+
 		if(__GETC__(life_mediclevel) > 2) then
 		{
 			_return pushBack ["ivory_b206_rescue",80000];
 			_return pushBack ["IVORY_BELL512_RESCUE",100000];
 			_return pushBack ["GR_Bell412_1",100000];
 		};
-		
+
 		if(__GETC__(life_mediclevel) > 3) then
 		{
 			_return pushBack ["EC635_Unarmed_CSAT",100000];
 		};
 	};
-	
+
 	case "adac_veh":
 	{
 		if(playerSide != east) exitWith {hint "Du bist kein LAC-Mitarbeiter!"};
@@ -1265,7 +1266,7 @@ switch (_shop) do
 			//_return pushBack ["C_Offroad_01_F",10000];
 			_return pushBack ["DRPG_11Transit_LAC",35000];
 			//_return pushBack ["A3L_CVLac",25000];
-			_return pushBack ["Jonzie_Tow_Truck",25000];
+			//_return pushBack ["Jonzie_Tow_Truck",25000];
 		};
 
 		if(__GETC__(life_adaclevel) > 1) then {
@@ -1296,7 +1297,7 @@ switch (_shop) do
 			//_return pushBack ["cl3_carrera_gt_light_yellow",75000];
 		};
 	};
-	
+
 	case "justiz_kfz":
 	{
 		if(playerSide != east) exitWith {hint "Du bist keine Justiz!"};
@@ -1331,7 +1332,7 @@ switch (_shop) do
 			//_return pushBack ["Nhz_audia8limo",125000];
 		};
 	};
-	
+
 	case "cop_car":
 	{
 		if(playerSide != west) exitWith {hint "Du bist kein Cop!"};
@@ -1349,7 +1350,7 @@ switch (_shop) do
 			//Ford Transit
 			//_return pushBack ["DRPG_11Transit_P_SWAT",20000];
 		};
-		
+
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			//_return pushBack ["A3L_CVPIFPBLBPD",25000];
@@ -1360,7 +1361,7 @@ switch (_shop) do
 			_return pushBack ["cl3_xr_1000_police",15000];
 			_return pushBack ["ugc_hrly",15000];
 		};
-			
+
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			//_return pushBack ["A3L_EvoXFPBLBPD",35000];
@@ -1393,7 +1394,7 @@ switch (_shop) do
 			_return pushBack ["ivory_wrx_unmarked",20000];
 			_return pushBack ["ivory_wrx_marked",20000];
 		};
-		
+
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			//_return pushBack ["charger_sh",40000];
@@ -1429,9 +1430,9 @@ switch (_shop) do
 			//Ford Explorer
 			_return pushBack ["DRPG_14Explorer_P_P",20000];
 		};
-		
+
 		if(__GETC__(life_coplevel) > 6) then
-		{	
+		{
 			_return pushBack ["IVORY_REV",85000];
 			//BMW
 			_return pushBack ["DRPG_12M5_P_LVPD",30000];
@@ -1440,7 +1441,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_12M5_P_STATE",30000];
 		};
 	};
-	
+
 	case "fbi_cars":
 	{
 		if(playerSide != west) exitWith {hint "Keine Berechtigung."};
@@ -1525,7 +1526,7 @@ switch (_shop) do
 			["DRPG_12Charger_White",30000]
 		];
 	};
-	
+
 
 	case "cop_air":
 	{
@@ -1543,7 +1544,7 @@ switch (_shop) do
 			["MELB_H6M",50000]
 		];
 	};
-	
+
 	case "cop_airhq":
 	{
 		_return =
@@ -1560,7 +1561,7 @@ switch (_shop) do
 			["MELB_H6M",50000]
 		];
 	};
-	
+
 	case "med_ship":
 	{
 		_return =
@@ -1568,7 +1569,7 @@ switch (_shop) do
 			["C_Boat_Civil_01_rescue_F",15000]
 		];
 	};
-	
+
 	case "cop_ship":
 	{
 		_return =

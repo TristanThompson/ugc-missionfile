@@ -694,7 +694,7 @@ life_garage_prices =
 		["Mrshounka_lykan_c_grise",1200],
 		["Mrshounka_lykan_c_violet",1200],
 		["Mrshounka_lykan_c_orange",1200],
-		
+
 	//Peugeot
 		["Mrshounka_207_noir",150],
 		["Mrshounka_207_bleufonce",150],
@@ -728,7 +728,7 @@ life_garage_prices =
 		["shounka_a3_peugeot508_civ_grise",175],
 		["shounka_a3_peugeot508_civ_violet",175],
 		["shounka_a3_peugeot508_civ_orange",175],
-	
+
 	//Citroen
 		["Mrshounka_a3_ds3_civ_noir",150],
 		["Mrshounka_a3_ds3_civ_bleufonce",150],
@@ -754,11 +754,11 @@ life_garage_prices =
 		["Mrshounka_c4_p_grise",175],
 		["Mrshounka_c4_p_violet",175],
 		["Mrshounka_c4_p_orange",175],
-		
+
 	//Smart
 		["Mrshounka_a3_smart_civ_noir",125],
 		["Mrshounka_a3_smart_civ_bleu",125],
-		
+
 	//Honda
 		["cl3_civic_vti_white",150],
 		["cl3_civic_vti_purple",150],
@@ -855,7 +855,7 @@ life_garage_prices =
 		["Mrshounka_cherokee_noir_violet_mat",250],
 		["Mrshounka_cherokee_noir_rouge",250],
 		["Mrshounka_cherokee_noir_rouge_mat",250],
-		
+
 	//Mitsubishi
 		["Mrshounka_evox_noir",300],
 		["Mrshounka_evox_bleufonce",300],
@@ -865,7 +865,7 @@ life_garage_prices =
 		["Mrshounka_evox_grise",300],
 		["Mrshounka_evox_violet",300],
 		["Mrshounka_evox_orange",300],
-		
+
 	//Hummer
 		["Mrshounka_hummer_civ_noir",250],
 		["Mrshounka_hummer_civ_bleufonce",250],
@@ -1158,6 +1158,8 @@ life_garage_prices =
 		["shounka_rs6_grise",420],
 		["shounka_rs6_violet",420],
 		["shounka_rs6_orange",420],
+		["shounka_a3_audiq7_bleu",220],
+
 
 	//BMW
 		["DAR_M3CivBlack",350],
@@ -1240,12 +1242,12 @@ life_garage_prices =
 		["shounka_transam_grise",510],
 		["shounka_transam_violet",510],
 		["shounka_transam_orange",510],
-		
+
 	//Agera
 		["Mrshounka_agera_p_noir",1200],
 		["Mrshounka_agera_p_bleu",1200],
 		["Mrshounka_agera_p_jaune",1200],
-		
+
 	//Alfa Romeo
 		["Mrshounka_Alfa_Romeo_noir",300],
 		["Mrshounka_Alfa_Romeo_bleufonce",300],
@@ -1255,7 +1257,7 @@ life_garage_prices =
 		["Mrshounka_Alfa_Romeo_grise",300],
 		["Mrshounka_Alfa_Romeo_violet",300],
 		["Mrshounka_Alfa_Romeo_orange",300],
-		
+
 	//Aston Martin
 		["S_Vantage_Red",500],
 		["S_Vantage_Blue",500],
@@ -1463,7 +1465,7 @@ life_garage_prices =
 
 	//Scania LKW
 		["A3L_Dumptruck",750],
-		
+
 	//Zamak LKW
 		["CL3_Zamak_Transport_open_01",550],
 		["CL3_Zamak_Transport_covered_01",750],
@@ -1486,7 +1488,7 @@ life_garage_prices =
 		["shounka_ivceco_grise",800],
 		["shounka_ivceco_violet",800],
 		["shounka_ivceco_orange",800],
-		
+
 	//Volvo LKW
 		["ALFR_GeK_Volvo_FH16_2012",800],
 
@@ -1550,7 +1552,7 @@ life_garage_prices =
 		["B_SDV_01_F",125],
 
 	//Medic Car
-	
+
 		["IVORY_PRIUS",100],
 		["Jonzie_Ambulance",125],
 		["A3L_GMC_Van_Coroner",125],
@@ -1570,17 +1572,17 @@ life_garage_prices =
 		["cl3_xr_1000_emt",150],
 		["DRPG_12M5_EMS",450],
 		["A3L_EvoXFPBLBMED",350],
-		
+
 	//Medic Heli
-	
+
 		["B_Heli_Light_01_F",600],
 		["ivory_b206_rescue",800],
 		["IVORY_BELL512_RESCUE",1000],
 		["GR_Bell412_1",1000],
 		["EC635_Unarmed_CSAT",1000],
-		
-	//LAC 
-	
+
+	//LAC
+
 		["C_Offroad_01_F",100],
 		["A3L_CVLac",250],
 		["Jonzie_Tow_Truck",250],
@@ -1589,13 +1591,13 @@ life_garage_prices =
 		["A3l_evoxADAC",350],
 		["B_Heli_Light_01_F",600],
 		["shounka_a3_mantgs",350],
-		["EC635_ADAC",100],			
+		["EC635_ADAC",100],
 		["cl3_dodge_charger_f_yellow",300],
 		["S_PorscheRS_Yellow",600],
 		["cl3_carrera_gt_light_yellow",750],
-		
+
 	//Justiz
-		
+
 		["A3L_CVBlack",150],
 		["A3L_CVBlue",150],
 		["A3L_TaurusBlack",175],
@@ -1618,9 +1620,9 @@ life_garage_prices =
 		["wirk_cayenne",700],
 		["ivory_c",1100],
 		["Nhz_audia8limo",1250],
-		
+
 	//Cop Car
-	
+
 		["A3l_TaurusFPBLBCSO",125],
 		["A3l_TaurusFPBLBPD",125],
 		["A3L_TaurusFPBLBSP",125],
@@ -1696,9 +1698,9 @@ life_garage_prices =
 		["DRPG_12M5_P_SHERIFF",300],
 		["DRPG_12M5_P_FBI",300],
 		["DRPG_12M5_P_STATE",300],
-		
+
 	//Cop Air
-	
+
 		["ivory_b206_police",800],
 		["B_Heli_Light_01_F",600],
 		["EC635_Unarmed_BW",1000],
@@ -1816,7 +1818,7 @@ life_garage_sell =
 			["Mrshounka_lykan_c_grise",60000],
 			["Mrshounka_lykan_c_violet",60000],
 			["Mrshounka_lykan_c_orange",60000],
-			
+
 		//Peugeot
 			["Mrshounka_207_noir",7500],
 			["Mrshounka_207_bleufonce",7500],
@@ -1850,7 +1852,7 @@ life_garage_sell =
 			["shounka_a3_peugeot508_civ_grise",8750],
 			["shounka_a3_peugeot508_civ_violet",8750],
 			["shounka_a3_peugeot508_civ_orange",8750],
-		
+
 		//Citroen
 			["Mrshounka_a3_ds3_civ_noir",7500],
 			["Mrshounka_a3_ds3_civ_bleufonce",7500],
@@ -1876,11 +1878,11 @@ life_garage_sell =
 			["Mrshounka_c4_p_grise",8750],
 			["Mrshounka_c4_p_violet",8750],
 			["Mrshounka_c4_p_orange",8750],
-			
+
 		//Smart
 			["Mrshounka_a3_smart_civ_noir",6250],
 			["Mrshounka_a3_smart_civ_bleu",6250],
-			
+
 		//Honda
 			["cl3_civic_vti_white",7500],
 			["cl3_civic_vti_purple",7500],
@@ -1977,7 +1979,7 @@ life_garage_sell =
 			["Mrshounka_cherokee_noir_violet_mat",12500],
 			["Mrshounka_cherokee_noir_rouge",12500],
 			["Mrshounka_cherokee_noir_rouge_mat",12500],
-			
+
 		//Mitsubishi
 			["Mrshounka_evox_noir",15000],
 			["Mrshounka_evox_bleufonce",15000],
@@ -1987,7 +1989,7 @@ life_garage_sell =
 			["Mrshounka_evox_grise",15000],
 			["Mrshounka_evox_violet",15000],
 			["Mrshounka_evox_orange",15000],
-			
+
 		//Hummer
 			["Mrshounka_hummer_civ_noir",12500],
 			["Mrshounka_hummer_civ_bleufonce",12500],
@@ -2280,6 +2282,7 @@ life_garage_sell =
 			["shounka_rs6_grise",21000],
 			["shounka_rs6_violet",21000],
 			["shounka_rs6_orange",21000],
+			["shounka_a3_audiq7_bleu",16500],
 
 		//BMW
 			["DAR_M3CivBlack",17500],
@@ -2362,12 +2365,12 @@ life_garage_sell =
 			["shounka_transam_grise",25500],
 			["shounka_transam_violet",25500],
 			["shounka_transam_orange",25500],
-			
+
 		//Agera
 			["Mrshounka_agera_p_noir",60000],
 			["Mrshounka_agera_p_bleu",60000],
 			["Mrshounka_agera_p_jaune",60000],
-			
+
 		//Alfa Romeo
 			["Mrshounka_Alfa_Romeo_noir",15000],
 			["Mrshounka_Alfa_Romeo_bleufonce",15000],
@@ -2377,7 +2380,7 @@ life_garage_sell =
 			["Mrshounka_Alfa_Romeo_grise",15000],
 			["Mrshounka_Alfa_Romeo_violet",15000],
 			["Mrshounka_Alfa_Romeo_orange",15000],
-			
+
 		//Aston Martin
 			["S_Vantage_Red",25000],
 			["S_Vantage_Blue",25000],
@@ -2585,7 +2588,7 @@ life_garage_sell =
 
 		//Scania LKW
 			["A3L_Dumptruck",37500],
-			
+
 		//Zamak LKW
 			["CL3_Zamak_Transport_open_01",27500],
 			["CL3_Zamak_Transport_covered_01",37500],
@@ -2608,7 +2611,7 @@ life_garage_sell =
 			["shounka_ivceco_grise",40000],
 			["shounka_ivceco_violet",40000],
 			["shounka_ivceco_orange",40000],
-			
+
 		//Volvo LKW
 			["ALFR_GeK_Volvo_FH16_2012",40000],
 
@@ -2672,7 +2675,7 @@ life_garage_sell =
 			["B_SDV_01_F",6250],
 
 		//Medic Car
-		
+
 			["IVORY_PRIUS",5000],
 			["Jonzie_Ambulance",6250],
 			["A3L_GMC_Van_Coroner",6250],
@@ -2690,17 +2693,17 @@ life_garage_sell =
 			["cl3_xr_1000_emt",7500],
 			["DRPG_12M5_EMS",22500],
 			["A3L_EvoXFPBLBMED",17500],
-			
+
 		//Medic Heli
-		
+
 			["B_Heli_Light_01_F",30000],
 			["ivory_b206_rescue",40000],
 			["IVORY_BELL512_RESCUE",50000],
 			["GR_Bell412_1",50000],
 			["EC635_Unarmed_CSAT",50000],
-			
-		//LAC 
-		
+
+		//LAC
+
 			["C_Offroad_01_F",5000],
 			["A3L_CVLac",12500],
 			["Jonzie_Tow_Truck",12500],
@@ -2709,13 +2712,13 @@ life_garage_sell =
 			["A3l_evoxADAC",17500],
 			["B_Heli_Light_01_F",30000],
 			["shounka_a3_mantgs",17750],
-			["EC635_ADAC",5000],			
+			["EC635_ADAC",5000],
 			["cl3_dodge_charger_f_yellow",15000],
 			["S_PorscheRS_Yellow",30000],
 			["cl3_carrera_gt_light_yellow",35000],
-			
+
 		//Justiz
-			
+
 			["A3L_CVBlack",7500],
 			["A3L_CVBlue",7500],
 			["A3L_TaurusBlack",8750],
@@ -2738,9 +2741,9 @@ life_garage_sell =
 			["wirk_cayenne",35000],
 			["ivory_c",55000],
 			["Nhz_audia8limo",62500],
-			
+
 		//Cop Car
-		
+
 			["A3l_TaurusFPBLBCSO",6250],
 			["A3l_TaurusFPBLBPD",6250],
 			["A3L_TaurusFPBLBSP",6250],
@@ -2816,9 +2819,9 @@ life_garage_sell =
 			["DRPG_12M5_P_SHERIFF",15000],
 			["DRPG_12M5_P_FBI",15000],
 			["DRPG_12M5_P_STATE",15000],
-			
+
 		//Cop Air
-		
+
 			["ivory_b206_police",40000],
 			["B_Heli_Light_01_F",30000],
 			["EC635_Unarmed_BW",50000],

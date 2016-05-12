@@ -1,0 +1,90 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7965.91,0.0014267,6585.63};
+					azimut=0;
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=5;
+		class Item0{position[]={8531.319336,3.41673,6617.407227};azimut=279.621;offsetY=3.41673;id=1;side="EMPTY";vehicle="Land_Pipe_fence_4m_F";skill=0.60000002;init="this enableSimulation false;this allowDamage false;this setdir 279.621;this setposATL [8531.319336,6617.407227,3.41673];this setVectorUp [0,0,1]";};
+		class Item1{position[]={8531.15918,3.41673,6616.431641};azimut=279.621;offsetY=3.41673;id=2;side="EMPTY";vehicle="Land_Pipe_fence_4m_F";skill=0.60000002;init="this enableSimulation false;this allowDamage false;this setdir 279.621;this setposATL [8531.15918,6616.431641,3.41673];this setVectorUp [0,0,1]";};
+		class Item2{position[]={8530.986328,3.41673,6615.434082};azimut=279.621;offsetY=3.41673;id=3;side="EMPTY";vehicle="Land_Pipe_fence_4m_F";skill=0.60000002;init="this enableSimulation false;this allowDamage false;this setdir 279.621;this setposATL [8530.986328,6615.434082,3.41673];this setVectorUp [0,0,1]";};
+		class Item3{position[]={8530.65625,3.41673,6613.460449};azimut=279.747;offsetY=3.41673;id=4;side="EMPTY";vehicle="Land_Pipe_fence_4m_F";skill=0.60000002;init="this enableSimulation false;this allowDamage false;this setdir 279.747;this setposATL [8530.65625,6613.460449,3.41673];this setVectorUp [0,0,1]";};
+		class Item4{position[]={8530.486328,3.41673,6612.489746};azimut=279.747;offsetY=3.41673;id=5;side="EMPTY";vehicle="Land_Pipe_fence_4m_F";skill=0.60000002;init="this enableSimulation false;this allowDamage false;this setdir 279.747;this setposATL [8530.486328,6612.489746,3.41673];this setVectorUp [0,0,1]";};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+	};
+	addOnsAuto[]=
+	{
+	};
+	randomSeed=13763187;
+	class Intel
+	{
+		timeOfChanges=0;startWeather=0;startWind=0;startWaves=0;forecastWeather=0;forecastWind=0;forecastWaves=0;forecastLightnings=0;year=2035;day=1;hour=12;minute=0;startFogDecay=0;forecastFogDecay=0;
+	};
+};
+

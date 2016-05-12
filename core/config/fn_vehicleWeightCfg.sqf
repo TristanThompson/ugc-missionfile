@@ -947,6 +947,9 @@ switch (_className) do
 	case "shounka_ivceco_violet": {380};
 	case "shounka_ivceco_orange": {380};
 
+	//DAF
+	case "shounka_a3_dafxf_euro6_f": {325};
+
 	//Man LKW
 	case "Jonzie_Flat_Bed": {300};
 	case "Jonzie_Log_Truck": {325};

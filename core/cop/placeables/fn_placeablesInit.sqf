@@ -11,7 +11,7 @@ life_placeables =
 [
   ["Pylon","RoadCone_F"],
   ["Pylon mit Licht","RoadCone_L_F"],
-  ["Richtungspfeil Blinkend","pfeil_Doc"],
+  //["Richtungspfeil Blinkend","pfeil_Doc"],
   ["Holzabsperrung","RoadBarrier_F"],
   ["Holzabsperrung mit Licht","RoadBarrier_small_F"],
   ["Kunststoffabsperrung Orange","PlasticBarrier_03_orange_F"],

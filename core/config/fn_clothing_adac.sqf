@@ -53,7 +53,8 @@ switch (_filter) do
 			["ALE_H_NewEra_Redsox",nil,10],
 			["H_ALFR_Headset",nil,10],
 			["H_Hat_Boonie_Cowboy","Cowboy Hut",10],
-			["H_Beret_blk","Beret (black)",10],
+			["H_Beret_blk",nil,10],
+			["H_Beret_A",nil,10],
 			["A3L_longhairblack","Haar Schwarz",10],
 			["A3L_longhairblond","Haar Blond",10],
 			["A3L_longhairbrown","Haar Braun",10]
@@ -71,6 +72,7 @@ switch (_filter) do
 			["G_Shades_Blue",nil,5],
 			["G_Sport_Blackred",nil,5],
 			["G_Sport_Checkered",nil,5],
+			["G_Aviator",nil,5],
 			["G_Sport_Blackyellow",nil,5],
 			["G_Sport_BlackWhite",nil,5],
 			["SFG_Tac_BeardD","Bart (Dunkel)",5],

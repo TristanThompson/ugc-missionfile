@@ -1343,6 +1343,7 @@ switch (_shop) do
 			//_return pushBack ["A3l_TaurusFPBLBPD",12500];
 			//_return pushBack ["A3L_TaurusFPBLBSP",12500];
 			_return pushBack ["A3L_JailBus",17500];
+			_return pushBack ["shounka_a3_gendsprinter",35000];
 			_return pushBack ["DRPG_06Victoria_P_STATE",25000];
 			_return pushBack ["DRPG_06Victoria_P_Sheriff",25000];
 			_return pushBack ["DRPG_06Victoria_P_LVPD",25000];
@@ -1359,6 +1360,8 @@ switch (_shop) do
 			//_return pushBack ["A3L_CVPIFPBLBFG",25000];
 			//_return pushBack ["A3L_CVPIFPBLBSM",25000];
 			//_return pushBack ["A3L_CVPIFPBLBHP",25000];
+			_return pushBack ["shounka_a3_audiq7_v2_gendarmerie",65000];
+			_return pushBack ["Mrshounka_Touareg_police",65000];
 			_return pushBack ["cl3_xr_1000_police",15000];
 			_return pushBack ["ugc_hrly",15000];
 		};
@@ -1394,6 +1397,7 @@ switch (_shop) do
 			_return pushBack ["ivory_m3_marked",20000];
 			_return pushBack ["ivory_wrx_unmarked",20000];
 			_return pushBack ["ivory_wrx_marked",20000];
+			_return pushBack ["Mrshounka_bmw_gend",60000];
 		};
 
 		if(__GETC__(life_coplevel) > 3) then
@@ -1430,16 +1434,22 @@ switch (_shop) do
 			_return pushBack ["DRPG_15Charger_P_U",20000];
 			//Ford Explorer
 			_return pushBack ["DRPG_14Explorer_P_P",20000];
+			//STATE EvoX
+			_return pushBack ["Mrshounka_evox_gend",20000];
 		};
 
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_return pushBack ["IVORY_REV",85000];
-			//BMW
 			_return pushBack ["DRPG_12M5_P_LVPD",30000];
 			_return pushBack ["DRPG_12M5_P_SHERIFF",30000];
 			_return pushBack ["DRPG_12M5_P_FBI",30000];
 			_return pushBack ["DRPG_12M5_P_STATE",30000];
+		};
+		
+		if(__GETC__(life_coplevel) > 8) then
+		{
+			_return pushBack ["Mrshounka_agera_gend_p",120000];
 		};
 	};
 

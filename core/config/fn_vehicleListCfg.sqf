@@ -1033,8 +1033,8 @@ switch (_shop) do
 			["shounka_limo_civ_rose",125000],
 			["shounka_limo_civ_grise",125000],
 			["shounka_limo_civ_violet",125000],
-			["shounka_limo_civ_orange",125000],
-			["SLB2k11_ChargerRT_black",180000]
+			["shounka_limo_civ_orange",125000]
+		//	["SLB2k11_ChargerRT_black",180000]
 		];
 	};
 

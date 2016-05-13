@@ -125,6 +125,8 @@ switch (_mode) do
 			case "tracker": {"life_inv_tracker"};
 			case "flugscheinformular": {"life_inv_flugscheinformular"};
 			case "taktikformular": {"life_inv_taktikformular"};
+			case "swatformular": {"life_inv_swatformular"};
+			case "fbiformular": {"life_inv_fbiformular"};
 		};
 	};
 	
@@ -232,6 +234,8 @@ switch (_mode) do
 			case "life_inv_taxischeinformular": {"taxischeinformular"};
 			case "life_inv_permdriverformular": {"permdriverformular"};
 			case "life_inv_flugscheinformular": {"flugscheinformular"};
+			case "life_inv_swatformular": {"swatformular"};
+			case "life_inv_fbiformular": {"fbiformular"};
 			case "life_inv_taktikformular": {"taktikformular"};
 
 			case "life_inv_bohrmaschine": {"bohrmaschine"};

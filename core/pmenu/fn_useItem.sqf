@@ -331,6 +331,24 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "swatformular"):
+	{
+		if(playerSide != west) exitWith {hint "Nur Polizisten können das Swatformular ausfüllen!"};
+		if([false,_item,1] call life_fnc_handleInv) then {
+			license_cop_swat = true;
+			hint parseText format["Du hast nun die SWAT-Lizenz!"];
+		};
+	};
+	
+	case (_item == "fbiformular"):
+	{
+		if(playerSide != west) exitWith {hint "Nur Polizisten können das Fbiformular ausfüllen!"};
+		if([false,_item,1] call life_fnc_handleInv) then {
+			license_cop_fbi = true;
+			hint parseText format["Du hast nun die FBI-Lizenz!"];
+		};
+	};
+	
 	case (_item == "taktikformular"):
 	{
 		if(playerSide != west) exitWith {hint "Nur Polizisten können das Taktikformular ausfüllen!"};

@@ -2648,6 +2648,8 @@ life_garage_sell =
 
 		//Volvo LKW
 			["ALFR_GeK_Volvo_FH16_2012",40000],
+		//DAF
+			["Ugc_daf_Container",40000],
 
 		//Man LKW
 			["Jonzie_Flat_Bed",37750],

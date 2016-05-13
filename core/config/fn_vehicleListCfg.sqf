@@ -1043,7 +1043,7 @@ switch (_shop) do
 		_return = [
 			["C_Van_01_box_F",17500],
 			["C_Van_01_transport_F",20000],
-			["shounka_a3_dafxf_euro6_f",53000],
+			["Ugc_daf_Container",53000],
 			["CL3_Zamak_Transport_open_01",55000],
 			["CL3_Zamak_Transport_covered_01",75000],
 			["CL3_Zamak_Transport_open_02",55000],

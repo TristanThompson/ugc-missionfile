@@ -966,6 +966,8 @@ switch (_className) do
 	case "Jonzie_Flat_Bed": {300};
 	case "Jonzie_Log_Truck": {325};
 	case "Jonzie_Box_Truck": {350};
+//DAF
+	case "Ugc_daf_Container": {350};
 
 
 	//Mack LKW

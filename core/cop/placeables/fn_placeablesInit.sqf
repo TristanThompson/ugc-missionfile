@@ -11,11 +11,11 @@ life_placeables =
 [
   ["Pylon","RoadCone_F"],
   ["Pylon mit Licht","RoadCone_L_F"],
-  ["Straßenschild (leer)","SignAd_Sponsor_F"],
-  ["Schranke","Land_BarGate_F"],
-  ["Leitplanke","Land_Crash_barrier_F"],
-  ["Absperrung (Orange)","PlasticBarrier_03_orange_F"],
-  ["Absperrung (Gelb)","PlasticBarrier_02_yellow_F"],
+  ["Richtungspfeil Blinkend","pfeil_Doc"],
+  ["Holzabsperrung","RoadBarrier_F"],
+  ["Holzabsperrung mit Licht","RoadBarrier_small_F"],
+  ["Kunststoffabsperrung Orange","PlasticBarrier_03_orange_F"],
+  ["Betonabsperrung","Land_CncBarrier_stripes_F"],
   ["Tragbares Licht","Land_PortableLight_single_F"],
   ["Tragbares Licht (Doppelt)","Land_PortableLight_double_F"]
 

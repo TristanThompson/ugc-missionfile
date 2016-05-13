@@ -76,6 +76,7 @@ switch (_className) do
 	case "Mrshounka_Volkswagen_Touareg_grise": {60};
 	case "Mrshounka_Volkswagen_Touareg_violet": {60};
 	case "Mrshounka_Volkswagen_Touareg_orange": {60};
+	case "Mrshounka_Touareg_police": {60};
 
 	//Honda
 	case "cl3_civic_vti_white": {45};
@@ -132,6 +133,7 @@ switch (_className) do
 	case "Mrshounka_evox_grise": {50};
 	case "Mrshounka_evox_violet": {50};
 	case "Mrshounka_evox_orange": {50};
+	case "Mrshounka_evox_gend": {50};
 
 	//GMC Vandura
 	case "Mrshounka_Vandura_civ_noir": {85};
@@ -195,6 +197,7 @@ switch (_className) do
 	case "shounka_h2_violet": {65};
 	case "shounka_h2_orange": {65};
 	case "DRPG_06Suburban_P_FBI": {50};
+	case "DRPG_06Suburban_DOJ": {50};
 	case "DRPG_06Suburban_P_LVPD": {50};
 	case "DRPG_06Suburban_P_Sheriff": {50};
 	case "DRPG_06Suburban_P_State": {50};
@@ -218,6 +221,7 @@ switch (_className) do
 	case "DRPG_08Suburban_Purple": {50};
 	case "DRPG_08Suburban_Yellow": {50};
 	case "DRPG_09Tahoe_P_FBI": {50};
+	case "DRPG_09Tahoe_DOJ": {50};
 	case "DRPG_09Tahoe_P_LVPD": {50};
 	case "DRPG_09Tahoe_P_Sheriff": {50};
 	case "DRPG_09Tahoe_P_State": {50};
@@ -311,6 +315,7 @@ switch (_className) do
 	case "Mrshounka_agera_p_noir": {35};
 	case "Mrshounka_agera_p_bleu": {35};
 	case "Mrshounka_agera_p_jaune": {35};
+	case "Mrshounka_agera_gend_p": {35};
 
 	//Smart
 	case "Mrshounka_a3_smart_civ_noir": {25};
@@ -390,6 +395,7 @@ switch (_className) do
 	case "Mrshounka_mustang_violet": {60};
 	case "Mrshounka_mustang_orange": {60};
 	case "DRPG_06Victoria_P_EMS": {45};
+	case "DRPG_06Victoria_DOJ": {45};
 	case "DRPG_06Victoria_P_STATE": {45};
 	case "DRPG_06Victoria_P_Sheriff": {45};
 	case "DRPG_06Victoria_P_LVPD": {45};
@@ -483,6 +489,7 @@ switch (_className) do
 	case "cl3_dodge_charger_f_orange": {60};
 	case "Jonzie_Viper": {55};
 	case "DRPG_12Charger_P_LVPD": {60};
+	case "DRPG_12Charger_DOJ": {60};
 	case "DRPG_12Charger_P_Sheriff": {60};
 	case "DRPG_12Charger_P_FBI": {60};
 	case "DRPG_12Charger_P_STATE": {60};
@@ -497,6 +504,7 @@ switch (_className) do
 	case "DRPG_12Charger_Purple": {60};
 	case "DRPG_12Charger_Yellow": {60};
 	case "DRPG_15Charger_P_FBI": {60};
+	case "DRPG_15Charger_DOJ": {60};
 	case "DRPG_15Charger_P_LVPD": {60};
 	case "DRPG_15Charger_P_Sheriff": {60};
 	case "DRPG_15Charger_P_State": {60};
@@ -581,6 +589,8 @@ switch (_className) do
 	case "shounka_a3_spr_civ_orange": {150};
 
 	//Audi
+
+	case "shounka_a3_audiq7_v2_gendarmerie": {55};
 	case "SAL_AudiCivSilver": {50};
 	case "shounka_a3_rs5_civ_noir": {55};
 	case "shounka_a3_rs5_civ_bleufonce": {55};
@@ -668,6 +678,7 @@ switch (_className) do
 	case "cl3_e60_m5_burgundy": {50};
 	case "cl3_e60_m5_black": {50};
 	case "DRPG_12M5_P_FDLV": {55};
+	case "DRPG_12M5_DOJ": {55};
 	case "DRPG_12M5_P_LVPD": {55};
 	case "DRPG_12M5_P_SHERIFF": {55};
 	case "DRPG_12M5_P_FBI": {55};
@@ -681,6 +692,7 @@ switch (_className) do
 	case "DRPG_12M5_Pink": {55};
 	case "DRPG_12M5_Purple": {55};
 	case "DRPG_12M5_Yellow": {55};
+	case "Mrshounka_bmw_gend": {55};
 
 	//Subaru
 	case "Jonzie_STI": {45};

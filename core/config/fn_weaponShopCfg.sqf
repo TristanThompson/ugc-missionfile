@@ -2,10 +2,10 @@
 /*
         File: fn_weaponShopCfg.sqf
         Author: Bryan "Tonic" Boardwine
-       
+
         Description:
         Master configuration file for the weapon shops.
-       
+
         Return:
         String: Close the menu
         Array:
@@ -17,7 +17,7 @@
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
- 
+
 switch(_shop) do
 {
 	case "med_supplies":
@@ -34,7 +34,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_mediclevel) == 2):
 			{
 				["Sanitäter",
@@ -46,7 +46,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_mediclevel) == 3):
 			{
 				["Rettungsassistent",
@@ -61,7 +61,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_mediclevel) == 4):
 			{
 				["Arzt",
@@ -77,7 +77,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_mediclevel) >= 5):
 			{
 				["Oberarzt bis Chefarzt",
@@ -92,10 +92,10 @@ switch(_shop) do
 						["Chemlight_green","Leichensack",10]
 					]
 				];
-			};			
+			};
 		};
 	};
-	
+
 	case "med_basic":
 	{
 		switch (true) do
@@ -118,18 +118,18 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			default {
 				["EMS Grundware",
 					[
 						["A3L_Extinguisher","Feuerlöscher",150],
 						["30Rnd_test_mag_Tracer","Löschschaum",10],
 						["acc_flashlight","Taschenlampe",10],
-						
+
 						["TRYK_headset2","Headset Groß (Nightvision)",100],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",100],
 						["pmc_earpiece","Nachtsichtgerät",100],
-						
+
 						["tf_anprc148jem_13","Kurzstreckenfunk",5],
 						["tf_anarc164","Langstreckenfunk",50],
 
@@ -145,7 +145,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "adac_basic":
 	{
 		switch (true) do
@@ -178,7 +178,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "justiz_laden":
 	{
 		switch (true) do
@@ -208,30 +208,29 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "cop_swat":
 	{
 		switch (true) do
 		{
 			case (playerSide != west): { };
-			//case (__GETC__(life_donator) <= 1): {"Du bist kein Mitglied des S.W.A.T.!"};
-			//case (__GETC__(life_donator) >= 4): {"Du bist kein Mitglied des S.W.A.T.!"};
-			case (!license_cop_swat): {"Du bist kein Mitglied des S.W.A.T.!"};
+			   case (__GETC__(life_donator) <= 1): {"Du bist kein Mitglied des S.W.A.T.!"};
+		    case (__GETC__(life_donator) >= 4): {"Du bist kein Mitglied des S.W.A.T.!"};
 			default {
 				["S.W.A.T.",
 					[
 						["NVGoggles_OPFOR","SWAT NV",150],
-						
+
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["muzzle_snds_L",nil,250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["muzzle_snds_L",nil,250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//M4A1 RIS, M16A3, M4
 						["RH_M4A1_ris",nil,1600],
 						["RH_qdss_nt4",nil,400],
@@ -242,69 +241,69 @@ switch(_shop) do
 						["RH_m4",nil,1500],
 						["RH_qdss_nt4",nil,400],
 						["30Rnd_556x45_Stanag",nil,75],
-						
+
 						//Benelli
 						["R3F_M4S90",nil,2200],
 						["R3F_7Rnd_M4S90",nil,75],
-						
+
 						//HK416 14,5"
 						["R3F_HK416M",nil,1500],
 						["R3F_SILENCIEUX_HK416",nil,400],
 						["R3F_30Rnd_556x45_HK416",nil,75],
-						
+
 						//HK417 16"
 						["R3F_HK417M",nil,1800],
 						["R3F_SILENCIEUX_HK417",nil,400],
 						["R3F_20Rnd_762x51_HK417",nil,100],
-						
+
 						//HK417 20"
 						["R3F_HK417L",nil,1800],
 						["R3F_SILENCIEUX_HK417",nil,400],
 						["R3F_20Rnd_762x51_HK417",nil,100],
-					
+
 						//M4 Block
 						["RHARD_M4DDRP_F",nil,1600],
 						["muzzle_MK18_L",nil,250],
 						["30Rnd_556x45_Stanag",nil,80],
-						
+
 						//MK12
 						["RH_Mk12mod1",nil,1650],
 						["RH_spr_mbs",nil,400],
 						["RH_30Rnd_556x45_Mk262",nil,75],
-						
+
 						//LRR AWM
 						["srifle_mas_lrr",nil,1750],
 						["optic_mas_LRPS",nil,500],
 						["muzzle_mas_snds_SH",nil,500],
 						["10Rnd_mas_338_Stanag",nil,900],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//FNP45 Schild
 						["KA_FNP45","SWAT FNP45",850],
 						["KA_15Rnd_45ACP_Mag",nil,95],
 						["KA_FNP45_Flashlight","SWAT FNP45 Flashlight",50],
 						["KA_red","SWAT FNP45 RedDot",120],
 						["KA_FNP45_shield2","SWAT FNP45 Schild",1500],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -322,13 +321,13 @@ switch(_shop) do
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
 						["acc_pointer_IR",nil,100],
-						
+
 						["ACE_M84",nil,300],
-						
+
 						["pmc_earpiece","Nachtsichtgerät",100],
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
-						
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -348,7 +347,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "cop_basic":
 	{
 		switch(true) do
@@ -362,23 +361,23 @@ switch(_shop) do
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
+
 						["RH_docter",nil,100],
 						["RH_M6X",nil,100],
-						
+
 
 						["pmc_earpiece","Nachtsichtgerät",100],
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -396,7 +395,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_coplevel) == 2):
 			{
 				["Officer",
@@ -404,35 +403,35 @@ switch(_shop) do
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
-						
+
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -441,13 +440,13 @@ switch(_shop) do
 						["optic_mas_acog_eo",nil,350],
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
-						
+
 
 						["pmc_earpiece","Nachtsichtgerät",100],
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -465,7 +464,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_coplevel) == 3):
 			{
 				["Detective",
@@ -473,43 +472,43 @@ switch(_shop) do
 						//HK416 14,5"
 						["R3F_HK416M",nil,1500],
 						["R3F_30Rnd_556x45_HK416",nil,75],
-					
+
 						//M4 Block
 						["RHARD_M4DDRP_F",nil,1600],
 						["30Rnd_556x45_Stanag",nil,80],
-						
+
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
-						
+
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -526,7 +525,7 @@ switch(_shop) do
 						["optic_DMS",nil,450],
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
-						
+
 
 						["TRYK_headset2","Headset Groß (Nightvision)",100],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",100],
@@ -534,8 +533,8 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
 						["tf_anarc164","FBI Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -553,7 +552,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_coplevel) == 4):
 			{
 				["Sergeant",
@@ -562,50 +561,50 @@ switch(_shop) do
 						["RH_M16A3",nil,1500],
 						["RH_m4",nil,1500],
 						["30Rnd_556x45_Stanag",nil,75],
-						
+
 						//HK416 14,5"
 						["R3F_HK416M",nil,1500],
 						["R3F_30Rnd_556x45_HK416",nil,75],
-						
+
 						//Benelli
 						["R3F_M4S90",nil,2200],
 						["R3F_7Rnd_M4S90",nil,75],
-					
+
 						//M4 Block
 						["RHARD_M4DDRP_F",nil,1600],
 						["30Rnd_556x45_Stanag",nil,80],
-						
+
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -621,7 +620,7 @@ switch(_shop) do
 						["RH_m3lr",nil,350],
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
-						
+
 
 						["TRYK_headset2","Headset Groß (Nightvision)",100],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",100],
@@ -629,8 +628,8 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
 						["tf_anarc164","FBI Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -648,7 +647,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_coplevel) == 5):
 			{
 				["1st Sergeant",
@@ -658,51 +657,51 @@ switch(_shop) do
 						["RH_M16A3",nil,1500],
 						["RH_m4",nil,1500],
 						["30Rnd_556x45_Stanag",nil,75],
-						
+
 						//HK416 14,5"
 						["R3F_HK416M",nil,1500],
 						["R3F_30Rnd_556x45_HK416",nil,75],
-						
+
 						//Benelli
 						["R3F_M4S90",nil,2200],
 						["R3F_7Rnd_M4S90",nil,75],
-					
+
 						//M4 Block
 						["RHARD_M4DDRP_F",nil,1600],
 						["30Rnd_556x45_Stanag",nil,80],
-						
+
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
-						
+
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -718,7 +717,7 @@ switch(_shop) do
 						["RH_m3lr",nil,350],
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
-						
+
 
 						["TRYK_headset2","Headset Groß (Nightvision)",100],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",100],
@@ -726,8 +725,8 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
 						["tf_anarc164","FBI Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -745,7 +744,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
+
 			case (__GETC__(life_coplevel) >= 6):
 			{
 				["Lt. bis CoP.",
@@ -753,57 +752,57 @@ switch(_shop) do
 						//HK417 16"
 						["R3F_HK417M",nil,1800],
 						["R3F_20Rnd_762x51_HK417",nil,100],
-						
+
 						//M4A1 RIS, M16A3, M4
 						["RH_M4A1_ris",nil,1600],
 						["RH_M16A3",nil,1500],
 						["RH_m4",nil,1500],
 						["30Rnd_556x45_Stanag",nil,75],
-						
+
 						//HK416 14,5"
 						["R3F_HK416M",nil,1500],
 						["R3F_30Rnd_556x45_HK416",nil,75],
-						
+
 						//Benelli
 						["R3F_M4S90",nil,2200],
 						["R3F_7Rnd_M4S90",nil,75],
-					
+
 						//M4 Block
 						["RHARD_M4DDRP_F",nil,1600],
 						["30Rnd_556x45_Stanag",nil,80],
-						
+
 						//MP5
 						["arifle_mas_mp5",nil,1250],
 						["30Rnd_mas_9x21_Stanag",nil,50],
-						
+
 						//Scorpion
 						["SMG_02_F",nil,1250],
 						["30Rnd_9x21_Mag",nil,50],
-						
+
 						//G19
 						["RH_g19",nil,850],
 						["RH_19Rnd_9x19_g18",nil,45],
-						
+
 						//USP
 						["RH_uspm",nil,800],
 						["RH_16Rnd_40cal_usp",nil,40],
-						
+
 						//Kimber
 						["RH_kimber_nw",nil,750],
 						["RH_7Rnd_45cal_m1911",nil,35],
-						
+
 						//FNP45
 						["RH_fnp45",nil,700],
 						["RH_15Rnd_45cal_fnp",nil,30],
-						
+
 						//Taser
 						["Taser_26","x26 Taser",250],
 						["26_cartridge",nil,10],
-						
+
 						//Laserpistole
 						["Radar_Gun","Radarpistole",50],
-						
-						
+
+
 						["RH_docter",nil,50],
 						["optic_ACO_grn_smg",nil,200],
 						["optic_ACO_grn",nil,200],
@@ -819,7 +818,7 @@ switch(_shop) do
 						["RH_m3lr",nil,350],
 						["acc_flashlight",nil,100],
 						["RH_M6X","Taschenlampe (klein)",100],
-						
+
 
 						["TRYK_headset2","Headset Groß (Nightvision)",100],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",100],
@@ -827,8 +826,8 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",10],
 						["tf_anprc155","Langstreckenfunk",50],
 						["tf_anarc164","FBI Langstreckenfunk",50],
-						
-						
+
+
 						["Laserdesignator",nil,50],
 						["Laserbatteries",nil,5],
 						["ToolKit",nil,200],
@@ -848,7 +847,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "rebel":
 	{
 		switch(true) do
@@ -870,12 +869,12 @@ switch(_shop) do
 						["RH_ar10",nil,16000],
 						["RH_Delft",nil,500],
 						["RH_20Rnd_762x51_AR10",nil,350],
-						
+
 				//Benelli
 						["R3F_M4S90",nil,15550],
 						["R3F_7Rnd_M4S90",nil,375],
-						
-				//Ak´s 7.62	
+
+				//Ak´s 7.62
 						["hlc_rifle_ak47",nil,15000],
 						["hlc_rifle_akm",nil,15000],
 						["HLC_Optic_PSO1",nil,350],
@@ -888,8 +887,8 @@ switch(_shop) do
 						["R3F_J4",nil,400],
 						["R3F_LAMPE_SURB",nil,150],
 						["R3F_SILENCIEUX_FAMAS",nil,1000],
-						["R3F_30Rnd_556x45_FAMAS",nil,175],		
-						
+						["R3F_30Rnd_556x45_FAMAS",nil,175],
+
 				//G36C
 						["arifle_mas_g36c",nil,13500],
 						["optic_mas_acog_eo",nil,325],
@@ -905,7 +904,7 @@ switch(_shop) do
 						["hlc_optic_kobra",nil,220],
 						["hlc_rifle_ak12",nil,12000],
 						["hlc_30Rnd_545x39_B_AK",nil,165],
-						
+
 				//Vitor + Samr
 						["RH_SAMR",nil,12000],
 						["RH_spr_mbs",nil,1500],
@@ -917,7 +916,7 @@ switch(_shop) do
 						["RH_ta31rco",nil,225],
 						["RH_shortdot",nil,225],
 						["RH_m3lr",nil,295],
-						
+
 				//Vitor + Samr + Ak12 + G36C Visiere & Aufsätze
 						["optic_Aco_smg",nil,205],
 						["optic_ACO_grn",nil,205],
@@ -928,24 +927,24 @@ switch(_shop) do
 						["optic_DMS",nil,420],
 						//["ACE_acc_pointer_red",nil,100],
 						["acc_flashlight",nil,95],
-						
+
 				//Maschienenpistolen
 						["RH_vz61",nil,5100],
 						["RH_20Rnd_32cal_vz61",nil,115],
 						["RH_muzi",nil,5100],
 						["RH_30Rnd_9x19_UZI",nil,115],
-						
+
 				//Pistole mit Schildoption
 						["KA_FNP45",nil,3950],
 						["KA_15Rnd_45ACP_Mag",nil,95],
-						
+
 				//NV-Goggles
 						["TRYK_headset2","Headset Groß (Nightvision)",500],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",500],
 						["TRYK_Shemagh_G_NV","Schal Grün (Nightvision)",300],
 						["TRYK_Shemagh_TAN_NV","Schal Tarnfleck (Nightvision)",300],
 						["TRYK_Shemagh_WH_NV","Schal Weis (Nightvision)",300],
-						
+
 				//TFAR + ACE + Standart
 						["tf_fadak","Walkie-Talkie",25],
 						["tf_mr3000","Langstreckenfunk",250],
@@ -1002,7 +1001,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
    	case "gun_illegal":
 	{
 		switch(true) do
@@ -1037,7 +1036,7 @@ switch(_shop) do
 			};
 		};
 	};
-	
+
 	case "genstore":
 	{
 		["Lakeside General Store",

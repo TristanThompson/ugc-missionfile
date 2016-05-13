@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_state.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
@@ -15,7 +15,8 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 
 //If (__GETC__(life_donator) <= 1)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (-Dlvl)"};
 //If (__GETC__(life_donator) >= 4)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (+Dlvl)"};
-if(!license_cop_swat)exitwith{closeDialog 0; hint "Du bist nicht in der SWAT Abteilung tätig."};
+If (__GETC__(life_donator) <= 1)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (-Dlvl)"};
+If (__GETC__(life_donator) >= 4)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (+Dlvl)"};
 
 
 switch (_filter) do
@@ -51,7 +52,7 @@ switch (_filter) do
 			["mr_pol_cloth_state_c_13","State Commissioner Lang",20]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -81,7 +82,7 @@ switch (_filter) do
 			["H_Watchcap_camo","Wollmütze Headset (grün)",20]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -110,7 +111,7 @@ switch (_filter) do
 			["G_Combat",nil,3]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
@@ -121,10 +122,10 @@ switch (_filter) do
 			["SERTvest1","SERT Weste Groß",25],
 			["V_PlateCarrier1_PMC_blk","SWAT Weste",25],
 			["SWATvest1","SWAT Weste Groß",25]
-			
+
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{
@@ -138,5 +139,5 @@ switch (_filter) do
 			["B_Carryall_khk",nil,25]
 		];
 	};
-	
+
 };

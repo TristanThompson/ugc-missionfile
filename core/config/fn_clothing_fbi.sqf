@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_fbi.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
@@ -14,14 +14,14 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //ctrlSetText[3104,"FBI Clothing Shop"];
 
 //If (__GETC__(life_donator) <= 3)exitwith{closeDialog 0; hint "Du bist nicht in der FBI Abteilung tätig (-Dlvl)"};
-if(!license_cop_fbi)exitwith{closeDialog 0; hint "Du bist nicht in der FBI Abteilung tätig"};
+If (__GETC__(life_donator) <= 3)exitwith{closeDialog 0; hint "Du bist nicht in der FBI Abteilung tätig (-Dlvl)"};
 if(playerSide != west) exitWith {closeDialog 0;};
 
 switch (_filter) do
 {
 	//Uniform
-	
-		
+
+
 	case 0:
 	{
 		[
@@ -48,7 +48,7 @@ switch (_filter) do
 			["mr_pol_cloth_fbi_c_12","FBI Chief Lang",30],
 			["mr_pol_cloth_fbi_c_13","FBI Commissioner Lang",30],
 			["TRYK_U_B_OD_OD_R_CombatUniform","Einsatzkleidung (Grün)",50],
-		
+
 		// Zivil
 			["A3L_Bikini_Girl",nil,175],
 			["U_BasicBodyICE123",nil,150],
@@ -62,21 +62,21 @@ switch (_filter) do
 			["HI1",nil,25],
 			["RastaCiv",nil,25],
 			["vacationshirt_uni",nil,25],
-			
+
 			["TRYK_shirts_DENIM_BK",nil,25],
 			["TRYK_shirts_DENIM_BK_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_BL",nil,25],
-			["TRYK_shirts_DENIM_BL_Sleeve",nil,25],		
+			["TRYK_shirts_DENIM_BL_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_BWH",nil,25],
-			["TRYK_shirts_DENIM_BWH_Sleeve",nil,25],			
+			["TRYK_shirts_DENIM_BWH_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_R",nil,25],
-			["TRYK_shirts_DENIM_R_Sleeve",nil,25],			
+			["TRYK_shirts_DENIM_R_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_RED2",nil,25],
-			["TRYK_shirts_DENIM_RED2_Sleeve",nil,25],			
+			["TRYK_shirts_DENIM_RED2_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_WH",nil,25],
-			["TRYK_shirts_DENIM_WH_Sleeve",nil,25],			
+			["TRYK_shirts_DENIM_WH_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_WHB",nil,25],
-			["TRYK_shirts_DENIM_WHB_Sleeve",nil,25],		
+			["TRYK_shirts_DENIM_WHB_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_ylb",nil,25],
 			["TRYK_shirts_DENIM_ylb_Sleeve",nil,25],
 			["TRYK_shirts_DENIM_od",nil,25],
@@ -105,11 +105,11 @@ switch (_filter) do
 			["TRYK_shirts_TAN_PAD",nil,25],
 			["TRYK_shirts_TAN_PAD_BK",nil,25],
 			["TRYK_shirts_TAN_PAD_BL",nil,25],
-			["TRYK_shirts_TAN_PAD_BLW",nil,25],			
+			["TRYK_shirts_TAN_PAD_BLW",nil,25],
 			["TRYK_shirts_TAN_PAD_BLU3",nil,25],
 			["TRYK_shirts_TAN_PAD_RED2",nil,25],
 			["TRYK_shirts_TAN_PAD_YEL",nil,25],
-			
+
 			["TRYK_U_B_RED_T_BR",nil,25],
 			["TRYK_U_B_RED_T_BG_BR",nil,25],
 			["TRYK_U_B_BLK_T_BK",nil,25],
@@ -120,7 +120,7 @@ switch (_filter) do
 			["TRYK_U_B_Denim_T_BG_BK",nil,25],
 			["TRYK_U_B_Denim_T_WH",nil,25],
 			["TRYK_U_B_Denim_T_BG_WH",nil,25],
-			
+
 			["U_Rangemaster_A",nil,25],
 			["U_Rangemaster_B",nil,25],
 			["U_Rangemaster_C",nil,25],
@@ -128,7 +128,7 @@ switch (_filter) do
 			["U_Rangemaster_E",nil,25],
 			["U_Rangemaster_F",nil,25],
 			["U_Rangemaster_G",nil,25],
-			
+
 			["U_CivilianTShirt_A",nil,25],
 			["U_CivilianTShirt_B",nil,25],
 			["U_CivilianTShirt_C",nil,25],
@@ -136,7 +136,7 @@ switch (_filter) do
 			["U_CivilianTShirt_E",nil,25],
 			["U_CivilianTShirt_F",nil,25],
 			["U_CivilianTShirt_G",nil,25],
-			
+
 			["cg_awesome1",nil,25],
 			["cg_bb1",nil,25],
 			["cg_beats1",nil,25],
@@ -180,7 +180,7 @@ switch (_filter) do
 			["cg_upyours1",nil,25],
 			["cg_wow1",nil,25],
 			["cg_jounie1",nil,25],
-			
+
 		//Rebell
 			["I_FEM_AAF_long","Frauenkleidung",75],
 			["B_FEM_AAF_Rolled","Frauenkleidung",75],
@@ -193,17 +193,17 @@ switch (_filter) do
 			["B_FEM_NATO_Collar","Frauenkleidung",75],
 			["B_FEM_NATO_Rolled","Frauenkleidung",75],
 			["B_FEM_NATO","Frauenkleidung",75],
-			
+
 			["U_CDFOfficerUni_A",nil,50],
 			["U_CDFSoldierUni_A",nil,50],
-			
+
 			["U_CombatUniVest_A",nil,50],
 			["B_Fem_SPEC_Smith",nil,50],
-			
+
 			["U_B_CTRG_1",nil,50],
 			["U_B_CTRG_2",nil,50],
 			["U_B_CTRG_3",nil,50],
-			
+
 			["U_CombatUniLong_A",nil,50],
 			["U_CombatUniLong_B",nil,50],
 			["U_CombatUniFatigue_A",nil,50],
@@ -212,19 +212,19 @@ switch (_filter) do
 			["U_I_CombatUniform_shortsleeve",nil,50],
 			["U_I_CombatUniform",nil,50],
 			["U_I_OfficerUniform",nil,50],
-			
+
 			["U_O_CombatUniform_ocamo",nil,50],
 			["U_O_CombatUniform_oucamo",nil,50],
-			
+
 			["U_O_OfficerUniform_ocamo",nil,50],
-			
+
 			["U_O_PilotCoveralls",nil,50],
 			["U_O_SpecopsUniform_ocamo",nil,50],
 			["U_B_CombatUniform_mcam_vest",nil,50],
-			
+
 			["U_CombatUniShirt_A",nil,50],
 			["rpima_uniform",nil,50],
-			
+
 			["U_TKOfficerUni_A",nil,50],
 			["U_TKOfficerUni_B",nil,50],
 			["U_TKSpecialUni_A",nil,50],
@@ -232,11 +232,11 @@ switch (_filter) do
 			["U_TKSoldierUni_A",nil,50],
 			["U_TKSoldierUni_B",nil,50],
 			["TRYK_B_TRYK_3C_T",nil,50],
-			
+
 			["TRYK_ZARATAKI",nil,50],
 			["TRYK_ZARATAKI2",nil,50],
 			["TRYK_ZARATAKI3",nil,50],
-			
+
 			["TRYK_U_B_BLK","Biker-Jacke (Schwarz)",50],
 			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",50],
 			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",50],
@@ -251,7 +251,7 @@ switch (_filter) do
 			["U_BG_Guerilla3_1",nil,50],
 			["U_BG_Guerrilla_6_1",nil,50],
 			["U_CivilianPilot_A",nil,50],
-			
+
 			["U_CombatOutdoor_A",nil,50],
 			["U_CombatOutdoor_B",nil,50],
 			["U_CombatOutdoor_C",nil,50],
@@ -275,7 +275,7 @@ switch (_filter) do
 			["U_InsUniShirt_A",nil,50],
 			["U_InsUniShirt_B",nil,50],
 			["U_InsUniShirt_C",nil,50],
-		
+
 			["U_CombatUniLeadMerc_A",nil,50],
 			["U_CombatUniLeadMerc_B",nil,50],
 			["U_CombatUniLeadMerc_C",nil,50],
@@ -310,7 +310,7 @@ switch (_filter) do
 			["U_CombatUniShirtMercD_E",nil,50],
 			["U_CombatUniShirtMercD_F",nil,50],
 			["U_CombatUniShirtMercD_G",nil,50],
-			
+
 			["U_CivilianMetro_A",nil,50],
 			["U_CivilianMetro_B",nil,50],
 			["U_CivilianMetro_C",nil,50],
@@ -329,7 +329,7 @@ switch (_filter) do
 			["U_CivilianOutdoor_B",nil,50],
 			["U_CivilianOutdoor_C",nil,50],
 			["U_CivilianOutdoor_D",nil,50],
-			
+
 			["U_CivilianSport_A",nil,50],
 			["U_CivilianSport_B",nil,50],
 			["U_CivilianSport_C",nil,50],
@@ -368,13 +368,13 @@ switch (_filter) do
 			["U_TKLocalTactic_B",nil,50],
 			["U_TKLocalTactic_C",nil,50],
 			["U_TKLocalTactic_D",nil,50],
-			["U_TKLocalTactic_E",nil,50],			
+			["U_TKLocalTactic_E",nil,50],
 			["U_TKLocalUni_A",nil,50],
 			["U_TKLocalUni_B",nil,50],
 			["U_TKLocalUni_C",nil,50],
 			["U_TKLocalUni_D",nil,50],
 			["U_TKLocalUni_E",nil,50],
-			["U_TKLocalUni_F",nil,50],			
+			["U_TKLocalUni_F",nil,50],
 			["U_TKLocalCombat_A",nil,50],
 			["U_TKLocalCombat_B",nil,50],
 			["U_TKLocalCombat_C",nil,50],
@@ -383,7 +383,7 @@ switch (_filter) do
 			["U_TerrorCombat_A",nil,50],
 			["U_TerrorCombat_B",nil,50],
 			["U_TerrorCombat_Black",nil,50],
-			
+
 			["U_PMC_CombatUniformLS_BSGPBB",nil,50],
 			["U_PMC_CombatUniformRS_BSGPBB",nil,50],
 			["U_PMC_CombatUniformLS_BSGPSB",nil,50],
@@ -412,7 +412,7 @@ switch (_filter) do
 			["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,50],
 			["U_PMC_CombatUniformLS_IndPBSBB",nil,50],
 			["U_PMC_CombatUniformRS_IndPBSBB",nil,50],
-			
+
 			["U_PMC_BluePlaidShirt_BeigeCords",nil,50],
 			["U_PMC_BluTShirt_SJeans",nil,50],
 			["U_PMC_BluPolo_BgPants",nil,50],
@@ -437,8 +437,8 @@ switch (_filter) do
 			["TRYK_hoodie_3c",nil,50],
 			["TRYK_hoodie_Blk",nil,50],
 			["TRYK_hoodie_FR",nil,50],
-			["TRYK_hoodie_Wood",nil,50],	
-			
+			["TRYK_hoodie_Wood",nil,50],
+
 			["TRYK_OVERALL_SAGE_BLKboots_nk",nil,50],
 			["TRYK_OVERALL_SAGE_BLKboots_nk_blk",nil,50],
 			["TRYK_OVERALL_SAGE_BLKboots_nk_blk2",nil,50],
@@ -611,7 +611,7 @@ switch (_filter) do
 			["TRYK_U_B_wh_blk_Rollup_CombatUniform",nil,50],
 			["TRYK_U_B_wh_OD_Rollup_CombatUniform",nil,50],
 			["TRYK_U_B_wh_tan_Rollup_CombatUniform",nil,50],
-			
+
 			["TRYK_U_B_Snowt",nil,50],
 			["TRYK_U_B_Snow_CombatUniform",nil,50],
 			["TRYK_U_B_woodtan_CombatUniform",nil,50],
@@ -645,7 +645,7 @@ switch (_filter) do
 			["TRYK_U_B_wood3c_CombatUniformTshirt",nil,50],
 			["TRYK_U_B_WOOD_MARPAT_CombatUniform",nil,50],
 			["TRYK_U_B_WOOD_MARPAT_CombatUniformTshirt",nil,50],
-			
+
 			["U_GhillieSuit_A",nil,150],
 			["U_I_GhillieSuit",nil,150],
 			["U_GhillieSuit_C",nil,150],
@@ -655,7 +655,7 @@ switch (_filter) do
 			["U_I_FullGhillie_ard","Vollst. Ghillie (Trocken)",200],
 			["U_I_FullGhillie_sard","Wookie-Anzug (Halbtrocken)",200],
 			["U_I_FullGhillie_lsh","Wookie-Anzug (Grün)",200],
-			
+
 		//Anzüge
 			["KAEL_SUITS_BR_Judge",nil,250],
 			["KAEL_SUITS_BLK_F",nil,250],
@@ -709,7 +709,7 @@ switch (_filter) do
 			["U_MilitaryCoat_D",nil,250]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -721,13 +721,13 @@ switch (_filter) do
 			["H_Watchcap_blk","Wollmütze Headset (Schwarz)",5],
 			["TRYK_H_woolhat","Wollmütze (Schwarz)",5],
 			["H_Watchcap_camo","Wollmütze Headset (grün)",5],
-			
+
 		//Zivil
 			["TRYK_Kio_Balaclava",nil,10],
-		
+
 			["TRYK_R_CAP_BLK ","Backcappy Schwarz",10],
 			["TRYK_H_Bandana_wig","Perücken Bandana",10],
-			
+
 			["TRYK_ESS_CAP",nil,10],
 			["TRYK_ESS_CAP_tan",nil,10],
 			["TRYK_H_headsetcap_Glasses",nil,10],
@@ -736,33 +736,33 @@ switch (_filter) do
 			["TRYK_R_CAP_TAN",nil,10],
 			["TRYK_r_cap_tan_Glasses",nil,10],
 			["TRYK_H_TACEARMUFF_H",nil,10],
-		
+
 			["TRYK_H_woolhat",nil,10],
 			["TRYK_H_woolhat_WH",nil,10],
 			["TRYK_H_woolhat_cu",nil,10],
 			["TRYK_H_woolhat_CW",nil,10],
-		
+
 			["H_Watchcap_cbr",nil,10],
 			["H_Watchcap_camo",nil,10],
 			["H_Watchcap_blk",nil,10],
 			["H_Watchcap_khk",nil,10],
-			
+
 			["H_Booniehat_DMARPAT",nil,10],
 			["H_Booniehat_rgr",nil,10],
 			["H_Booniehat_GCAMO",nil,10],
-		
+
 			["H_Hat_Pagri",nil,10],
 			["H_Hat_Pagri_B",nil,10],
 			["H_Hat_Pagri_C",nil,10],
-			
+
 			["H_Hat_HelmetCrewR",nil,10],
 			["H_Hat_Pakol",nil,10],
-			
+
 			["H_Hat_Beret_Basque_A",nil,10],
 			["H_Hat_Beret_Basque_B",nil,10],
 			["H_Hat_Beret_Basque_C",nil,10],
 			["H_Hat_Beret_Basque_D",nil,10],
-		
+
 			["H_Hat_HelmetT","Kriegshelm",10],
 			["H_Hat_HelmetA","Kriegshelm Grün",10],
 			["H_Hat_HelmetC","Kriegshelm Tarnfleck",10],
@@ -771,30 +771,30 @@ switch (_filter) do
 			["H_Hat_CapSov_A","Sovjet Braun",10],
 			["H_Hat_CapSov_B","Sovjet Schwarz",10],
 			["H_Hat_CapSov_C","Sovjet Grün",10],
-			
+
 			["TRYK_H_Booniehat_JSDF","Army Hut",10],
 			["TRYK_H_wig","Perücke",10],
 			["TRYK_H_Bandana_H",nil,10],
 			["TRYK_H_Bandana_wig_g",nil,10],
-			
+
 			["H_Hat_Ushanka",nil,10],
 			["H_Hat_Ushanka_Rnd_A",nil,10],
 			["H_Hat_Ushanka_Rnd_B",nil,10],
 			["H_Hat_Ushanka_Rnd_C",nil,10],
 			["H_Hat_Ushanka_Rnd_D",nil,10],
-			
+
 			["H_Hat_Turban_A",nil,10],
 			["H_Hat_Turban_B",nil,10],
 			["H_Hat_Turban_C",nil,10],
 			["H_Hat_Turban_D",nil,10],
 			["H_Hat_Turban_E",nil,10],
-			
+
 			["H_Hat_Taqiyah_A",nil,10],
 			["H_Hat_Taqiyah_B",nil,10],
 			["H_Hat_Taqiyah_C",nil,10],
 			["H_Hat_Taqiyah_D",nil,10],
 			["H_Hat_Taqiyah_E",nil,10],
-			
+
 			["H_Bandanna_blu",nil,10],
 			["H_Bandanna_gry",nil,10],
 			["H_Bandanna_surfer_grn",nil,10],
@@ -838,7 +838,7 @@ switch (_filter) do
 			["ALE_H_Cowboy_Black",nil,10],
 			["ALE_H_Cowboy_White",nil,10],
 			["ALE_H_NewEra_Rouge",nil,10],
-			
+
 			["H_ALFR_Dallas_Mask",nil,25],
 			["H_ALFR_Samurai_Mask",nil,25],
 			["H_ALFR_Sheep_Mask",nil,25],
@@ -853,7 +853,7 @@ switch (_filter) do
 			["cg_horsehead_2",nil,25],
 			["cg_horsehead_blk",nil,25],
 			["cg_horsehead_pnk",nil,25],
-			
+
 			["H_ALFR_Heist_Mask_1",nil,25],
 			["H_ALFR_Heist_Mask_2",nil,25],
 			["H_ALFR_Heist_Mask_3",nil,25],
@@ -861,28 +861,28 @@ switch (_filter) do
 			["H_ALFR_Heist_Mask_5",nil,25],
 			["H_ALFR_Heist_Mask_6",nil,25],
 			["H_ALFR_Heist_Mask_7",nil,25],
-			
+
 			["Kio_Hat",nil,25],
 			["Kio_Capital_Hat",nil,25],
 			["Kio_Spinning_Hat",nil,25],
 			["Kio_Santa_Hat",nil,25],
 			["kio_no1_hat",nil,25],
 			["kio_pirate_hat",nil,25],
-			["Kio_Afro_Hat",nil,25],			
+			["Kio_Afro_Hat",nil,25],
 			["kio_vfv_mask",nil,25],
-			
+
 			["H_ALFR_OVERKILL_I",nil,25],
 			["H_ALFR_OVERKILL_II",nil,25],
 			["H_ALFR_OVERKILL_III",nil,25],
 			["H_ALFR_OVERKILL_IV",nil,25],
-			
+
 			["Masque_Santa","Scarry Santa",25],
 			["Masque_archNemesis","Monster Maske",25],
 			["Masque_Smiley","Scarry Clown",25],
 			["Masque_Religieuse","Nonnen Maske",25],
 			["Masque_Macrilleuse","Scarry Clown (Klein)",25],
 			["Masque_Unic","Einhorn Maske",25],
-			
+
 			["Gorb_Gingerbread1",nil,50],
 			["Gorb_AngryGingerbread3",nil,50],
 			["Gorb_PuddingHat",nil,50],
@@ -937,7 +937,7 @@ switch (_filter) do
 			["Gorb_UglyMrsClaus1",nil,50],
 			["Gorb_UglyMrsClaus2",nil,50],
 			["Gorb_UglyMrsClaus3",nil,50],
-			
+
 			["Masque_Alien1",nil,50],
 			["Masque_Anonymous",nil,50],
 			["Masque_archNemesis",nil,50],
@@ -973,7 +973,7 @@ switch (_filter) do
 			["Masque_Unic",nil,50],
 			["Masque_Wolfv2",nil,50],
 			["Masque_zeus",nil,50],
-			
+
 			["H_GingerbreadMask",nil,50],
 			["H_UltronMask",nil,50],
 			["H_KermitMask",nil,50],
@@ -1000,14 +1000,14 @@ switch (_filter) do
 			["H_StarFoxMask",nil,50],
 			["H_WashingtonMask",nil,50],
 			["H_VenomMask",nil,50],
-			
+
 			["A3L_Legoman","Legokopf",50],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",50],
-			["A3L_Halloween_PredatorMask","Predator",50],		
+			["A3L_Halloween_PredatorMask","Predator",50],
 			["A3L_Halloween_JigSaw","Jigsaw",50],
-			["A3L_soa_helmet","Biker Helm",50],	
+			["A3L_soa_helmet","Biker Helm",50],
 			["A3L_gangster_hat","Gangster Maske",50],
-			["A3L_Mask","Maske",50],				
+			["A3L_Mask","Maske",50],
 			["A3L_Crown","Krone",50],
 			["A3L_Sombrero","Sombrero",50],
 			["A3L_SkateHelmet_green",nil,50],
@@ -1015,16 +1015,16 @@ switch (_filter) do
 			["A3L_russianhat",nil,50],
 			["jokermask",nil,50],
 			["cowboyhat",nil,50],
-			
+
 		//Rebell
 			["H_Hat_Face_Wrap",nil,25],
 			["H_Hat_Face_Wrap_Desert",nil,25],
 			["H_Hat_Face_Wrap_Olive",nil,25],
 			["H_Hat_Face_Wrap_Red",nil,25],
-			
+
 			["H_Hat_Face_Wrap_Dark","Shemag G. Schwarz",25],
 			["H_Hat_Face_Wrap_DPM","Shemag G. Tarn",25],
-			
+
 			["H_Hat_Kufiya_B",nil,25],
 			["H_Hat_Kufiya_F",nil,25],
 			["H_Hat_Kufiya_D",nil,25],
@@ -1032,41 +1032,41 @@ switch (_filter) do
 			["H_Hat_Kufiya",nil,25],
 			["H_Hat_Kufiya_G",nil,25],
 			["H_Hat_Kufiya_R",nil,25],
-			
+
 			["H_ShemagOpen_tan",nil,25],
 			["H_Shemag_olive",nil,25],
 			["H_ShemagOpen_khk",nil,25],
-			
+
 			["H_HelmetO_ocamo",nil,25],
 			["H_MilCap_oucamo",nil,25],
 			["H_Bandanna_camo",nil,25],
-			
+
 			["H_Hat_Face_Balaclava_T",nil,25],
 			["H_Hat_Face_Wrap_Black",nil,25],
 			["H_Hat_Face_Wrap_Gold",nil,25],
-	
+
 			["H_Hat_Face_Wrap_Dark",nil,25],
 			["H_Hat_Face_Wrap_White",nil,25],
 			["H_Hat_Face_Wrap_DPM",nil,25],
 			["H_Hat_Face_Wrap_Flecktarn",nil,25],
 			["H_Hat_Face_Wrap_Sand",nil,25],
-			
+
 			["H_ALFR_Metal_Facemask_gry",nil,25],
 			["H_ALFR_Metal_Facemask_oli",nil,25],
 			["H_ALFR_Metal_Facemask_sand",nil,25],
 			["H_ALFR_Metal_Facemask_blk",nil,25],
-			
+
 			["H_ALFR_Metal_Gasmask_RU_fuckyou",nil,25],
 			["H_ALFR_Metal_Gasmask_RU_grey",nil,25],
 			["H_ALFR_Metal_Gasmask_RU_khk",nil,25],
 			["H_ALFR_Metal_Gasmask_RU_oli",nil,25],
 			["H_ALFR_Metal_Gasmask_RU_blk",nil,25],
 			["H_ALFR_Gasmask",nil,25],
-			
+
 			["H_Hat_Face_Cover_Black",nil,25],
 			["H_Hat_Face_Cover_Gold",nil,25],
 			["H_Hat_Face_Cover_Green",nil,25],
-			
+
 			["kio_skl_msk_weed",nil,25],
 			["kio_skl_msk_UK",nil,25],
 			["kio_skl_msk_US",nil,25],
@@ -1089,10 +1089,10 @@ switch (_filter) do
 			["kio_skl_msk",nil,25],
 			["kio_skl_msk_red",nil,25],
 			["kio_skl_msk_grn",nil,25]
-			
+
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -1113,19 +1113,19 @@ switch (_filter) do
 			["G_Lady_Mirror",nil,5],
 			["G_Lady_Dark",nil,5],
 			["G_Lady_Blue",nil,5],
-			
+
 			["L_Shemagh_Gry",nil,5],
 			["L_Shemagh_OD",nil,5],
 			["L_Shemagh_Red",nil,5],
 			["L_shemagh_white",nil,5],
-			
+
 			["NeckTight_Dmaripat",nil,5],
 			["NeckTight_Gry",nil,5],
 			["NeckTight_OD",nil,5],
 			["NeckTight_Red",nil,5],
 			["NeckTight_Tan",nil,5],
 			["NeckTight",nil,5],
-			
+
 			["H_ALFR_SkiMask_Glasses_6",nil,5],
 			["H_ALFR_SkiMask_Glasses_5",nil,5],
 			["H_ALFR_SkiMask_Glasses_4",nil,5],
@@ -1134,35 +1134,35 @@ switch (_filter) do
 			["H_ALFR_SkiMask_Glasses_3",nil,5],
 			["H_ALFR_SkiMask_Glasses_1",nil,5],
 			["H_ALFR_SkiMask_Glasses_2",nil,5],
-			
+
 			["Masque_Solitaire",nil,5],
 			["Masque_Chirurgical",nil,5],
 			["A3L_FatHead",nil,5],
-			
+
 			["SFG_Tac_smallBeardD",nil,5],
 			["SFG_Tac_BeardD","Bart (Dunkel)",5],
 			["SFG_Tac_ChopsD","Mutton Chops (Dunkel)",5],
 			["SFG_Tac_moustacheD","Moustache (Dunkel)",5],
 			["SFG_Tac_chinlessbD","Chinless Beard (Dunkel)",5],
-			
+
 			["SFG_Tac_smallBeardG",nil,5],
 			["SFG_Tac_BeardG","Bart (Ginger)",5],
 			["SFG_Tac_ChopsG","Mutton Chops (Ginger)",5],
 			["SFG_Tac_moustacheG","Moustache (Ginger)",5],
 			["SFG_Tac_chinlessbG","Chinless Beard (Ginger)",5],
-			
+
 			["SFG_Tac_smallBeardO",nil,5],
 			["SFG_Tac_BeardO","Bart (Alt)",5],
 			["SFG_Tac_ChopsO","Mutton Chops (Alt)",5],
 			["SFG_Tac_moustacheO","Moustache (Alt)",5],
 			["SFG_Tac_chinlessbO","Chinless Beard (Alt)",5],
-			
+
 			["SFG_Tac_smallBeardB",nil,5],
 			["SFG_Tac_BeardB","Bart (Blond)",5],
 			["SFG_Tac_ChopsB","Mutton Chops (Blond)",5],
 			["SFG_Tac_moustacheB","Moustache (Blond)",5],
 			["SFG_Tac_chinlessbB","Chinless Beard (Blond)",5],
-			
+
 			["TRYK_Beard_BW","Vollbart",5],
 			["TRYK_Beard_BW2",nil,5],
 			["TRYK_Beard_BW3",nil,5],
@@ -1172,19 +1172,19 @@ switch (_filter) do
 			["TRYK_Beard2",nil,5],
 			["TRYK_Beard3","Vollbart",5],
 			["TRYK_Beard4",nil,5],
-			
+
 			["TRYK_Beard_Gr",nil,5],
 			["TRYK_Beard_Gr2",nil,5],
 			["TRYK_Beard_Gr3","Vollbart",5],
 			["TRYK_Beard_Gr4",nil,5],
-			
+
 			["TRYK_Beard_BK",nil,5],
 			["TRYK_Beard_BK2","Vollbart",5],
 			["TRYK_Beard_BK3","Vollbart",5],
 			["TRYK_Beard_BK4","Vollbart",5],
-	
+
 			["TRYK_headset_Glasses",nil,5],
-			
+
 		//Rebell
 			["A3L_Balaclava",nil,15],
 			["Balaclava_Black",nil,15],
@@ -1197,30 +1197,30 @@ switch (_filter) do
 			["T_HoodODCLR",nil,15],
 			["T_HoodTanCLR",nil,15],
 			["T_HoodMWCLR",nil,15],
-			
+
 			["Shemagh_FaceGry",nil,15],
 			["Shemagh_FaceOD",nil,15],
 			["Shemagh_FaceRed",nil,15],
 			["Shemagh_FaceTan",nil,15],
 			["Shemagh_Face",nil,15],
-			
+
 			["G_Balaclava_blk",nil,15],
-			
+
 			["PU_shemagh_GryO",nil,15],
 			["PU_shemagh_ODO",nil,15],
 			["PU_shemagh_TanO",nil,15],
 			["PU_shemagh_WhiteO",nil,15],
-			
+
 			["SAS_shemagh_OD",nil,15],
 			["SAS_shemagh_Tan",nil,15],
 			["SAS_shemagh_White",nil,15],
-			
+
 			["Mask_M40",nil,15],
 			["Mask_M40_OD",nil,15],
 			["Mask_M50",nil,15]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
@@ -1229,7 +1229,7 @@ switch (_filter) do
 			//["A3L_policevest1","FBI Weste",100],
 			["TRYK_V_Bulletproof_BLK","FBI Weste",100],
 			["TRYK_V_tacv1_FBI_BK","Einsatzweste (Grün)",200],
-			
+
 		//Zivil
 			["V_BandollierB_cbr",nil,100],
 			["V_BandollierB_khk",nil,100],
@@ -1238,7 +1238,7 @@ switch (_filter) do
 			["V_Rangemaster_belt",nil,100],
 			["A3L_SpiderVest",nil,100],
 			["A3L_SpookyVest",nil,100],
-			
+
 		//Rebell
 			["V_PlateCarrierInd_PMC_blk",nil,300],
 			["V_PlateCarrierInd_PMC_grn",nil,300],
@@ -1256,13 +1256,13 @@ switch (_filter) do
 			["Jamie_Rebell","Fuck U Police",300],
 
 			["V_TacVest_darkblck",nil,150],
-			
+
 			["k_cut_1","Sinister Sons",150],
 			["k_cut_2","Gold Gunners",150],
 			["k_cut_3","Sons of Anarchy Mitglied",150],
 			["k_cut_4","Sons of Anarchy Chef",150],
 			["k_cut_5","Sons of Outlaws",150],
-			
+
 			["V_TacVest_TK",nil,150],
 			["V_TacVest_brn",nil,150],
 			["V_TacVest_khk",nil,150],
@@ -1270,14 +1270,14 @@ switch (_filter) do
 			["V_TacVest_blk",nil,150],
 			["V_I_G_resistanceLeader_F",nil,150],
 			["V_TacVest_camo",nil,150],
-			
+
 			["V_PlateCarrier_heavy_A",nil,150],
 			["V_PlateCarrier_heavy_B",nil,150],
 			["V_PlateCarrier_heavy_C",nil,150],
 			["V_PlateCarrier_heavy_D",nil,150],
 			["V_PlateCarrier_heavy_E",nil,150],
 			["V_PlateCarrier_heavy_F",nil,150],
-			
+
 			["V_FlakJacket_Black",nil,150],
 			["V_FlakJacket_KP_Black",nil,150],
 			["V_FlakJacket_digiCamo",nil,150],
@@ -1288,13 +1288,13 @@ switch (_filter) do
 			["V_FlakJacket_KP_Tan",nil,150],
 			["V_FlakJacket_Woodland",nil,150],
 			["V_FlakJacket_KP_Woodland",nil,150],
-			
+
 			["TRYK_V_tacSVD_BK",nil,150],
 			["TRYK_V_tacSVD_OD",nil,150],
 			["TRYK_V_tacv1LC_BK",nil,150],
 			["TRYK_V_tacv1LC_CY",nil,150],
 			["TRYK_V_tacv1LC_OD",nil,150],
-			
+
 			["TRYK_V_ArmorVest_Winter",nil,150]
 		];
 	};
@@ -1343,5 +1343,5 @@ switch (_filter) do
 			["TRYK_B_tube_od",nil,50]
 		];
 	};
-	
+
 };

@@ -1,7 +1,7 @@
 /*
 	File: fn_virt_menu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initialize the virtual shop menu.
 */
@@ -19,7 +19,7 @@ if(_shop == "rebel" && !license_civ_rebel) exitWith {hint localize "STR_NOTF_Not
 if(_shop == "ems" && playerSide != independent) exitWith {hint localize "STR_NOTF_NotAMedic"};
 if(_shop == "adac" && playerSide != east) exitWith {hint localize "STR_NOTF_NotAADAC"};
 if(_shop == "adacdriver" && ((__GETC__(life_adaclevel) < 2) OR playerSide != east)) exitWith {hint localize "STR_NOTF_NotAADAC"};
-if(_shop == "itemfbi" && ((__GETC__(life_donator) < 4) OR playerSide != west) OR !license_cop_fbi) exitWith {hint "Du gehoerst nicht zum FBI!"};
+if(_shop == "itemfbi" && (__GETC__(life_donator) < 4) OR playerSide != west) exitWith {hint "Du gehoerst nicht zum FBI!"};
 if(_shop == "coppresse" && ((__GETC__(life_coplevel) < 4) OR playerSide != west)) exitWith {hint "Du musst mindestens Dienstgrad 4 erreicht haben!"};
 if(_shop == "fishmarket" && !license_civ_fischerei) exitWith {hint "Du besitzt die benötige Lizenz nicht! Fischereischein benötigt."};
 if(_shop == "copausbilder" && !license_cop_ausbilder && playerSide != west) exitWith {hint "Du besitzt die benötige Lizenz nicht! Ausbilderlizenz benötigt."};

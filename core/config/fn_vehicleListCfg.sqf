@@ -1323,6 +1323,7 @@ switch (_shop) do
 			//_return pushBack ["A3L_CVBlue",15000];
 			//_return pushBack ["A3L_TaurusBlack",17500];
 			//_return pushBack ["A3L_TaurusBlue",17500];
+			_return pushBack ["A3L_JailBus",17500];
 			_return pushBack ["cl3_z4_2008_black",37500];
 			//_return pushBack ["shounka_a3_rs5_civ_noir",40000];
 			//_return pushBack ["cl3_e63_amg_black",40000];
@@ -1342,13 +1343,14 @@ switch (_shop) do
 			//_return pushBack ["A3l_TaurusFPBLBCSO",12500];
 			//_return pushBack ["A3l_TaurusFPBLBPD",12500];
 			//_return pushBack ["A3L_TaurusFPBLBSP",12500];
-			_return pushBack ["A3L_JailBus",17500];
+
 			_return pushBack ["shounka_a3_gendsprinter",35000];
 			_return pushBack ["DRPG_06Victoria_P_STATE",25000];
 			_return pushBack ["DRPG_06Victoria_P_Sheriff",25000];
 			_return pushBack ["DRPG_06Victoria_P_LVPD",25000];
 			_return pushBack ["DRPG_06Victoria_P_FBI",25000];
 			_return pushBack ["DRPG_06Victoria_P_R",30000];
+			_return pushBack ["A3L_JailBus",17500];
 			//Ford Transit
 			//_return pushBack ["DRPG_11Transit_P_SWAT",20000];
 		};
@@ -1446,7 +1448,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_12M5_P_FBI",30000];
 			_return pushBack ["DRPG_12M5_P_STATE",30000];
 		};
-		
+
 		if(__GETC__(life_coplevel) > 8) then
 		{
 			_return pushBack ["Mrshounka_agera_gend_p",120000];
@@ -1456,7 +1458,7 @@ switch (_shop) do
 	case "fbi_cars":
 	{
 		if(playerSide != west) exitWith {hint "Keine Berechtigung."};
-		if(!license_cop_fbi) exitWith {hint "Du bist kein FBI-Agent!"};
+		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"};
 		_return =
 		[
 		//Suburban 2008

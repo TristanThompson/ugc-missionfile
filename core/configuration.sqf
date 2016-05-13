@@ -3,9 +3,9 @@
 	Master Life Configuration File
 	This file is to setup variables for the client, there are still other configuration files in the system
 
-*****************************
-****** Backend Variables *****
-*****************************
+***************************
+**** Backend Variables ****
+***************************
 */
 life_query_time = time;
 life_action_delay = time;
@@ -692,6 +692,7 @@ life_garage_prices =
 		["Mrshounka_Volkswagen_Touareg_grise",650],
 		["Mrshounka_Volkswagen_Touareg_violet",650],
 		["Mrshounka_Volkswagen_Touareg_orange",650],
+		["Mrshounka_Touareg_police",650],
 
 	//Lykan
 		["Mrshounka_lykan_c_noir",1200],
@@ -873,6 +874,7 @@ life_garage_prices =
 		["Mrshounka_evox_grise",300],
 		["Mrshounka_evox_violet",300],
 		["Mrshounka_evox_orange",300],
+		["Mrshounka_evox_gend",300],
 
 	//Hummer
 		["Mrshounka_hummer_civ_noir",250],
@@ -912,6 +914,7 @@ life_garage_prices =
 
 	//Ford
 		["DRPG_06Victoria_Black",150],
+		["DRPG_06Victoria_DOJ",150],
 		["DRPG_06Victoria_White",150],
 		["DRPG_06Victoria_Red",150],
 		["DRPG_06Victoria_blue",150],
@@ -1041,6 +1044,7 @@ life_garage_prices =
 		["cl3_dodge_charger_f_orange",300],
 		["Jonzie_Viper",400],
 		["DRPG_12Charger_Black",300],
+		["DRPG_12Charger_DOJ",300],
 		["DRPG_12Charger_White",300],
 		["DRPG_12Charger_Red",300],
 		["DRPG_12Charger_blue",300],
@@ -1050,6 +1054,7 @@ life_garage_prices =
 		["DRPG_12Charger_Purple",300],
 		["DRPG_12Charger_Yellow",300],
 		["DRPG_15Charger_Black",350],
+		["DRPG_15Charger_DOJ",350],
 		["DRPG_15Charger_White",350],
 		["DRPG_15Charger_Red",350],
 		["DRPG_15Charger_blue",350],
@@ -1081,6 +1086,9 @@ life_garage_prices =
 		["Mrshounka_a3_gtr_civ_grau",350],
 		["Mrshounka_a3_gtr_civ_gruen",350],
 		["Mrshounka_a3_gtr_civ_violet",350],
+
+	//Sprinter
+	["shounka_a3_gendsprinter",400],
 
 	//Mercedes
 		["cl3_e63_amg_white",400],
@@ -1167,6 +1175,7 @@ life_garage_prices =
 		["shounka_rs6_violet",420],
 		["shounka_rs6_orange",420],
 		["shounka_a3_audiq7_bleu",220],
+		["shounka_a3_audiq7_v2_gendarmerie",220],
 
 
 	//BMW
@@ -1190,6 +1199,7 @@ life_garage_prices =
 		["Mrshounka_bmwm1_civ_grise",400],
 		["Mrshounka_bmwm1_civ_violet",400],
 		["Mrshounka_bmwm1_civ_orange",400],
+		["Mrshounka_bmw_gend",400],
 		["Mrshounka_bmwm6_noir",500],
 		["Mrshounka_bmwm6_bleufonce",500],
 		["Mrshounka_bmwm6_rouge",500],
@@ -1209,6 +1219,7 @@ life_garage_prices =
 		["cl3_e60_m5_burgundy",450],
 		["cl3_e60_m5_black",450],
 		["DRPG_12M5_Black",450],
+		["DRPG_12M5_DOJ",450],
 		["DRPG_12M5_White",450],
 		["DRPG_12M5_Red",450],
 		["DRPG_12M5_blue",450],
@@ -1255,6 +1266,7 @@ life_garage_prices =
 		["Mrshounka_agera_p_noir",1200],
 		["Mrshounka_agera_p_bleu",1200],
 		["Mrshounka_agera_p_jaune",1200],
+		["Mrshounka_agera_gend_p",1200],
 
 	//Alfa Romeo
 		["Mrshounka_Alfa_Romeo_noir",300],
@@ -1575,6 +1587,7 @@ life_garage_prices =
 		["cl3_dodge_charger_emt",300],
 		["DRPG_06Suburban_EMS", 250],
 		["DRPG_09Tahoe_EMS", 250],
+		["DRPG_09Tahoe_DOJ", 250],
 		["charger_ems", 400],
 		["AM_2015C_EMS",400],
 		["cl3_xr_1000_emt",150],
@@ -1659,6 +1672,7 @@ life_garage_prices =
 		["AM_09Tahoe_P_Sheriff",250],
 		["AM_09Tahoe_U_T",250],
 		["DRPG_06Suburban_P_FBI",200],
+		["DRPG_06Suburban_DOJ",200],
 		["DRPG_06Suburban_P_LVPD",200],
 		["DRPG_06Suburban_P_Sheriff",200],
 		["DRPG_06Suburban_P_State",200],
@@ -1816,6 +1830,7 @@ life_garage_sell =
 			["Mrshounka_Volkswagen_Touareg_grise",32500],
 			["Mrshounka_Volkswagen_Touareg_violet",32500],
 			["Mrshounka_Volkswagen_Touareg_orange",32500],
+			["Mrshounka_Touareg_police",32500],
 
 		//Lykan
 			["Mrshounka_lykan_c_noir",60000],
@@ -1997,6 +2012,7 @@ life_garage_sell =
 			["Mrshounka_evox_grise",15000],
 			["Mrshounka_evox_violet",15000],
 			["Mrshounka_evox_orange",15000],
+			["Mrshounka_evox_gend",15000],
 
 		//Hummer
 			["Mrshounka_hummer_civ_noir",12500],
@@ -2036,6 +2052,7 @@ life_garage_sell =
 
 		//Ford
 			["DRPG_06Victoria_Black",7500],
+			["DRPG_06Victoria_DOJ",7500],
 			["DRPG_06Victoria_White",7500],
 			["DRPG_06Victoria_Red",7500],
 			["DRPG_06Victoria_blue",7500],
@@ -2165,6 +2182,7 @@ life_garage_sell =
 			["cl3_dodge_charger_f_orange",15000],
 			["Jonzie_Viper",20000],
 			["DRPG_12Charger_Black",15000],
+			["DRPG_12Charger_DOJ",15000],
 			["DRPG_12Charger_White",15000],
 			["DRPG_12Charger_Red",15000],
 			["DRPG_12Charger_blue",15000],
@@ -2174,6 +2192,7 @@ life_garage_sell =
 			["DRPG_12Charger_Purple",15000],
 			["DRPG_12Charger_Yellow",15000],
 			["DRPG_15Charger_Black",17500],
+			["DRPG_15Charger_DOJ",17500],
 			["DRPG_15Charger_White",17500],
 			["DRPG_15Charger_Red",17500],
 			["DRPG_15Charger_blue",17500],
@@ -2205,6 +2224,9 @@ life_garage_sell =
 			["Mrshounka_a3_gtr_civ_grau",17500],
 			["Mrshounka_a3_gtr_civ_gruen",17500],
 			["Mrshounka_a3_gtr_civ_violet",17500],
+
+			//Sprinter
+			["shounka_a3_gendsprinter",17500],
 
 		//Mercedes
 			["cl3_e63_amg_white",20000],
@@ -2291,6 +2313,7 @@ life_garage_sell =
 			["shounka_rs6_violet",21000],
 			["shounka_rs6_orange",21000],
 			["shounka_a3_audiq7_bleu",16500],
+			["shounka_a3_audiq7_v2_gendarmerie",16500],
 
 		//BMW
 			["DAR_M3CivBlack",17500],
@@ -2313,6 +2336,7 @@ life_garage_sell =
 			["Mrshounka_bmwm1_civ_grise",20000],
 			["Mrshounka_bmwm1_civ_violet",20000],
 			["Mrshounka_bmwm1_civ_orange",20000],
+			["Mrshounka_bmw_gend",20000],
 			["Mrshounka_bmwm6_noir",25000],
 			["Mrshounka_bmwm6_bleufonce",25000],
 			["Mrshounka_bmwm6_rouge",25000],
@@ -2332,6 +2356,7 @@ life_garage_sell =
 			["cl3_e60_m5_burgundy",22500],
 			["cl3_e60_m5_black",22500],
 			["DRPG_12M5_Black",22500],
+			["DRPG_12M5_DOJ",22500],
 			["DRPG_12M5_White",22500],
 			["DRPG_12M5_Red",22500],
 			["DRPG_12M5_blue",22500],
@@ -2378,6 +2403,7 @@ life_garage_sell =
 			["Mrshounka_agera_p_noir",60000],
 			["Mrshounka_agera_p_bleu",60000],
 			["Mrshounka_agera_p_jaune",60000],
+			["Mrshounka_agera_gend_p",60000],
 
 		//Alfa Romeo
 			["Mrshounka_Alfa_Romeo_noir",15000],
@@ -2780,6 +2806,7 @@ life_garage_sell =
 			["AM_09Tahoe_P_Sheriff",12500],
 			["AM_09Tahoe_U_T",12500],
 			["DRPG_06Suburban_P_FBI",10000],
+			["DRPG_06Suburban_DOJ",10000],
 			["DRPG_06Suburban_P_LVPD",10000],
 			["DRPG_06Suburban_P_Sheriff",10000],
 			["DRPG_06Suburban_P_State",10000],
@@ -2827,6 +2854,8 @@ life_garage_sell =
 			["DRPG_12M5_P_SHERIFF",15000],
 			["DRPG_12M5_P_FBI",15000],
 			["DRPG_12M5_P_STATE",15000],
+			["DRPG_09Tahoe_EMS", 250],
+			["DRPG_09Tahoe_DOJ", 250],
 
 		//Cop Air
 

@@ -97,7 +97,9 @@ switch (_filter) do
 		_ret pushBack ["TRYK_H_PASGT_BLK","Einsatzhelm LVPD",5];
 		_ret pushBack ["H_Titan_Helmet","Bombenhelm klein",10];
 		_ret pushBack ["H_Bombsuit_Helmet","Bombenhelm groß",15];
-		_ret pushBack ["H_Beret_C","Beret (blau)",1];
+		_ret pushBack ["H_Beret_blk",nil,10];
+		_ret pushBack ["H_Beret_Colonel",nil,10];
+		_ret pushBack ["H_Beret_C",nil,10];
 	};
 	
 	//Glasses

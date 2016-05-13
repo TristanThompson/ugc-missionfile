@@ -32,7 +32,7 @@ switch (_shop) do
 	case "baumarkt": {["Baumarkt",["laminat","grillkohle","axt"]]};
 	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","nothammer","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","fuelF"]]};
 	case "butcher": {["Bob's Metzgerei",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
-	case "adac": {["LAC Werkbank",["water","rabbit","apple","redgull","tbacon","lockpick","nothammer","fuelE","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
+	case "adac": {["LAC Werkbank",["water","coffee","rabbit","apple","redgull","tbacon","donuts","keks","pizzabrot","pizza","nothammer","fuelE","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "adacdriver": {["LAC Formular Druck",["permdriverformular"]]};
 	case "coppresse": {["Firmen-Lizenzen",["presseformular","taxischeinformular"]]};
 	case "copausbilder": {["Ausbilder Shop",["flugscheinformular","taktikformular","presseformular","taxischeinformular","fbiformular","swatformular"]]};

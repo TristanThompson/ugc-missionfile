@@ -1323,14 +1323,20 @@ switch (_shop) do
 			//_return pushBack ["A3L_CVBlue",15000];
 			//_return pushBack ["A3L_TaurusBlack",17500];
 			//_return pushBack ["A3L_TaurusBlue",17500];
-			_return pushBack ["cl3_z4_2008_black",37500];
+			//_return pushBack ["cl3_z4_2008_black",37500];
 			//_return pushBack ["shounka_a3_rs5_civ_noir",40000];
 			//_return pushBack ["cl3_e63_amg_black",40000];
 			//_return pushBack ["cl3_e60_m5_black",45000];
 			//_return pushBack ["Mrshounka_bmwm6_noir",50000];
 			//_return pushBack ["wirk_cayenne",70000];
-			_return pushBack ["ivory_c",110000];
+			//_return pushBack ["ivory_c",110000];
 			//_return pushBack ["Nhz_audia8limo",125000];
+			_return pushBack ["DRPG_12M5_DOJ",45000];
+			_return pushBack ["DRPG_06Suburban_DOJ",25000];
+			_return pushBack ["DRPG_06Victoria_DOJ",15000];
+			_return pushBack ["DRPG_09Tahoe_DOJ",30000];
+			_return pushBack ["DRPG_12Charger_DOJ",30000];
+			_return pushBack ["DRPG_15Charger_DOJ",35000];
 		};
 	};
 

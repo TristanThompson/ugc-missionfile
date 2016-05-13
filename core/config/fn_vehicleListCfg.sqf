@@ -1323,12 +1323,8 @@ switch (_shop) do
 			//_return pushBack ["A3L_CVBlue",15000];
 			//_return pushBack ["A3L_TaurusBlack",17500];
 			//_return pushBack ["A3L_TaurusBlue",17500];
-<<<<<<< HEAD
 			_return pushBack ["A3L_JailBus",17500];
 			_return pushBack ["cl3_z4_2008_black",37500];
-=======
-			//_return pushBack ["cl3_z4_2008_black",37500];
->>>>>>> origin/master
 			//_return pushBack ["shounka_a3_rs5_civ_noir",40000];
 			//_return pushBack ["cl3_e63_amg_black",40000];
 			//_return pushBack ["cl3_e60_m5_black",45000];

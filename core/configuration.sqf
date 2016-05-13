@@ -1721,6 +1721,9 @@ life_garage_prices =
 		["DRPG_12M5_P_FBI",300],
 		["DRPG_12M5_P_STATE",300],
 
+		//Doge Charger RT
+		["SLB2k11_ChargerRT_black",350],
+
 	//Cop Air
 
 		["ivory_b206_police",800],
@@ -2645,6 +2648,9 @@ life_garage_sell =
 			["shounka_ivceco_grise",40000],
 			["shounka_ivceco_violet",40000],
 			["shounka_ivceco_orange",40000],
+
+			//Doge Charger RT
+			["SLB2k11_ChargerRT_black",51000],
 
 		//Volvo LKW
 			["ALFR_GeK_Volvo_FH16_2012",40000],

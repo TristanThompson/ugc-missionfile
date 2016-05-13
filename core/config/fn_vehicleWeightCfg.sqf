@@ -969,7 +969,8 @@ switch (_className) do
 //DAF
 	case "Ugc_daf_Container": {350};
 
-
+//Doge Charger RT
+case "SLB2k11_ChargerRT_black": {50};
 	//Mack LKW
 	case "cl3_mackr_blue": {225};
 	case "Jonzie_Superliner": {200};

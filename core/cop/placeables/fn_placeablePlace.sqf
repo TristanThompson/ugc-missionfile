@@ -23,6 +23,8 @@ _object enableSimulationGlobal false;
 _originalPos = position _object;
 _playerOriginalPos = position player;
 
+hint "Du kannst mit der Leertaste das Objekt plazieren!";
+
 waitUntil{
   if (life_barrier_activeObj distance _originalPos > _allowMoveDistance || player distance _playerOriginalPos > _allowMoveDistance) then {
       [true] call life_fnc_placeableCancel;

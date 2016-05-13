@@ -56,7 +56,7 @@ class Life_Cop_Placeables {
               };
               class RemoveAll : life_RscButtonMenu {
                 idc = -1;
-                text = "Alle Löschen";
+                text = "Löschen";
                 onButtonClick = "[] call life_fnc_placeablesRemoveAll";
                 x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
                 y = 0.8 - (1 / 25);

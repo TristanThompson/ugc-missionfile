@@ -47,12 +47,12 @@ switch (_state) do
 		license_civ_bike = false;
 	};
 	
-//	//Erschossen von Cop
-//	case 3:
-//	{
-//		license_civ_rebel = false;
-//		systemChat "LIZENZ> Rebellen-Lizenz entzogen!";
-//	};
+	//Erschossen von Cop
+	case 3:
+	{
+		license_civ_rebel = false;
+		systemChat "LIZENZ> Rebellen-Lizenz entzogen!";
+	};
 
 	
 	// Drivers License

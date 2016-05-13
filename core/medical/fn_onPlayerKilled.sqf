@@ -84,7 +84,7 @@ _container = nearestObjects[getPosATL _unit,["WeaponHolderSimulated"],4];
 //Killed by cop stuff...
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
-	[3] remoteExecCall ["life_fnc_removeLicenses",player];
+	[3,0] remoteExecCall ["life_fnc_removeLicenses",player];
 	//Did I rob the federal reserve?
 	if(!life_use_atm && {v4r14t0X_isTc00L > 0}) then {
 		[format[localize "STR_Cop_RobberDead",[v4r14t0X_isTc00L] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",-2];

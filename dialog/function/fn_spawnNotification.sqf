@@ -3,7 +3,7 @@
 	File: fn_dynamixErrorMsg.sqf
 	Author: Marcel "Variatox" Koch
 	Server: lakeside-reallife.de
-	
+
 	Description:
 	Dynamische Nachricht für den Spieler wo er aufgewacht ist.
 */
@@ -42,7 +42,7 @@ switch (_sp) do {
 	case _RBHof: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen beim ","align = 'center' size = '0.6'"],["","<br/>"],["      Rebellen Bauernhof","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
 	case _JVA: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen zur ","align = 'center' size = '0.6'"],["","<br/>"],["      Justizvollzugsanstalt","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
 	case _FBHQ: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen im ","align = 'center' size = '0.6'"],["","<br/>"],["      Fort Baxter HQ","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
-	case _HWHQ: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen zum ","align = 'center' size = '0.6'"],["","<br/>"],["      Highway Dept.","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
+	case _HWHQ: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen im ","align = 'center' size = '0.6'"],["","<br/>"],["      Highway Dept.","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
 	case _ZKH: {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen beim ","align = 'center' size = '0.6'"],["","<br/>"],["     Zentralklinikum","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
 	default {[[["","<br/><br/><br/><br/><br/><br/><br/>"],["Willkommen in ","align = 'center' size = '0.6'"],["","<br/>"],["      Lakeside Valley","align = 'center' size = '0.7' font='PuristaBold'"]]] spawn BIS_fnc_typeText2;};
 

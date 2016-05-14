@@ -1,7 +1,7 @@
 /*
 	File: fn_clothingMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Opens and initializes the clothing store menu.
 	Started clean, finished messy.
@@ -28,12 +28,16 @@ if((_this select 3) == "justiz" && playerSide != east) exitWith {hint "Du gehör
 
 life_clothing_store = _this select 3;
 
-//License Check?
-_var = [life_clothing_store,0] call life_fnc_licenseType;
-if(_var select 0 != "") then
-{
-	if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format[localize "STR_Shop_YouNeed",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
-};
+if(!(life_clothing_store == "fbi" OR life_clothing_store == "state")){ //Temp Fix
+	//License Check?
+	_var = [life_clothing_store,0] call life_fnc_licenseType;
+	if(_var select 0 != "") then
+	{
+		if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format[localize "STR_Shop_YouNeed",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
+	};
+} //Temp Fix
+
+
 
 //initialize camera view
 life_shop_cam = "CAMERA" camCreate getPos player;
@@ -98,12 +102,12 @@ if(isNil "life_clothesPurchased") exitWith
 			};
 		};
 	};
-	
+
 	if(count life_oldUniformItems > 0) then
 	{
 		{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldUniformItems;
 	};
-	
+
 	if(vest player != "") then
 	{
 		if(life_oldVest == "") then
@@ -137,7 +141,7 @@ if((life_clothing_purchase select 2) == -1) then
 {
 	if(life_oldGlasses != goggles player) then
 	{
-		if(life_oldGlasses == "") then 
+		if(life_oldGlasses == "") then
 		{
 			removeGoggles player;
 		}

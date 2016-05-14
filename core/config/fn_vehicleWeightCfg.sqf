@@ -967,7 +967,7 @@ switch (_className) do
 	case "Jonzie_Log_Truck": {325};
 	case "Jonzie_Box_Truck": {350};
 //DAF
-	case "Ugc_daf_Container": {350};
+	case "Ugc_Daf_Container": {350};
 
 //Doge Charger RT
 case "SLB2k11_ChargerRT_black": {50};

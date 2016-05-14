@@ -1517,6 +1517,9 @@ life_garage_prices =
 		["Jonzie_Box_Truck",750],
 		["Jonzie_Log_Truck",800],
 
+		//DAF
+			["Ugc_Daf_Container",750],
+
 	//Mack LKW
 		["cl3_mackr_blue",700],
 		["Jonzie_Superliner",750],
@@ -2655,7 +2658,7 @@ life_garage_sell =
 		//Volvo LKW
 			["ALFR_GeK_Volvo_FH16_2012",40000],
 		//DAF
-			["Ugc_daf_Container",40000],
+			["Ugc_Daf_Container",40000],
 
 		//Man LKW
 			["Jonzie_Flat_Bed",37750],

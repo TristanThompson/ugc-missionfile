@@ -1,7 +1,7 @@
 /*
 	File: fn_onPlayerKilled.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	When the player dies collect various information about that player
 	and pull up the death dialog / camera functionality.
@@ -47,20 +47,20 @@ _unit spawn
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
 
-	
+
 	_maxTime = time + (life_respawn_timer * 1);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
-	
+
 	if (Life_request_timer) then {
 	_maxTime = time + (life_respawn_timer * 1);
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this};
 	};
-	
+
 	Life_request_timer = false; //resets increased respawn timer
-	
+
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
@@ -116,6 +116,11 @@ v4r14t0X_isTc00L = 0;
 [player,life_sidechat,playerSide] remoteExec ["TON_fnc_managesc",2];
 _format = format["%1 (%2) wurde von %3 (%4) getötet.",name player,getPlayerUID player, name _killer, getPlayerUID _killer];
 [_format,0] remoteExecCall ["UGC_fnc_sendToYourMom",2];
-[_killer getVariable ["steam64ID",getPlayerUID _killer], _killer getVariable ["realname", name _killer], getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
+
+if (isNull _killer) then {
+	["NO KILLER","NO KILLER", getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
+} else {
+	[_killer getVariable ["steam64ID",getPlayerUID _killer], _killer getVariable ["realname", name _killer], getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
+};
 
 [] call SOCK_fnc_updateRequest;

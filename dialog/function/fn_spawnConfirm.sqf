@@ -1,7 +1,7 @@
 /*
 	File: fn_spawnConfirm.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Spawns the player where he selected.
 */
@@ -13,19 +13,19 @@ if(count life_spawn_point == 0) then
 	private["_sp","_spCfg"];
 	_spCfg = [playerSide] call life_fnc_spawnPointCfg;
 	_sp = _spCfg select 0;
-	
+
 	if(playerSide == civilian) then
 	{
 		if(isNil {(call compile format["%1", _sp select 0])}) then {
 			player setPos (getMarkerPos (_sp select 0));
-			
+
 			// Run our code for hospital spawn
-			if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
+			if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then
 			{
 				[] call A3L_Fnc_HospitalSpawn;
-			};			
-			
-			
+			};
+
+
 		} else {
 			_spawnPos = (call compile format["%1", _sp select 0]) call BIS_fnc_selectRandom;
 			_spawnPos = _spawnPos buildingPos 0;
@@ -37,10 +37,10 @@ if(count life_spawn_point == 0) then
 		player setPos (getMarkerPos (_sp select 0));
 
 		// Run our code for hospital spawn
-		if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
+		if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then
 		{
 		[] call A3L_Fnc_HospitalSpawn;
-		};					
+		};
 	};
 	[_sp select 1] call life_fnc_spawnNotification;
 }
@@ -57,7 +57,7 @@ if(count life_spawn_point == 0) then
 				if(count _bPos == 0) exitWith {
 					player setPos (getMarkerPos (life_spawn_point select 0));
 				};
-				
+
 				{_bPos = _bPos - [(_house buildingPos _x)];} foreach (_house getVariable ["slots",[]]);
 				_pos = _bPos call BIS_fnc_selectRandom;
 				player setPosATL _pos;

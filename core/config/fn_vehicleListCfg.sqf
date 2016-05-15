@@ -1465,7 +1465,7 @@ switch (_shop) do
 	case "fbi_cars":
 	{
 		if(playerSide != west) exitWith {hint "Keine Berechtigung."};
-		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"};
+		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"; closeDialog 0;};
 		_return =
 		[
 		//Suburban 2008

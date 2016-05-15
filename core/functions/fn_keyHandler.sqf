@@ -567,6 +567,12 @@ switch (_code) do
 
 	case 211:
 	{
+		if((typeOf cursorTarget) in (life_placeables select 1)) then
+		{
+			deleteVehicle cursorTarget;
+			hint "Du hast das Objekt entfernt!";
+		};
+
 		if (_alt && _ctrlKey) then
 		{
 			diag_log format ["SERVER INFO: %1 verwendet CTRL + ALT + DEL",_player getVariable["realname",name _player]];

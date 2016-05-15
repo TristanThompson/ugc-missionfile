@@ -3,11 +3,14 @@ Description: Placeables for the cop\medic sides.
 Disclaimer: Don't be a asshole and pass this off as your own or become a KAI and sell it for profit, Im releasing this for FREE...
 Credits: Killerty69 for a second pare of eyes when mine got to sleepy
 P.S. - Don't be a faggot like i know some of you all will be.
+
+  edited: Bastian "Janl1.DE" Schumacher
+  Server: lakeside-reallife.de
 */
 
 disableSerialization;
 if (count life_bar_placey >= life_bar_limit) exitWith {
-  hint "You've reached the limit of objects you can place.";
+  hint "Du hast das Limit an Objekten erreicht!";
 };
 
 _display = findDisplay 20000;
@@ -23,7 +26,7 @@ _object enableSimulationGlobal false;
 _originalPos = position _object;
 _playerOriginalPos = position player;
 
-hint "Du kannst mit der Leertaste das Objekt plazieren!";
+hint "Du kannst das Objekt mit der Leertaste plazieren!";
 
 waitUntil{
   if (life_barrier_activeObj distance _originalPos > _allowMoveDistance || player distance _playerOriginalPos > _allowMoveDistance) then {

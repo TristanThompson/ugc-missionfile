@@ -100,7 +100,7 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 			
 			_onTsServer = "[GER] Lakeside Reallife - Lebe deinen Traum" == (call TFAR_fnc_getTeamSpeakServerName);
 			if (!(_onTsServer)) then {
-				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 37.187.174.105", "BLACK"];
+				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: ts.ug-c.de", "BLACK"];
 				A3L_onTsServer = false;
 			} else {
 				if (!(A3L_onTsServer)) then {

@@ -105,5 +105,4 @@ if(_rip) then
     [1,format["NEWS - Lakeside City: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shopName, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",-2];
 
 };
-
 [_shop,_robber,_action,0] remoteExec ["TON_fnc_shopStateBank",2];

@@ -104,5 +104,4 @@ if(_rip) then
     if!(alive _robber) exitWith {};
     [1,format["112 - Morrison Town: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shopName, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
 };
-
 [_shop,_robber,_action,0] remoteExec ["TON_fnc_shopStateBank",2];

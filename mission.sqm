@@ -4910,7 +4910,7 @@ class Mission
 			side="EMPTY";
 			vehicle="cg_precious_metal";
 			skill=0.60000002;
-			text="LosDiablosBank_1";
+			text="LakesideBank";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Bank Ausrauben"",life_fnc_robBankLS];";
 		};
 		class Item130
@@ -22142,7 +22142,7 @@ class Mission
 			side="EMPTY";
 			vehicle="A3L_MoneyPile";
 			skill=0.60000002;
-			text="bankmorrison";
+			text="MorrisonTownBank";
 			init="this enableSimulation true;this allowDamage false;this setdir 268.99;this setposATL [5501.0766602,3007.598145,3.95013];this setVectorUp [0,0,1];this addAction[""Bank Ausrauben"",life_fnc_robBankMT];";
 		};
 		class Item1834

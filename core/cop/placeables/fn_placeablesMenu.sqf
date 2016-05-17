@@ -7,6 +7,9 @@ P.S. - Don't be a faggot like i know some of you all will be.
 */
 
 disableSerialization;
+if (life_barrier_active) then {
+    hint "Du hast bereits eine Absperrung vor deiner Nase!";
+};
 createDialog "life_cop_placeables";
 waitUntil { !isNull(findDisplay 20000) };
 

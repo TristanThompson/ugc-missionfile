@@ -86,7 +86,8 @@ switch (playerSide) do {
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
-	_vehicle setVariable ["plateString",_plate,true];
+	_finalplate = format ["%1",_plate];
+	_vehicle setVariable ["plateString",_finalplate,true];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
@@ -100,7 +101,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 //	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
-	_vehicle setVariable ["plateString",_plate,true];
+	_finalplate = format ["%1",_plate];
+	_vehicle setVariable ["plateString",_finalplate,true];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;

@@ -66,22 +66,24 @@ switch (_code) do
 	//Oe Taste
 	case 39:
 	{
-		switch (playerSide) do {
-		  case west: {
-				[] spawn life_fnc_placeablesMenu;
-				_handled = true;
-			};
-
-			case independent: {
-				[] spawn life_fnc_placeablesMenu;
-				_handled = true;
-			};
-
-			case east: {
-				_adaclevel = call life_adaclevel;
-				if(_adaclevel < 9) then {
+		if (isNull(findDisplay 20000)) then {
+			switch (playerSide) do {
+				case west: {
 					[] spawn life_fnc_placeablesMenu;
 					_handled = true;
+				};
+
+				case independent: {
+					[] spawn life_fnc_placeablesMenu;
+					_handled = true;
+				};
+
+				case east: {
+					_adaclevel = call life_adaclevel;
+					if(_adaclevel < 9) then {
+						[] spawn life_fnc_placeablesMenu;
+						_handled = true;
+					};
 				};
 			};
 		};

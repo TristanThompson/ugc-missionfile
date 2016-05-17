@@ -58,6 +58,8 @@ class Life_Cop_Placeables {
                 idc = -1;
                 text = "Löschen";
                 onButtonClick = "[] call life_fnc_placeablesRemoveAll";
+                tooltip = "ACHTUNG: Du löscht alle Objekte die du platziert hast!";
+                colorBackground[] = {0.584, 0.086, 0.086,1.0};
                 x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
                 y = 0.8 - (1 / 25);
                  w = (6.25 / 40);
@@ -65,8 +67,8 @@ class Life_Cop_Placeables {
                 };
 
                 class Place : Life_RscButtonMenu {
-                  idc = -1;            
-                  text = "Plazieren";
+                  idc = -1;
+                  text = "Platzieren";
                   colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
                   onButtonClick = "[] spawn life_fnc_placeablePlace;";
                   x = 0.32;

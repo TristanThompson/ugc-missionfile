@@ -1033,7 +1033,17 @@ switch (_shop) do
 			["shounka_limo_civ_rose",125000],
 			["shounka_limo_civ_grise",125000],
 			["shounka_limo_civ_violet",125000],
-			["shounka_limo_civ_orange",125000]
+			["shounka_limo_civ_orange",125000],
+
+			//Buggys
+			["shounka_buggy_noir",140000],
+			["shounka_buggy_grise",140000],
+			["shounka_buggy_rouge",140000],
+			["shounka_buggy_jauwne",140000],
+			["shounka_buggy_bleufonce",140000],
+			["shounka_buggy_violet",140000],
+			["shounka_buggy_orange",140000],
+			["shounka_buggy_rose",140000]
 		//	["SLB2k11_ChargerRT_black",180000]
 		];
 	};

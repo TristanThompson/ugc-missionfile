@@ -1738,7 +1738,17 @@ life_garage_prices =
 		["GR_UH1H_3",500],
 		["GR_UH1D_1",500],
 		["MELB_MH6M",500],
-		["MELB_H6M",500]
+		["MELB_H6M",500],
+
+		//Buggys
+		["shounka_buggy_noir",600],
+		["shounka_buggy_grise",600],
+		["shounka_buggy_rouge",600],
+		["shounka_buggy_jauwne",600],
+		["shounka_buggy_bleufonce",600],
+		["shounka_buggy_violet",600],
+		["shounka_buggy_orange",600],
+		["shounka_buggy_rose",600]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -2879,7 +2889,17 @@ life_garage_sell =
 			["GR_UH1H_3",25000],
 			["GR_UH1D_1",25000],
 			["MELB_MH6M",25000],
-			["MELB_H6M",25000]
+			["MELB_H6M",25000],
+
+		//Buggys
+		["shounka_buggy_noir",70000],
+		["shounka_buggy_grise",70000],
+		["shounka_buggy_rouge",70000],
+		["shounka_buggy_jauwne",70000],
+		["shounka_buggy_bleufonce",70000],
+		["shounka_buggy_violet",70000],
+		["shounka_buggy_orange",70000],
+		["shounka_buggy_rose",70000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
 

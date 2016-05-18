@@ -569,7 +569,7 @@ switch (_code) do
 
 	case 211:
 	{
-		if((typeOf cursorTarget) in ["RoadCone_F","RoadCone_L_F","RoadBarrier_F","RoadBarrier_small_F","PlasticBarrier_03_orange_F","Land_CncBarrier_stripes_F","Land_PortableLight_single_F","Land_PortableLight_double_F"]) then
+		if((typeOf cursorTarget) in ["RoadCone_F","RoadCone_L_F","RoadBarrier_F","RoadBarrier_small_F","PlasticBarrier_03_orange_F","Land_CncBarrier_stripes_F","Land_PortableLight_single_F","Land_PortableLight_double_F"] && playerSide in ["west", "independent","east"]) then
 		{
 			deleteVehicle cursorTarget;
 			hint "Du hast das Objekt entfernt!";

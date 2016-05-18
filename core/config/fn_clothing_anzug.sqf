@@ -16,7 +16,6 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["KAEL_SUITS_BR_Judge",nil,250],
 			["KAEL_SUITS_BLK_F",nil,250],
 			["KAEL_SUITS_BR_F",nil,250],
 			["KAEL_SUITS_BR_F3",nil,250],
@@ -57,7 +56,7 @@ switch (_filter) do
 			["U_CivilianSuit_B",nil,250],
 			["TRYK_SUITS_BLK_F",nil,250],
 			["TRYK_SUITS_BR_F",nil,250],
-			
+
 			["U_CivilianCoat_D",nil,250],
 			["U_CivilianCoat_E",nil,250],
 			["U_CivilianCoat_F",nil,250],
@@ -69,7 +68,7 @@ switch (_filter) do
 			["U_MilitaryCoat_D",nil,250]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -78,7 +77,7 @@ switch (_filter) do
 			["kio_capital_hat","Zylinder",20]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -91,14 +90,14 @@ switch (_filter) do
 			["G_Lady_Blue",nil,5]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
 		[
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{

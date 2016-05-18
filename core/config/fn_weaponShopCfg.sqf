@@ -186,7 +186,7 @@ switch(_shop) do
 			case (playerSide != east): { };
 			case (__GETC__(life_adaclevel) <= 9): {"Du bist ein Mitarbeiter des LACs!"};
 			default {
-				["LAC Laden",
+				["Justiz Laden",
 					[
 						["TRYK_G_Shades_Black_NV","Brille Schwarz (Nightvision)",50],
 						["TRYK_G_Shades_Blue_NV","Brille Blau (Nightvision)",50],
@@ -749,6 +749,10 @@ switch(_shop) do
 			{
 				["Lt. bis CoP.",
 					[
+
+						//DEBUG TEST
+						["ACE_salineIV","ACE DEBUG",10],
+
 						//HK417 16"
 						["R3F_HK417M",nil,1800],
 						["R3F_20Rnd_762x51_HK417",nil,100],
@@ -1060,5 +1064,27 @@ switch(_shop) do
 				["Chemlight_blue","Ohrstöpsel",1]
 			]
 		];
+	};
+
+	case "justiz_waffen":
+	{
+		switch (true) do
+		{
+			case (playerSide != east): { };
+			case (__GETC__(life_adaclevel) <= 9): {"Du bist ein Mitarbeiter des LACs!"};
+			default {
+				["Justiz Waffen",
+					[
+						["tf_anarc164","Langstreckenfunk",50],
+						//SIG
+						["RH_p226",nil,1025],
+						["RH_15Rnd_9x19_SIG",nil,35],
+						//G19
+						["RH_g19",nil,850],
+						["RH_19Rnd_9x19_g18",nil,45]
+					]
+				];
+			};
+		};
 	};
 };

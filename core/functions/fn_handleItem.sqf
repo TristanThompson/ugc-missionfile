@@ -60,8 +60,8 @@ if(_bool) then
 			};
 			player addBackpack _item;
 			clearAllItemsFromBackpack player;
-			if(!isNil {_items}) then 
-			{ 
+			if(!isNil {_items}) then
+			{
 				{[_x,true,true,false,true] spawn life_fnc_handleItem; } foreach _items;
 			};
 		};
@@ -73,7 +73,7 @@ if(_bool) then
 			if(_ispack) exitWith {player addItemToBackpack _item;};
 
 			player addMagazine _item;
-			
+
 			if(_item == "SmokeShell") then {
 				player removeMagazine _item;
 				if(playerSide == independent) then {
@@ -86,7 +86,7 @@ if(_bool) then
 					player addItem "ACE_elasticBandage";
 					player addItem "ACE_elasticBandage";
 					player addItem "ACE_elasticBandage";
-					player addItem "ACE_elasticBandage";						
+					player addItem "ACE_elasticBandage";
 					player addItem "ACE_packingBandage";
 					player addItem "ACE_packingBandage";
 					player addItem "ACE_packingBandage";
@@ -110,9 +110,9 @@ if(_bool) then
 					player addItem "ACE_packingBandage";
 					player addItem "ACE_packingBandage";
 					player addItem "ACE_packingBandage";
-				};		
+				};
 			};
-			
+
 			if(_item == "SmokeShellRed") then {
 				player removeMagazine _item;
 				if(playerSide == independent) then {
@@ -121,7 +121,7 @@ if(_bool) then
 					player addItem "ACE_morphine";
 					player addItem "ACE_morphine";
 					player addItem "ACE_atropine";
-					player addItem "ACE_atropine";						
+					player addItem "ACE_atropine";
 				}
 				else
 				{
@@ -129,7 +129,7 @@ if(_bool) then
 					player addItem "ACE_morphine";
 				};
 			};
-			
+
 			if(_item == "SmokeShellGreen") then {
 				player removeMagazine _item;
 				if(playerSide == independent) then {
@@ -137,54 +137,54 @@ if(_bool) then
 					player addItem "ACE_tourniquet";
 					player addItem "ACE_tourniquet";
 					player addItem "ACE_tourniquet";
-					player addItem "ACE_tourniquet";						
+					player addItem "ACE_tourniquet";
 				}
 				else
 				{
 					player addItem "ACE_tourniquet";
 				};
 			};
-			
-			
+
+
 			if(_item == "SmokeShellYellow") then {
 				player removeMagazine _item;
 				player addItem "ACE_personalAidKit";
 			};
-			
+
 			if(_item == "SmokeShellPurple") then {
 				player removeMagazine _item;
 				player addItem "ACE_salineIV";
 			};
-			
+
 			if(_item == "SmokeShellBlue") then {
 				player removeMagazine _item;
 				player addItem "ACE_plasmaIV";
 			};
-			
+
 			if(_item == "SmokeShellOrange") then {
 				player removeMagazine _item;
 				player addItem "ACE_bloodIV";
 			};
-			
+
 			if(_item == "Chemlight_green") then {
 				player removeMagazine _item;
 				player addItem "ACE_bodyBag";
 			};
-			
+
 			if(_item == "Chemlight_red") then {
 				player removeMagazine _item;
 				player addItem "ACE_Flashlight_MX991";
 			};
-			
+
 			if(_item == "Chemlight_yellow") then {
 				player removeMagazine _item;
 				player addItem "ACE_Flashlight_XL50";
 			};
-			
+
 			if(_item == "Chemlight_blue") then {
 				player removeMagazine _item;
 				player addItem "ACE_EarPlugs";
-			};	
+			};
 
 			if(_item == "HandGrenade_Stone") then {
 				player removeMagazine _item;
@@ -216,8 +216,8 @@ if(_bool) then
 
 			if(_isgun) then
 			{
-				if(!_ispack && _override) exitWith {}; //It was in the vest/uniform, try to close to prevent it overriding stuff... (Actual weapon and not an item)
-				if(_item == "MineDetector") then
+				//if(!_ispack && _override) exitWith {}; //DEBUG TEST
+				if(_item == "MineDetector" OR _item == "ACE_salineIV") then
 				{
 					player addItem _item;
 				}
@@ -230,7 +230,7 @@ if(_bool) then
 			{
 				switch(_details select 5) do
 				{
-					case 0: 
+					case 0:
 					{
 						if(_ispack) then
 						{
@@ -244,19 +244,19 @@ if(_bool) then
 							}
 								else
 							{
-								if(_item in (assignedItems  player)) then 
+								if(_item in (assignedItems  player)) then
 								{
 									player addItem _item;
-								} 
-									else 
+								}
+									else
 								{
-									player addItem _item; 
+									player addItem _item;
 									player assignItem _item;
 								};
 							};
 						};
 					};
-					case 605: 
+					case 605:
 					{
 						if(_ispack) then
 						{
@@ -285,7 +285,7 @@ if(_bool) then
 							};
 						};
 					};
-					case 801: 
+					case 801:
 					{
 						if(_ispack) then
 						{
@@ -313,7 +313,7 @@ if(_bool) then
 											{player addItemToUniform _x} foreach _items;
 										};
 									};
-								} else {									
+								} else {
 									if(uniform player != "") then {
 										_items = uniformItems player;
 										removeUniform player;
@@ -333,7 +333,7 @@ if(_bool) then
 					};
 					case 701:
 					{
-						if(_ispack) then 
+						if(_ispack) then
 						{
 							player addItemToBackpack _item;
 						}
@@ -438,7 +438,7 @@ if(_bool) then
 							_type = [_item,301] call life_fnc_accType;
 
 							if(_ongun) then
-							{ 
+							{
 								switch (_type) do
 								{
 									case 1: { player addPrimaryWeaponItem _item; };
@@ -584,13 +584,13 @@ if(_bool) then
 						};
 					};
 
-					default 
-					{ 
-						if(_ispack) then 
+					default
+					{
+						if(_ispack) then
 						{
 							player addItemToBackpack _item;
-						} 
-							else 
+						}
+							else
 						{
 							player addItem _item;
 						};
@@ -675,7 +675,7 @@ if(_bool) then
 									_numVestWeps = _tWeaponCount select _forEachIndex;
 									if(_x == _this) then
 									{
-										_numVestWeps = _numVestWeps - 1;                        
+										_numVestWeps = _numVestWeps - 1;
 									};
 									(uniformContainer player) addWeaponCargo [ _x,_numVestWeps];
 								}forEach _tWeapons;
@@ -690,7 +690,7 @@ if(_bool) then
 									_numVestWeps = _tWeaponCount select _forEachIndex;
 									if(_x == _this) then
 									{
-										_numVestWeps = _numVestWeps - 1;                        
+										_numVestWeps = _numVestWeps - 1;
 									};
 									(vestContainer player) addWeaponCargo [ _x,_numVestWeps];
 								}forEach _tWeapons;
@@ -705,7 +705,7 @@ if(_bool) then
 									_numVestWeps = _tWeaponCount select _forEachIndex;
 									if(_x == _this) then
 									{
-										_numVestWeps = _numVestWeps - 1;                        
+										_numVestWeps = _numVestWeps - 1;
 									};
 									(backpackContainer player) addWeaponCargo [ _x,_numVestWeps];
 								}forEach _tWeapons;
@@ -739,7 +739,7 @@ if(_bool) then
 					case 701: {if(vest player == _item) then {removeVest player} else {player removeItem _item};};
 					case 621: {player unassignItem _item; player removeItem _item;};
 					case 616: {player unassignItem _item; player removeItem _item;};
-					default 
+					default
 					{
 						switch (true) do
 						{

@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_justiz.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Uniform Shop für Justiz
 */
@@ -63,7 +63,7 @@ switch (_filter) do
 			["TRYK_SUITS_BR_F",nil,250]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -73,19 +73,19 @@ switch (_filter) do
 			["H_Hat_Taqiyah_C",nil,5],
 			["H_Hat_Taqiyah_D",nil,5],
 			["H_Hat_Taqiyah_E",nil,5],
-			
+
 			["H_Hat_Turban_A",nil,5],
 			["H_Hat_Turban_B",nil,5],
 			["H_Hat_Turban_C",nil,5],
 			["H_Hat_Turban_D",nil,5],
 			["H_Hat_Turban_E",nil,5],
-			
+
 			["A3L_longhairblack","Lang-Haar Schwarz",10],
 			["A3L_longhairblond","Lang-Haar Blond",10],
 			["A3L_longhairbrown","Lang-Haar Braun",10]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -109,7 +109,7 @@ switch (_filter) do
 			["SFG_Tac_chinlessbO","Chinless Beard (Alt)",10]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
@@ -117,7 +117,7 @@ switch (_filter) do
 			["A3L_policevest2","Justiz Weste",15]
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{

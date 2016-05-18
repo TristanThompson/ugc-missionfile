@@ -73,7 +73,7 @@ lrl_copSiren_vehAggro_active = false;
 lrl_copSiren_vehPlease_active = false;
 lrl_firstSpawn = true;
 lrl_licenseGotRemoved = false;
-lrl_version = "BackpacksOnTRUE443514a";
+lrl_version = "BackpacksOnTRUE725487a";
 
 
 //Persistent Saving

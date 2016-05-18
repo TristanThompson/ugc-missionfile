@@ -751,8 +751,8 @@ switch(_shop) do
 					[
 
 						//DEBUG TEST
-						["ACE_salineIV","ACE DEBUG",10],
-						["ACE_quikclot","ACE DEBUG2",10],
+						//["ACE_salineIV","ACE DEBUG",10],
+						//["ACE_quikclot","ACE DEBUG2",10],
 
 						//HK417 16"
 						["R3F_HK417M",nil,1800],

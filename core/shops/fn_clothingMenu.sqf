@@ -28,14 +28,14 @@ if((_this select 3) == "justiz" && playerSide != east) exitWith {hint "Du gehör
 
 life_clothing_store = _this select 3;
 
-if(!(life_clothing_store == "fbi" OR life_clothing_store == "state")){ //Temp Fix
+if(!(life_clothing_store == "fbi" OR life_clothing_store == "state")) then { //Temp Fix
 	//License Check?
 	_var = [life_clothing_store,0] call life_fnc_licenseType;
 	if(_var select 0 != "") then
 	{
 		if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format[localize "STR_Shop_YouNeed",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
 	};
-} //Temp Fix
+}; //Temp Fix
 
 
 

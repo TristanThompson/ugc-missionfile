@@ -39,13 +39,14 @@ life_vInact_curTarget = _curTarget;
 _Btn7 ctrlEnable false;
 _Btn8 ctrlShow false;
 
+_adaclevel = call life_adaclevel;
 
-if(__GETC__(life_adaclevel) >= 9) then {
+if(_adaclevel >= 9) then {
 	//Reparieren als Justizler
 	_Btn1 ctrlSetText localize "STR_vInAct_Repair";
 	_Btn1 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_repairTruck;";
 	_Btn1 ctrlEnable false;
-	if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true};
+	if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;};
 } else {
 	//Reparieren als LAC'ler
 	_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";

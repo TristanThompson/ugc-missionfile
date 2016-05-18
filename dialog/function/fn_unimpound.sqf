@@ -22,7 +22,6 @@ _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;
-
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call TON_fnc_index;

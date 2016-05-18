@@ -43,6 +43,7 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
 		__CONST__(life_medicLevel,0);
 		life_blacklisted = _this select 9;
+		player setVariable ["ugc_copNumber",parseNumber(_this select 10),true];
 		__CONST__(life_adacLevel,0);
 	};
 	
@@ -50,7 +51,7 @@ switch(playerSide) do {
 		life_is_arrested = _this select 7;
 		life_arrestMinutes = _this select 9;
 		life_arrestReason = _this select 10;
-		
+		player setVariable ["ugc_copNumber","0",true];
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		__CONST__(life_adacLevel,0);
@@ -72,12 +73,14 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		__CONST__(life_adacLevel,0);
+		player setVariable ["ugc_copNumber","0",true];
 	};
 
 	case east: {
 		__CONST__(life_adacLevel,parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		__CONST__(life_medicLevel,0);
+		player setVariable ["ugc_copNumber","0",true];
 	};
 };
 

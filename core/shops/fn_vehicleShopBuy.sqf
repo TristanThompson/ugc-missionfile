@@ -86,6 +86,8 @@ switch (playerSide) do {
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+	_copNumber = player getVariable "ugc_copNumber";
+	if(playerSide == west) then {_vehicle setVariable["ugc_copNumber_car",_copNumber]};
 	_finalplate = format ["%1",_plate];
 	_vehicle setVariable ["plateString",_finalplate,true];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -103,6 +105,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	_finalplate = format ["%1",_plate];
 	_vehicle setVariable ["plateString",_finalplate,true];
+	_copNumber = player getVariable "ugc_copNumber";
+	if(playerSide == west) then {_vehicle setVariable["ugc_copNumber_car",_copNumber]};
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;

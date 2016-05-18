@@ -1,7 +1,7 @@
 /*
 	File: fn_vInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Replaces the mass addactions for various vehicle actions
 */
@@ -36,13 +36,28 @@ _Btn8 = _display displayCtrl Btn8;
 life_vInact_curTarget = _curTarget;
 
 //Unused Buttons
-_Btn7 ctrlEnable false;	
+_Btn7 ctrlEnable false;
 _Btn8 ctrlShow false;
 
-//Repair
-_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
-_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
-_Btn1 ctrlEnable false;
+
+if(__GETC__(life_adaclevel) >= 9) then {
+	//Reparieren als Justizler
+	_Btn1 ctrlSetText localize "STR_vInAct_Repair";
+	_Btn1 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_repairTruck;";
+	_Btn1 ctrlEnable false;
+	if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true};
+} else {
+	//Reparieren als LAC'ler
+	_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
+	_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
+	_Btn1 ctrlEnable false;
+
+	if("A3l_Spanner" in (items player) OR currentWeapon player == "A3l_Spanner") then {
+		if(damage _curTarget < 1) then {
+			_Btn1 ctrlEnable true;
+		};
+	};
+};
 
 //Impound Vehicle
 _Btn2 ctrlSetText localize "STR_vInAct_Impound";
@@ -51,12 +66,6 @@ _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; clo
 //Vehicle Owner Check
 _Btn5 ctrlSetText localize "STR_vInAct_Registration";
 _Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-
-if("A3l_Spanner" in (items player) OR currentWeapon player == "A3l_Spanner") then {
-	if(damage _curTarget < 1) then {
-		_Btn1 ctrlEnable true;
-	};
-};
 
 _Btn6 ctrlSetText localize "STR_vInAct_Einschlagen";
 _Btn6 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_scheibeEinschlagen;";

@@ -2,7 +2,7 @@
 	File: fn_removeLicenses.sqf
 	Author: Bryan "Tonic" Boardwine
 		edited: Bastian "Janl1.DE" Schumacher
-	
+
 	Description:
 	Used for stripping certain licenses off of civilians as punishment.
 */
@@ -27,7 +27,7 @@ switch (_state) do
 			hint localize "STR_Civ_LicenseRemove_3";
 		};
 	};
-	
+
 	//Jail licenses
 	case 1:
 	{
@@ -37,7 +37,7 @@ switch (_state) do
 		license_civ_taxischein = false;
 		hint localize "STR_Jail_LicenseNOTF";
 	};
-	
+
 	//Führerschein nach Tod
 	case 2:
 	{
@@ -46,7 +46,7 @@ switch (_state) do
 		license_civ_bus = false;
 		license_civ_bike = false;
 	};
-	
+
 	//Erschossen von Cop
 	case 3:
 	{
@@ -54,7 +54,7 @@ switch (_state) do
 		systemChat "LIZENZ> Rebellen-Lizenz entzogen!";
 	};
 
-	
+
 	// Drivers License
 	case 10:
 	{

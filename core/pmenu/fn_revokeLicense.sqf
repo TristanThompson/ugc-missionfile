@@ -1,7 +1,7 @@
 /*
 	File: fn_revokeLicense.sqf
 	Author: Michael Francis
-	
+
 	Description:
 	Allows cops to revoke individual licenses, or all licenses. Vehicle related only.
 */
@@ -23,7 +23,7 @@ _Btn7 = _display displayCtrl 41008;
 life_pInact_curTarget = _curTarget;
 
 //Driver License
-_Btn1 buttonSetAction "[10,1] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn1 buttonSetAction "[10,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Truck License
 _Btn2 buttonSetAction "[11,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
@@ -41,4 +41,4 @@ _Btn5 buttonSetAction "[14,0] remoteExec [""life_fnc_removeLicenses"",life_pInac
 _Btn6 buttonSetAction "[15,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
 
 //Perm Führerschein
-_Btn7 buttonSetAction "[16,1] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";
+_Btn7 buttonSetAction "[19,0] remoteExec [""life_fnc_removeLicenses"",life_pInact_curTarget]; closeDialog 0;";

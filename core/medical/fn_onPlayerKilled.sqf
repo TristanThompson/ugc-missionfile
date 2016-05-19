@@ -117,10 +117,6 @@ v4r14t0X_isTc00L = 0;
 _format = format["%1 (%2) wurde von %3 (%4) getötet.",name player,getPlayerUID player, name _killer, getPlayerUID _killer];
 [_format,0] remoteExecCall ["UGC_fnc_sendToYourMom",2];
 
-if (isNull _killer) then {
-	["NO KILLER","NO KILLER", getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
-} else {
-	[_killer getVariable ["steam64ID",getPlayerUID _killer], _killer getVariable ["realname", name _killer], getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
-};
+[_killer getVariable ["steam64ID",getPlayerUID _killer], _killer getVariable ["realname", name _killer], getPlayerUID player, _unit getVariable["realname", profileName]] remoteExec ["UGC_fnc_logDead",2];
 
 [] call SOCK_fnc_updateRequest;

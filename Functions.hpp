@@ -355,6 +355,7 @@ class Life_Client_Core
 	class Civilian
 	{
 		file = "core\civilian";
+		class checkVehicleVIP {};
 		class removeWeapons {};
 		class jailMe {};
 		class jail {};
@@ -393,6 +394,7 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
+		class checkKennzeichen {};
 		class copMarkers {};
 		class copLights {};
 		class vehInvSearch {};

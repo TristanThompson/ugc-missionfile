@@ -151,6 +151,17 @@ class life_wanted_menu {
 			h = (1 / 25);
 		};
 		
+		class KennzeichenCheck : life_RscButtonMenu {
+			idc = 9802;
+			text = "Kennzeichen";
+			tooltip = "Die Leitstelle kann über diese Funktion das Kennzeichen prüfen!";
+			onButtonClick = "closeDialog 0; createDialog ""Life_Kennzeichen"";";
+			x = 0.3 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.9 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
 		class wantedText: Life_RscText
 		{
 			idc = 1000;

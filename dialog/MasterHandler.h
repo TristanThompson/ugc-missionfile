@@ -49,3 +49,5 @@
 #include "spawnPicture.hpp"
 //Objekte
 #include "placeables.hpp"
+#include "kennzeichen.hpp"
+#include "zulassung.hpp"

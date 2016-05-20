@@ -8,7 +8,7 @@
 
 class Life_zulassung
 {
-	idd = 9988;
+	idd = 2800;
 	name="life_zulassung";
 	movingEnabled = 0;
 	enableSimulation = 1;

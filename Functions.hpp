@@ -355,6 +355,7 @@ class Life_Client_Core
 	class Civilian
 	{
 		file = "core\civilian";
+		class getPlate {};
 		class checkVehicleVIP {};
 		class removeWeapons {};
 		class jailMe {};
@@ -515,6 +516,7 @@ class Life_Client_Core
 	class Dialog_Controls
 	{
 		file = "dialog\function";
+		class callBackPlayer {};
 		class setMapPosition {};
 		class displayHandler {};
 		class spawnConfirm {};

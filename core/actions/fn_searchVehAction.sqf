@@ -7,6 +7,7 @@ if(getDammage _vehicle == 1) exitWith {hintSilent "Der Besitzer ist 'Schrottkarr
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "landVehicle") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
+	_plate = _vehicle getVariable "plateString";
 	if(isNil {_owners}) exitWith {
 		hint "Fahrzeug wurde durch eine höhere Macht erstellt...";
 	};
@@ -22,5 +23,16 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "landVehicle") || !(_vehicle 
 	{
 		_owners = "Keine Halter. Beschlagnahmen!<br/>";
 	};
-	hint parseText format[localize "STR_NOTF_SearchVeh",_owners];
+	
+	_copnumber = _vehicle getVariable "ugc_copNumber_car";
+	_copnb = format ["%1", _copnumber];
+	
+		if(_copnb == "0") then {
+			hint parseText format[localize "STR_NOTF_SearchVeh",_owners, _plate];
+		} else {
+			_plateString = format ["LVPD-%1", _copnb];
+			hint parseText format[localize "STR_NOTF_SearchVeh",_owners, _plateString];
+		};
+	
+		
 };

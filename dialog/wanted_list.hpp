@@ -157,7 +157,7 @@ class life_wanted_menu {
 			tooltip = "Die Leitstelle kann über diese Funktion das Kennzeichen prüfen!";
 			onButtonClick = "closeDialog 0; createDialog ""Life_Kennzeichen"";";
 			x = 0.3 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.85 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};

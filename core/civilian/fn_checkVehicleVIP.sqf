@@ -19,7 +19,8 @@ _kennzeichen = ctrlText 9983;
 if(_kennzeichen == "" OR _kennzeichen == "Neues Kennzeichen eingeben") exitWith {hint "Bitte gebe ein Kennzeichen ein!";};
 _kennzeichen = [_kennzeichen] call DB_fnc_mresString; //<- Schutz gegen SQL-Injections
 _length = count (toArray _kennzeichen);
-if(_length > 7 OR _length == 1) exitWith {hint "Dein Kennzeichen darf max. 7 und min. 2 Zeichen haben!";};
+if(_length > 7) exitWith {hint "Dein Kennzeichen darf max. 7 und min. 2 Zeichen haben!";};
 
-[_kennzeichen, _vid, player] remoteExec ["UGC_fnc_saveNewPlate",2];
+diag_log format["DEBUG PlateChangedTry :: Player %1 changed the plate of veh-id %2 to %3",name player, _vid, _kennzeichen];
+[_kennzeichen, _vid, _unit] remoteExec ["UGC_fnc_saveNewPlate",2];
 

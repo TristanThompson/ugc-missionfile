@@ -879,7 +879,7 @@
 			<Original>Du trägst zu viel bei dir! Du bist nicht in der Lage, zu rennen oder dich schnell zu bewegen, bis du Gegenstände abgelegt hast!</Original>
  		</Key>
  		<Key ID="STR_NOTF_SearchVeh">
-			<Original>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Fahrzeuginfo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Besitzer&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Original>
+			<Original>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Fahrzeuginfo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Besitzer&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1 &lt;br/&gt;&lt;br/&gt;Kennzeichen: &lt;br/&gt; %2</Original>
  		</Key>
  		<Key ID="STR_NOTF_CannotSearchPerson">
 			<Original>Diese Person kann nicht durchsucht werden.</Original>

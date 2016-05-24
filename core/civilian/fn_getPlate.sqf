@@ -8,6 +8,7 @@
 
 _vehicle = cursorTarget;
 _plate = _vehicle getVariable "plateString";
+_copnumber = _vehicle getVariable "ugc_copNumber_car";
 
 if(_copnumber == "0") then {
 	hint format ["Das Fahrzeug hat das Kennzeichen: <br/>%1", _plate];

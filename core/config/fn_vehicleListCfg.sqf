@@ -2,6 +2,7 @@
 /*
 	File:
 	Author: Bryan "Tonic" Boardwine
+	File: fn_vehicleListCfg.sqf
 
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
@@ -317,15 +318,15 @@ switch (_shop) do
 			["DRPG_08Suburban_Pink",30000],
 			["DRPG_08Suburban_Purple",30000],
 			["DRPG_08Suburban_Yellow",30000],
-			["DRPG_09Tahoe_Black",30000],
-			["DRPG_09Tahoe_White",30000],
-			["DRPG_09Tahoe_Red",30000],
-			["DRPG_09Tahoe_blue",30000],
-			["DRPG_09Tahoe_Green",30000],
-			["DRPG_09Tahoe_Orange",30000],
-			["DRPG_09Tahoe_Pink",30000],
-			["DRPG_09Tahoe_Purple",30000],
-			["DRPG_09Tahoe_Yellow",30000],
+		//	["DRPG_09Tahoe_Black",30000],
+		//	["DRPG_09Tahoe_White",30000],
+		//	["DRPG_09Tahoe_Red",30000],
+		//	["DRPG_09Tahoe_blue",30000],
+		//	["DRPG_09Tahoe_Green",30000],
+		//	["DRPG_09Tahoe_Orange",30000],
+		//	["DRPG_09Tahoe_Pink",30000],
+		//	["DRPG_09Tahoe_Purple",30000],
+		//	["DRPG_09Tahoe_Yellow",30000],
 			["Mrshounka_cherokee_noir_bleu",25000],
 			["Mrshounka_cherokee_noir_bleu_mat",25000],
 			["Mrshounka_cherokee_noir_blanc",25000],
@@ -1233,7 +1234,7 @@ switch (_shop) do
 		{
 			//_return pushBack ["A3L_CVPILBFD", 25000];
 			_return pushBack ["DRPG_06Victoria_EMS", 25000];
-			_return pushBack ["DRPG_09Tahoe_EMS",35000];
+			//_return pushBack ["DRPG_09Tahoe_EMS",35000];
 			_return pushBack ["DRPG_12Charger_EMS",30000];
 			//_return pushBack ["cl3_dodge_charger_emt",30000];
 			//_return pushBack ["charger_ems", 40000];
@@ -1282,7 +1283,7 @@ switch (_shop) do
 		};
 
 		if(__GETC__(life_adaclevel) > 1) then {
-			_return pushBack ["DRPG_09Tahoe_LAC",30000];
+			//_return pushBack ["DRPG_09Tahoe_LAC",30000];
 			//_return pushBack ["cl3_enduro_yellow",7500];
 			_return pushBack ["ivory_isf",15000];
 			//_return pushBack ["DRPG_10F150_Yellow",14000];
@@ -1346,7 +1347,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_12M5_DOJ",45000];
 			_return pushBack ["DRPG_06Suburban_DOJ",25000];
 			_return pushBack ["DRPG_06Victoria_DOJ",15000];
-			_return pushBack ["DRPG_09Tahoe_DOJ",30000];
+			//_return pushBack ["DRPG_09Tahoe_DOJ",30000];
 			_return pushBack ["DRPG_12Charger_DOJ",30000];
 			_return pushBack ["DRPG_15Charger_DOJ",35000];
 		};
@@ -1441,10 +1442,10 @@ switch (_shop) do
 			//_return pushBack ["shounka_a3_brinks_noir",35000];
 			_return pushBack ["shounka_a3_suburbangign",35000];
 			//Chevrolet Tahoe
-			_return pushBack ["DRPG_09Tahoe_P_FBI",20000];
-			_return pushBack ["DRPG_09Tahoe_P_LVPD",20000];
-			_return pushBack ["DRPG_09Tahoe_P_Sheriff",20000];
-			_return pushBack ["DRPG_09Tahoe_P_State",20000];
+			//_return pushBack ["DRPG_09Tahoe_P_FBI",20000];
+			//_return pushBack ["DRPG_09Tahoe_P_LVPD",20000];
+			//_return pushBack ["DRPG_09Tahoe_P_Sheriff",20000];
+			//_return pushBack ["DRPG_09Tahoe_P_State",20000];
 			//Dodge Charger 2015
 			_return pushBack ["DRPG_15Charger_P_FBI",20000];
 			_return pushBack ["DRPG_15Charger_P_LVPD",20000];
@@ -1483,9 +1484,9 @@ switch (_shop) do
 			["DRPG_08Suburban_White",30000],
 			["DRPG_08Suburban_blue",30000],
 		//Tahoe 2009
-			["DRPG_09Tahoe_Black",30000],
-			["DRPG_09Tahoe_White",30000],
-			["DRPG_09Tahoe_blue",30000],
+		//	["DRPG_09Tahoe_Black",30000],
+		//	["DRPG_09Tahoe_White",30000],
+		//	["DRPG_09Tahoe_blue",30000],
 		//RS4
 			["Mrshounka_rs4_civ_noir",38000],
 			["Mrshounka_rs4_civ_grise",38000],

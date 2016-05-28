@@ -1,7 +1,7 @@
 /*
 	File: fn_licenseType.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Returns the short-var of the license name to a long var and display name.
 */
@@ -59,7 +59,7 @@ switch (_mode) do
 			default {_var = ""};
 		};
 	};
-	
+
 	case 1:
 	{
 		switch (_type) do
@@ -74,7 +74,6 @@ switch (_mode) do
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
-			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost

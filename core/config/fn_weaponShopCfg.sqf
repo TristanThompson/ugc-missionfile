@@ -214,8 +214,9 @@ switch(_shop) do
 		switch (true) do
 		{
 			case (playerSide != west): { };
-			   case (__GETC__(life_donator) <= 1): {"Du bist kein Mitglied des S.W.A.T.!"};
-		    case (__GETC__(life_donator) >= 4): {"Du bist kein Mitglied des S.W.A.T.!"};
+			  // case (__GETC__(life_donator) <= 1): {"Du bist kein Mitglied des S.W.A.T.!"};
+		    //case (__GETC__(life_donator) >= 4): {"Du bist kein Mitglied des S.W.A.T.!"};
+				case(!license_cop_swat) : {"Du bist kein Mitglied des S.W.A.T.!"};
 			default {
 				["S.W.A.T.",
 					[

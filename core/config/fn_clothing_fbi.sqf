@@ -13,7 +13,8 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 //ctrlSetText[3104,"FBI Clothing Shop"];
 
-if(__GETC__(life_donator) <= 3) exitWith{closeDialog 0; hint "Du bist nicht in der FBI Abteilung tätig (-Dlvl)"};
+//if(__GETC__(life_donator) <= 3) exitWith { closeDialog 0; hint "Du bist nicht in der FBI Abteilung tätig (-Dlvl)"};
+if(!license_cop_fbi) exitWith {hint "Du bist nicht beim FBI! Du benötigst die FBI Lizenz!";};
 if(playerSide != west) exitWith {closeDialog 0;};
 
 switch (_filter) do

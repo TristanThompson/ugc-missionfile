@@ -298,7 +298,6 @@ life_licenses =
 	["license_cop_cg","cop"],
 	["license_cop_ausbilder","cop"],
 	["license_cop_taktik","cop"],
-	["license_cop_swat","cop"],
 	["license_cop_fbi","cop"],
 
 //Medic Licenses

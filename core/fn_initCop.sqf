@@ -68,7 +68,7 @@ if((str(player) in ["cop_4"]) && lrl_copLeitstelle) then {
 	life_paycheck = life_paycheck + 165;
 };
 
-if((__GETC__(life_donator) >= 4 )) then {
+if(license_cop_fbi) then {
 	player setVariable ["isFbi",true,true] //Fbi approved
 } else {
 	player setVariable ["isFbi",false,true] //No Fbi

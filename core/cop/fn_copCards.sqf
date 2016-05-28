@@ -2,7 +2,7 @@
 	File: fn_copCards.sqf
 	Author: Marcel "VariatoX" Koch
 	Server: lakeside-reallife.de
-	
+
 	Description:
 	Gibt dem Polizisten die entsprechende Cop Card zum Rang...
 */
@@ -17,7 +17,7 @@ if(call(life_coplevel) > 9) then {
 		player addItem "ItemDeaCard";
 		player assignItem "ItemDeaCard";
 	} else {
-		if(call(life_donator) in [2,3]) then {
+		if(license_cop_swat) then {
 			player addItem "ItemUnirCard";
 			player assignItem "ItemUnirCard";
 		} else {

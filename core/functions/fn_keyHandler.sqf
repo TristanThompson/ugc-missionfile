@@ -310,7 +310,7 @@ switch (_code) do
 	// F
 	case 33: {
 		if(_copPlayer && _ctrlKey) then {				// ***** Polizei Sirene (FBI UND STATEPOLICE) *******
-			if(_coplevel) then {
+			if(license_cop_fbi OR license_cop_swat) then {
 				if(vehicle player != player && !life_siren_active &&((driver vehicle player) == player)) then {
 					[] spawn {
 						life_siren_active = true;

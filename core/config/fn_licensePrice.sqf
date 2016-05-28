@@ -1,7 +1,7 @@
 /*
 	File: fn_licensePrice.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Returns the license price.
 */
@@ -23,7 +23,6 @@ switch (_type) do
 	case "cair": {2500}; //Cop Pilot License cost
 	case "ausbilder": {5000}; //Nicht Kaufbar - Dennoch Preis, Logic? Welcome to sqf
 	case "taktik": {5000}; //Nicht Kaufbar - Dennoch Preis, Logic? Welcome to sqf
-	case "swat": {4000}; //Swat License cost
 	case "cg": {1000}; //Coast guard license cost
 	case "heroin": {9000}; //Heroin processing license cost
 	case "marijuana": {9000}; //Marijuana processing license cost

@@ -13,10 +13,11 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 //ctrlSetText[3104,"FBI Clothing Shop"];
 
+
 //If (__GETC__(life_donator) <= 1)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (-Dlvl)"};
 //If (__GETC__(life_donator) >= 4)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (+Dlvl)"};
-If (__GETC__(life_donator) <= 1)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (-Dlvl)"};
-If (__GETC__(life_donator) >= 4)exitwith{closeDialog 0; hint "Du bist nicht in der State Police Abteilung tätig (+Dlvl)"};
+if(!license_cop_swat) exitWith {closeDialog 0; hint "Du bist nicht bei den StateTroopers! Du benötigst die StateTrooper Lizenz!";};
+if(playerSide != west) exitWith {closeDialog 0;};
 
 
 switch (_filter) do

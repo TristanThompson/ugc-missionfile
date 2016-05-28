@@ -16,11 +16,11 @@ if((_this select 3) in ["bruce","dive","reb","kart","anzug"] && playerSide != ci
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 if((_this select 3) == "lakeistani" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 //if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
-if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley FBI-Abteilung!"; closeDialog 0;};
+if((_this select 3) in ["fbi"] && playerSide != west && !license_cop_fbi) exitWith {hint localize "Du gehörst nicht zur LakesideValley FBI-Abteilung!"; closeDialog 0;};
 if((_this select 3) in ["ausbilder"] && playerSide != west && !license_cop_ausbilder) exitWith {hint localize "Du gehörst nicht zum Ausbilderteam des LakesideValley Police Departments!"; closeDialog 0;};
 if((_this select 3) in ["taktik"] && playerSide != west && !license_cop_taktik) exitWith {hint localize "Du gehörst nicht zum Taktikteam des LakesideValley Police Departments!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zum LakesideValley Police Department!"; closeDialog 0;};
-if((_this select 3) in ["state"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley SWAT-Einheit!"; closeDialog 0;};
+if((_this select 3) in ["state"] && playerSide != west && !license_cop_swat) exitWith {hint localize "Du gehörst nicht zur LakesideValley SWAT-Einheit!"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "Du gehörst nicht zum LakesideValley EMS/FDP!"; closeDialog 0;};
 if((_this select 3) in ["adac"] && playerSide != east) exitWith {hint "Du gehörst nicht zum LakesideValley LAC!"; closeDialog 0;};
@@ -28,14 +28,13 @@ if((_this select 3) == "justiz" && playerSide != east) exitWith {hint "Du gehör
 
 life_clothing_store = _this select 3;
 
-if(!(life_clothing_store == "fbi" OR life_clothing_store == "state")) then { //Temp Fix
 	//License Check?
 	_var = [life_clothing_store,0] call life_fnc_licenseType;
 	if(_var select 0 != "") then
 	{
 		if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format[localize "STR_Shop_YouNeed",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
 	};
-}; //Temp Fix
+
 
 
 

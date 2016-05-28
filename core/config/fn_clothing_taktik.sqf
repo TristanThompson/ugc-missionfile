@@ -13,12 +13,15 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 ctrlSetText[3103,"Taktische Dienstkleidung"];
 
+if(!license_cop_taktik) exitWith {closeDialog 0; hint "Du bist kein Polizist mit taktischer Ausbildung!";};
+if(playerSide != west) exitWith {closeDialog 0;};
+
 _ret = [];
 switch (_filter) do
 {
 
 	//Uniform
-	
+
 	case 0:
 	{
 		_ret pushBack ["fto_uni","Gefängniswärter",5];
@@ -79,7 +82,7 @@ switch (_filter) do
 		_ret pushBack ["U_bombsuit","Bomben Anzug",50];
 		_ret pushBack ["U_B_Wetsuit",nil,50];
 	};
-	
+
 	//Huete
 	case 1:
 	{
@@ -99,11 +102,11 @@ switch (_filter) do
 		_ret pushBack ["H_Bombsuit_Helmet","Bombenhelm groß",15];
 		_ret pushBack ["H_Beret_C","Beret (blau)",1];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
-		_ret = 
+		_ret =
 		[
 			["TRYK_US_ESS_Glasses","Einsatzbrille LVPD",5],
 			["TRYK_US_ESS_Glasses_TAN","Einsatzbrille Sheriff",5],
@@ -150,30 +153,30 @@ switch (_filter) do
 			["SFG_Tac_chinlessbG","Chinless Beard (Ginger)",10],
 			["SFG_Tac_chinlessbB","Chinless Beard (Blond)",10],
 			["SFG_Tac_chinlessbO","Chinless Beard (Alt)",10]
-			
+
 		];
 	};
-	
+
 	//Westen
 	case 3:
 	{
 	//	_ret pushBack ["do_polizeiguertel",nil,50];
 	//	_ret pushBack ["do_polizeiguertelMen",nil,50];
 		_ret pushBack ["A3L_policevest2","DOJ",100];
-		
+
 	//	_ret pushBack ["A3L_sheriffvest2","LVPD",100];
 		_ret pushBack ["TRYK_V_Bulletproof","LVPD",200];
 		_ret pushBack ["TRYK_V_tacv1_P_BK","Einsatzweste LVPD",200];
-		
+
 	//	_ret pushBack ["A3L_sheriffvest1","Sheriff",100];
 		_ret pushBack ["TRYK_V_Bulletproof_BL","Sheriff",100];
 		_ret pushBack ["TRYK_V_tacv1_SHERIFF_BK","Einsatzweste Sheriff",100];
-		
+
 	//	_ret pushBack ["V_Vest_light_Invisible","Deeskalationsweste",200]; //Bis Fix raus
 		_ret pushBack ["V_Press_F","Presseweste",75];
 		_ret pushBack ["V_RebreatherB",nil,75];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{

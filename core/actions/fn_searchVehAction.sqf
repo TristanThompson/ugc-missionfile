@@ -27,7 +27,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "landVehicle") || !(_vehicle 
 	_copnumber = _vehicle getVariable "ugc_copNumber_car";
 	_copnb = format ["%1", _copnumber];
 	
-		if(_copnb == "0") then {
+		if(_copnb == "0" OR isNull _copnb) then {
 			hint parseText format[localize "STR_NOTF_SearchVeh",_owners, _plate];
 		} else {
 			_plateString = format ["LVPD-%1", _copnb];

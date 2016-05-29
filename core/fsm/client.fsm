@@ -81,7 +81,7 @@ class FSM
        "}" \n
        "	else" \n
        "{" \n
-       "	if(side player == west && player distance (getMarkerPos ""fed_reserve"") < 30 || player distance (getMarkerPos ""fed_reserve_1"") < 30 || player distance (getMarkerPos ""fed_reserve_2"") < 30) then" \n
+       "	if(side player == west && (player distance (getMarkerPos ""fed_reserve"") < 30 || player distance (getMarkerPos ""fed_reserve_1"") < 30 || player distance (getMarkerPos ""fed_reserve_2"") < 30)) then" \n
        "	{" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 250] call life_fnc_numberText];" \n
        "		c00l3_b4Nck3h13R = c00l3_b4Nck3h13R + (call life_paycheck) + 250;" \n

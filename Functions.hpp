@@ -275,6 +275,7 @@ class Life_Client_Core
 	class Functions
 	{
 		file = "core\functions";
+		class callBackPlayer {};
 		class A3L_bankrobbery {};
 		class A3L_PlantCharge {};
 		class calWeightDiff {};
@@ -516,7 +517,6 @@ class Life_Client_Core
 	class Dialog_Controls
 	{
 		file = "dialog\function";
-		class callBackPlayer {};
 		class setMapPosition {};
 		class displayHandler {};
 		class spawnConfirm {};

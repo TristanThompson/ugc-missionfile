@@ -86,7 +86,7 @@ switch (playerSide) do {
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
-	_copNumber = player getVariable "ugc_copNumber";
+	_copNumber = call ugc_cop;
 	if(playerSide == west) then {_vehicle setVariable["ugc_copNumber_car",_copNumber]};
 	_finalplate = format ["%1",_plate];
 	_vehicle setVariable ["plateString",_finalplate,true];

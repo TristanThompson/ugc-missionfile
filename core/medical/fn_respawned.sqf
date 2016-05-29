@@ -17,7 +17,7 @@ v4r14t0X_isTc00L = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 lrl_isDead = false;
 player playMove "amovpercmstpsnonwnondnon";
-_copnumber = ugc_plate;
+_copnumber = call ugc_plate;
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
 life_corpse setVariable["Reviving",nil,TRUE];

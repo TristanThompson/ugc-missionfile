@@ -24,6 +24,8 @@ _unit setVariable["transporting",FALSE,TRUE]; //Again why the fuck am I setting 
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Reset the UID.
 _unit setVariable["realname",profileName,true]; //Reset the players name.
 _unit setVariable["isblinded",false,true];
+_copnumber = call ugc_plate;
+player setVariable["ugc_copNumber",_copnumber,true];
 player setVariable["ace_captives_isHandcuffed",FALSE,TRUE];
 _unit playMove "ACE_AmovPercMstpScapWnonDnon_AmovPercMstpSnonWnonDnon";
 

@@ -24,6 +24,7 @@ switch (_shop) do
 	case "iron": {["Förder-Industrie",["iron_r","copper_r","schwarzpulver","elektroteile"]]};
 	case "diamond": {["Juwelier",["diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
+	case "junk": {["Kevin's Mülldeponie",["junk"]]};
 	case "cop": {["Polizei Austatter",["redgull","coffee","water","donuts","rabbit","pizzabrot","sos","nothammer","lockpick","defusekit","boltcutter","spikeStrip","fuelF","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "itemfbi": {["FBI Austatter",["blaulicht","augenbinde","tracker"]]};
 	case "cement": {["Zementhändler",["cement"]]};

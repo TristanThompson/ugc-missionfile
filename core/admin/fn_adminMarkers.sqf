@@ -5,7 +5,7 @@
 */
 if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error"};
 
-if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 if(!(getPlayerUID player in LSRL_your_momy)) exitWith {closeDialog 0; [5,player] call LRLAC_fnc_busted;};
 
 life_markers = !life_markers;
@@ -41,5 +41,5 @@ FinishedLoop = true;
 	waitUntil{FinishedLoop};
 	{
 		deleteMarkerLocal str _x;
-	} forEach PlayerMarkers;
+	} forEach PlayerMarkers;	
 };

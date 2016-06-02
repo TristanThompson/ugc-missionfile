@@ -85,6 +85,7 @@ class Life_Client_Core
 		class adminHeal {};
 		class adminJail {};
 		class adminToggle {};
+		class adminTpTo {};
 	};
 
 	class Medical_System

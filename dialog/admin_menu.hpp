@@ -167,12 +167,13 @@ class life_admin_menu {
 		class WorkInProgress : Life_RscButtonMenu
 		{
 			idc = -1;
-			text = "W.I.P.";
+			text = "TP to";
+			tooltip = "Wähle eine Person aus, zu der du dich teleportieren willst.";
 			x = 0.90 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.885;
 			w = (6.25 / 40);
 			h = (1 / 25);
-			onButtonClick = "[] call life_fnc_adminJail;";
+			onButtonClick = "[] call life_fnc_adminTpTo;";
 		};
 		
 		class admintogglerbutton : Life_RscButtonMenu

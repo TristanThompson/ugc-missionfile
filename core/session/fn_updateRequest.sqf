@@ -20,6 +20,10 @@ switch (playerSide) do {
 	case civilian: {
 		_packet pushBack life_is_arrested;
 	};
+	
+	case west: {
+		[getPlayerUID player] remoteExec ["UGC_fnc_stempelUhrUpdate",2];
+	};
 };
 
 _packet remoteExec ["DB_fnc_updateRequest",2];

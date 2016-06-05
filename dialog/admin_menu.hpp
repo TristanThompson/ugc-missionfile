@@ -153,11 +153,22 @@ class life_admin_menu {
 			h = (1 / 25);
 		};
 		
-	//Copy of -CH7News-
+	//Copy of -CH7News- 
 		class HealingOinkment : Life_RscButtonMenu {
 			idc = 2912;
 			text = "Unsichtbar";
 			onButtonClick = "[] spawn life_fnc_adminHeal;";
+			x = 0.74 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.885;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
+		class GetOutcar : Life_RscButtonMenu {
+			idc = 33365;
+			text = "GET-OUT";
+			tooltip = "Diese Funktion wirft dich aus dem Auto, auch wenn das Auto abgeschlossen ist";
+			onButtonClick = "[""GETOUT""] spawn life_fnc_adminActions;";
 			x = 0.74 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.885;
 			w = (6.25 / 40);

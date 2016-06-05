@@ -386,7 +386,7 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-
+	
 	//U Key
 	case 22:
 	{

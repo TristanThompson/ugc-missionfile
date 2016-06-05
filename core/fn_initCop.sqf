@@ -81,6 +81,10 @@ player setVariable ["inSOS",false,true]; //Muss initialisiert werden, sonst gehe
 //Init Placeables
 [] spawn life_fnc_placeablesInit;
 [] call life_fnc_spawnMenu;
+
+//Stempeluhr init
+[] spawn life_fnc_initStempel;
+
 [] execVM "core\initJVM.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

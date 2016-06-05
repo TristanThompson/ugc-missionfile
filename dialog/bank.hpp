@@ -109,9 +109,9 @@ class Life_atm_management {
 		class GangDeposit : TransferButton
 		{
 			idc = 2705;
-			text = "LSRLCoins Einlösen";
+			text = "";
 			colorBackground[] = {0.18,0.604,0.996,1};
-			onButtonClick = "[] call life_fnc_bankLsrlCoinsCheck";
+			onButtonClick = "";
 			y = .7; x = 0.365;
 			w = 0.275;
 		};

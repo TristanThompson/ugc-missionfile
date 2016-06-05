@@ -21,7 +21,7 @@ _rip = true;
 //Ausraubbares Geld
 _cops = [2] call life_fnc_copCounter;
 private _bankBase = 87500;
-private _maxVal = random(200000);
+private _maxVal = random(150000);
 private _ran = _maxVal * ((_cops / 100) + 1);
 private _kassa = ceil(90000 + _ran);
 [_shop,_robber,_action,-1] remoteExec ["TON_fnc_shopStateBank",2]; 
@@ -58,15 +58,14 @@ if(_rip) then
 		sleep  8.55;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
-		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (3m) (%1%2)...",round(_cP * 100),"%"];
+		_pgText ctrlSetText format["Bankraub , bleib 15 Minuten in Reichweite (3m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
 		if(_robber distance _shop > 3) exitWith {};
 		if!(alive _robber) exitWith {};
 		if(life_istazed) exitWith {};
 		if(_alarm) then
 		{
-			_Pos = position player; // by ehno: get player pos
-			_marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
+			_marker = createMarker ["Marker200", position player]; //by ehno: Place a Maker on the map
 			"Marker200" setMarkerColor "ColorRed";
 			"Marker200" setMarkerText "!ACHTUNG! Bankraub Zivile Personen entfernen !ACHTUNG!";
 			"Marker200" setMarkerType "mil_warning";

@@ -27,8 +27,8 @@ private _kassa = ceil(90000 + _ran);
 [_shop,_robber,_action,-1] remoteExec ["TON_fnc_shopStateBank",2]; 
 
 hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
-[2,format["MorrisonTown Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",-2];
-[1,format["MorrisonTown wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",west];
+[2,format["Lakeside Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",-2];
+[1,format["Lakeside Bank wird von Rebellen ausgeraubt!"]] remoteExec ["life_fnc_broadcast",west];
 
 _shop spawn {
 	for "_i" from 1 to 6 do {
@@ -73,21 +73,21 @@ if(_rip) then
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
     if!(alive _robber) exitWith { 
 		deleteMarker "Marker200";
-		[1,"MorrisonTown Bank: Der Täter ist verstorben!"] remoteExec ["life_fnc_broadcast",west];
+		[1,"Lakeside Bank: Der Täter ist verstorben!"] remoteExec ["life_fnc_broadcast",west];
 		_rip = false;
 		5 cutText ["","PLAIN"];
 	};
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		5 cutText ["","PLAIN"];
-		[1,"MorrisonTown Bank: Der Täter wurde erfolgreich gestellt!"] remoteExec ["life_fnc_broadcast",west];
+		[1,"Lakeside Bank: Der Täter wurde erfolgreich gestellt!"] remoteExec ["life_fnc_broadcast",west];
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;
 	};
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du bist weggerannt, flüchte nun komplett bevor die Cops da sind!";
 		5 cutText ["","PLAIN"];
-		[1,"MorrisonTown Bank: Der Täter ist ohne Geld geflüchtet!"] remoteExec ["life_fnc_broadcast",west];
+		[1,"Lakeside Bank: Der Täter ist ohne Geld geflüchtet!"] remoteExec ["life_fnc_broadcast",west];
 		_rip = false;
 		deleteMarker "Marker200";
 	};
@@ -101,6 +101,6 @@ if(_rip) then
     life_use_atm = true; // Robber can not use the ATM at this point.
 	
     if!(alive _robber) exitWith {};
-    [1,format["NEWS - MorrisonTown: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",-2];
+    [1,format["NEWS - Lakeside: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",-2];
 };
 [_shop,_robber,_action,0] remoteExec ["TON_fnc_shopStateBank",2];

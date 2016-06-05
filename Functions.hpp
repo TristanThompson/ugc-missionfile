@@ -69,6 +69,7 @@ class Life_Client_Core
 	class Admin
 	{
 		file = "core\admin";
+		class adminActions {};
 		class admininfo {};
 		class adminid {};
 		class admingetID {};
@@ -162,8 +163,8 @@ class Life_Client_Core
 		class hammer {};
 		class robBank {};
 		class robBank2 {};
-		class robBankLS {};
-		class robBankLS2 {};
+		class robBankLakeside {};
+		class robBankLakeside2 {};
 		class robBankMT {};
 		class robBankMT2 {};
 		class craftAction {};
@@ -276,6 +277,7 @@ class Life_Client_Core
 	class Functions
 	{
 		file = "core\functions";
+		class initStempel {};
 		class callBackPlayer {};
 		class A3L_bankrobbery {};
 		class A3L_PlantCharge {};
@@ -397,6 +399,7 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
+		class stempelUhrToggle {};
 		class checkKennzeichen {};
 		class copMarkers {};
 		class copLights {};

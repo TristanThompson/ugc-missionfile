@@ -16,4 +16,4 @@ if(vehicle player != _robber) exitWith { hint "Wie bist du mit dem Auto in die B
 if(_robber distance _shop > 3) exitWith { hint "Wie lange Arme hast du denn? Du bist zu weit weg!" };
 if(!([false,"bohrmaschine",1] call life_fnc_handleInv)) exitWith {hint "Du benötigst eine Bohrmaschine in deinem Inventar um den Bankraub zu beginnen!"};
 
-[_shop,_robber,_action] remoteExec ["TON_fnc_robBankMT",2];//now we send the info to the server to be processed further there.
+[_shop,_robber,_action] remoteExec ["TON_fnc_robBankLakesideServer",-2];

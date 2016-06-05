@@ -4911,7 +4911,7 @@ class Mission
 			vehicle="cg_precious_metal";
 			skill=0.60000002;
 			text="LakesideBank";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Bank Ausrauben"",life_fnc_robBankLS];";
+			init="this addAction[""Bank Ausrauben"",life_fnc_robBankLakeside]; this allowDamage false; this enableSimulation false;";
 		};
 		class Item130
 		{

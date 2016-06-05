@@ -383,10 +383,11 @@ switch (_code) do
 	//Z - Spieler Menü
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog && !life_istazed) then {
+			if(player getVariable "ace_captives_isHandcuffed") exitWith {hint "Du bist gefesselt!";};
 			[] call life_fnc_p_openMenu;
 		};
 	};
-	
+
 	//U Key
 	case 22:
 	{

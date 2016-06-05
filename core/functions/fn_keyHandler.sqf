@@ -383,7 +383,7 @@ switch (_code) do
 	//Z - Spieler Menü
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog && !life_istazed) then {
-			if(player getVariable "ace_captives_isHandcuffed") exitWith {hint "Du bist gefesselt!";};
+			if(player getVariable "ace_captives_isHandcuffed" && (__GETC__(life_adminlevel) < 2)) exitWith {hint "Du bist gefesselt!";};
 			[] call life_fnc_p_openMenu;
 		};
 	};

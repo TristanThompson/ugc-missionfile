@@ -10,7 +10,7 @@ params[
 
 if(isNull _shop OR isNull _robber) exitWith {};
 if(currentWeapon _robber in lrl_noWeapons) exitWith {hint "Ohne Waffe nix los. Wenn nix los, gibt's kein Moos."}; //Ausrauben ohne gueltige Waffe
-if(playersNumber west < 0) exitWith { hint "Das Zeitschloss des Tresors ist derzeit noch aktiv!"};
+if(playersNumber west < 7) exitWith { hint "Das Zeitschloss des Tresors ist derzeit noch aktiv!"};
 if(side _robber != civilian) exitWith { hint "Korruptes Schwein verschwinde!" };// We do not want anyone but civilianz to rob the stations.
 if(vehicle player != _robber) exitWith { hint "Wie bist du mit dem Auto in die Bank gekommen? Verschwinde!" };
 if(_robber distance _shop > 3) exitWith { hint "Wie lange Arme hast du denn? Du bist zu weit weg!" };

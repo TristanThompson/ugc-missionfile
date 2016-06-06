@@ -1654,6 +1654,9 @@
 		<Key ID="STR_License_Bike">
 			<Original>Führerschein A</Original>
 		</Key>
+		<Key ID="STR_License_WSD">
+			<Original>WSD-Lizenz</Original>
+		</Key>
 		<Key ID="STR_License_Bus">
 			<Original>Führerschein D</Original>
 		</Key>

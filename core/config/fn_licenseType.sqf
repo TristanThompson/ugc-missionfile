@@ -56,6 +56,7 @@ switch (_mode) do
 			case "taktik": {_var = "license_cop_taktik"};
 			case "swat": {_var = "license_cop_swat"};
 			case "fbi": {_var = "license_cop_fbi"};
+			case "wsd": {_var = "license_civ_wsd"};
 			default {_var = ""};
 		};
 	};
@@ -103,6 +104,7 @@ switch (_mode) do
 			case "license_cop_taktik": {_var = "taktik"};
 			case "license_cop_fbi": {_var = "fbi"};
 			case "license_cop_swat": {_var = "swat"};
+			case "license_civ_wsd": {_var = "wsd";};
 			default {_var = ""};
 		};
 	};

@@ -50,4 +50,5 @@ switch (_type) do
 	case "rebelbase": {25000}; //Rebellen Grundlizenz
 	case "swat": {2500};
 	case "fbi": {2500};
+	case "wsd": {200};
 };

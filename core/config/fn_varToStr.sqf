@@ -1,7 +1,7 @@
 /*
 	File: fn_varToStr.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Takes the long-name (variable) and returns a display name for our
 	virtual item.
@@ -92,7 +92,7 @@ switch (_var) do
 	case "life_inv_laminat": {(localize "STR_Item_Laminat")};
 	case "life_inv_holz": {(localize "STR_Item_Holz")};
 
-	case "life_inv_zoobeer": {"Zoo Beer"}; 
+	case "life_inv_zoobeer": {"Zoo Beer"};
 	case "life_inv_RoadConeStripB": {"Leitkegel (Reihe/Licht)"};
 	case "life_inv_RoadConeB": {"Leitkegel (Licht)"};
 	case "life_inv_RoadConeStrip": {"Leitkegel (Reihe)"};
@@ -104,12 +104,12 @@ switch (_var) do
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_weddingring": {(localize "STR_Item_WeddingRing")};
 	case "life_inv_augenbinde": {(localize "STR_Item_augenbinde")};
-	
+
 	case "life_inv_stahlschild": {(localize "STR_Item_stahlschild")};
 	case "life_inv_panzerglas": {(localize "STR_Item_panzerglas")};
 	case "life_inv_junk": {(localize "STR_Item_junk")};
 	case "life_inv_tracker": {(localize "STR_Item_tracker")};
-	
+
 //Formulare
 	case "life_inv_presseformular": {(localize "STR_Item_PresseForm")};
 	case "life_inv_taxischeinformular": {(localize "STR_Item_TaxiForm")};
@@ -129,7 +129,7 @@ switch (_var) do
 	case "life_inv_flugscheinformular": {(localize "STR_Item_FlugForm")};
 	case "life_inv_swatformular": {(localize "STR_Item_SWATFormular")};
 	case "life_inv_fbiformular": {(localize "STR_Item_FBIFormular")};
-	
+
 
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
@@ -169,4 +169,5 @@ switch (_var) do
 	case "license_civ_permdriver": {(localize "STR_License_permdriver")};
 	case "license_cop_swat": {(localize "STR_License_SWAT")};
 	case "license_cop_fbi": {(localize "STR_License_FBI")};
+	case "license_civ_wsd": {(localize "STR_License_WSD")};
 };

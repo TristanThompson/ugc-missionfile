@@ -17,6 +17,11 @@ _statemode = "(KAUF)";
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 _plate = round(random(1000000));
 //Series of checks (YAY!)
+
+if(_className in LSRL_blocked_vehicles) exitWith {
+	[1,"Dieses Fahrzeug kann aktuell nicht genutzt werden! Das Geld wurde erstattet!"] remoteExec ["life_fnc_broadcast",player];
+};
+
 if(_basePrice < 0) exitWith {}; //Bad price entry
 if(c00l3_b4Nck3h13R < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - c00l3_b4Nck3h13R] call life_fnc_numberText];};
 if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint localize "STR_Shop_Veh_NoLicense"};

@@ -339,8 +339,10 @@ life_licenses =
 	["license_civ_presse","civ"],
 	["license_civ_taxischein","civ"],
 	["license_civ_permdriver","civ"],
-	["license_civ_fischerei","civ"] //Nur zum Verkaufen von Fisch
+	["license_civ_fischerei","civ"], //Nur zum Verkaufen von Fisch
 
+	//Firmen Lizenzen
+	["license_civ_wsd","civ"]
 ];
 
 //Setup License Variables

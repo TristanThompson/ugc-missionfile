@@ -170,7 +170,7 @@ class life_admin_menu {
 			tooltip = "Diese Funktion wirft dich aus dem Auto, auch wenn das Auto abgeschlossen ist";
 			onButtonClick = "[""GETOUT""] spawn life_fnc_adminActions;";
 			x = 0.74 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.885;
+			y = 0.88 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};

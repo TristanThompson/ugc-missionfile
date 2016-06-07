@@ -16,7 +16,6 @@ if(!lrl_coinsCheck) exitWith {hint "Es ist ein Fehler aufgetreten! Melde dich im
 
 params["_m0n3y"];
 
-if(isNil _m0n3y) exitWith {hint "Es ist ein Fehler aufgetreten! Melde dich im Bürgerbüro! Code: 0x0921307"; lrl_coinsCheck = false;};
 if(_m0n3y < 1) exitWith {hint "Es ist ein Fehler aufgetreten! Melde dich im Bürgerbüro! Code: 0x0134751"; lrl_coinsCheck = false;};
 
 _n3Wm0n33yl3l = _m0n3y;

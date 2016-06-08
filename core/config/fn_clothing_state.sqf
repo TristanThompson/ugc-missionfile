@@ -50,7 +50,8 @@ switch (_filter) do
 			["mr_pol_cloth_state_c_11","State Ast. Chief Lang",20],
 			["sp_rang12","State Chief Kurz",20],
 			["mr_pol_cloth_state_c_12","State Chief Lang",20],
-			["mr_pol_cloth_state_c_13","State Commissioner Lang",20]
+			["mr_pol_cloth_state_c_13","State Commissioner Lang",20],
+			["sp_rang13","State Commissioner Kurz",20]
 		];
 	};
 

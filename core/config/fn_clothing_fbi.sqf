@@ -47,6 +47,7 @@ switch (_filter) do
 			["FBI_rang10","FBI Chief Kurz",30],
 			["mr_pol_cloth_fbi_c_12","FBI Chief Lang",30],
 			["mr_pol_cloth_fbi_c_13","FBI Commissioner Lang",30],
+			["FBI_rang13","FBI Commissioner Kurz",30],
 			["TRYK_U_B_OD_OD_R_CombatUniform","Einsatzkleidung (Grün)",50],
 
 		// Zivil

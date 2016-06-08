@@ -47,6 +47,7 @@ switch (_filter) do
 		_ret pushBack ["Sheriff_rang12","Sheriff Chief Kurz",35];
 		_ret pushBack ["mr_pol_cloth_sheriff_c_12","Sheriff Chief Lang",35];
 		_ret pushBack ["mr_pol_cloth_sheriff_c_13","Sheriff Commissioner Lang",35];
+		_ret pushBack ["Sheriff_rang13","Sheriff Commissioner Kurz",35];
 		_ret pushBack ["lvpd_rang1","LVPD Recruit Kurz",10];
 		_ret pushBack ["mr_pol_cloth_lvpd_c_1","LVPD Recruit Lang",10];
 		_ret pushBack ["lvpd_rang2","LVPD Officer Kurz",15];
@@ -72,6 +73,7 @@ switch (_filter) do
 		_ret pushBack ["lvpd_rang12","LVPD Chief Kurz",35];
 		_ret pushBack ["mr_pol_cloth_lvpd_c_12","LVPD Chief Lang",35];
 		_ret pushBack ["mr_pol_cloth_lvpd_c_13","LVPD Commissioner Lang",35];
+		_ret pushBack ["lvpd_rang13","LVPD Commissioner Kurz",35];
 		_ret pushBack ["TCG_PDAV","Pilotenkleidung (Allg.)",25];
 		_ret pushBack ["U_CombatUniShirtMercB_A","Ausbilder",20];
 		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",10];

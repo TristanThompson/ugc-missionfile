@@ -1,5 +1,5 @@
 author = "Tonic | Edited by LSRL.DE and UG-C.DE";
-onLoadName = "LS-Reallife v4.1.9.2";
+onLoadName = "LS-Reallife v4.2.0.0";
 onLoadMission = "Webseite: http://ug-c.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;

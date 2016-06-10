@@ -1418,6 +1418,8 @@ switch (_shop) do
 			_return pushBack ["ivory_wrx_unmarked",20000];
 			_return pushBack ["ivory_wrx_marked",20000];
 			_return pushBack ["Mrshounka_bmw_gend",60000];
+			_return pushBack ["UGC_Swat_Van",40000];
+			_return pushBack ["shounka_a3_suburbangign",35000];
 		};
 
 		if(__GETC__(life_coplevel) > 3) then
@@ -1437,10 +1439,8 @@ switch (_shop) do
 			//_return pushBack ["A3L_ChargerUC_Blue_New",40000];
 			//_return pushBack ["A3L_ChargerUC_Black_New",40000];
 			//_return pushBack ["DAR_SWATPolice",40000];
-			_return pushBack ["UGC_Swat_Van",40000];
 			//_return pushBack ["DAR_ExplorerPoliceStealth",35000];
 			//_return pushBack ["shounka_a3_brinks_noir",35000];
-			_return pushBack ["shounka_a3_suburbangign",35000];
 			//Chevrolet Tahoe
 			//_return pushBack ["DRPG_09Tahoe_P_FBI",20000];
 			//_return pushBack ["DRPG_09Tahoe_P_LVPD",20000];
@@ -1467,7 +1467,7 @@ switch (_shop) do
 			_return pushBack ["DRPG_12M5_P_STATE",30000];
 		};
 
-		if(__GETC__(life_coplevel) > 8) then
+		if(__GETC__(life_coplevel) > 9) then
 		{
 			_return pushBack ["Mrshounka_agera_gend_p",120000];
 		};

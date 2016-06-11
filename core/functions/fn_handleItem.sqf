@@ -216,8 +216,8 @@ if(_bool) then
 
 			if(_isgun) then
 			{
-				if(!_ispack && _override) exitWith {};
-				if(_item == "MineDetector" OR _item == "ACE_salineIV") then
+				//if(!_ispack && _override) exitWith {}; Fuck this lel
+				if(_item == "MineDetector") then
 				{
 					player addItem _item;
 				}

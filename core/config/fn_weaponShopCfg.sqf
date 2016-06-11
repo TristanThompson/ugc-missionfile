@@ -28,9 +28,14 @@ switch(_shop) do
 			case (__GETC__(life_mediclevel) == 1):
 			{
 				["Praktikant",
-					[
-						["SmokeShell","Verbandspäckchen",20],
-						["Chemlight_green","Leichensack",10]
+					[	
+						//Verbandspäckchen
+						["ACE_fieldDressing",nil,2],
+						["ACE_elasticBandage",nil,2],
+						["ACE_packingBandage",nil,2],
+						["ACE_quikclot",nil,2],
+						//leichensack
+						["ACE_bodyBag",nil,10]
 					]
 				];
 			};
@@ -38,11 +43,19 @@ switch(_shop) do
 			case (__GETC__(life_mediclevel) == 2):
 			{
 				["Sanitäter",
-					[
-						["SmokeShell","Verbandspäckchen",20],
-						["SmokeShellGreen","Nähkästchen",90],
-						["SmokeShellPurple","Salzlösung",15],
-						["Chemlight_green","Leichensack",10]
+					[	
+						//Verbandspäckchen
+						["ACE_fieldDressing",nil,2],
+						["ACE_elasticBandage",nil,2],
+						["ACE_packingBandage",nil,2],
+						["ACE_quikclot",nil,2],
+						//Nähkästchen
+						["ACE_surgicalKit",nil,10],
+						["ACE_tourniquet",nil,5],
+						//Salzlösung
+						["ACE_salineIV",nil,15],
+						//leichensack
+						["ACE_bodyBag",nil,10]
 					]
 				];
 			};
@@ -51,13 +64,27 @@ switch(_shop) do
 			{
 				["Rettungsassistent",
 					[
-						["SmokeShell","Verbandspäckchen",20],
-						["SmokeShellRed","Injektionsbeutel",50],
-						["SmokeShellGreen","Nähkästchen",90],
-						["SmokeShellPurple","Salzlösung",15],
-						["SmokeShellBlue","Plasmabeutel",15],
-						["SmokeShellOrange","Bluttransfusion",15],
-						["Chemlight_green","Leichensack",10]
+						//Verbandspäckchen
+						["ACE_fieldDressing",nil,2],
+						["ACE_elasticBandage",nil,2],
+						["ACE_packingBandage",nil,2],
+						["ACE_quikclot",nil,2],
+						//Nähkästchen
+						["ACE_surgicalKit",nil,10],
+						["ACE_tourniquet",nil,5],
+						//Salzlösung
+						["ACE_salineIV",nil,15],
+						//Plasmabeutel
+						["ACE_plasmaIV",nil,50],
+						//Bluttransfusion
+						["ACE_bloodIV",nil,15],
+						//Injektionsbeutel
+						["ACE_epinephrine",nil,50],
+						["ACE_morphine",nil,50],
+						["ACE_atropine",nil,50],
+						//leichensack
+						["ACE_bodyBag",nil,10]
+						
 					]
 				];
 			};
@@ -65,15 +92,29 @@ switch(_shop) do
 			case (__GETC__(life_mediclevel) == 4):
 			{
 				["Arzt",
-					[
-						["SmokeShell","Verbandspäckchen",20],
-						["SmokeShellYellow","Notarztkoffer",250],
-						["SmokeShellRed","Injektionsbeutel",50],
-						["SmokeShellGreen","Nähkästchen",90],
-						["SmokeShellPurple","Salzlösung",15],
-						["SmokeShellBlue","Plasmabeutel",15],
-						["SmokeShellOrange","Bluttransfusion",15],
-						["Chemlight_green","Leichensack",10]
+					[	
+						//Verbandspäckchen
+						["ACE_fieldDressing",nil,2],
+						["ACE_elasticBandage",nil,2],
+						["ACE_packingBandage",nil,2],
+						["ACE_quikclot",nil,2],
+						//Nähkästchen
+						["ACE_surgicalKit",nil,10],
+						["ACE_tourniquet",nil,5],
+						//Salzlösung
+						["ACE_salineIV",nil,15],
+						//Plasmabeutel
+						["ACE_plasmaIV",nil,50],
+						//Bluttransfusion
+						["ACE_bloodIV",nil,15],
+						//Injektionsbeutel
+						["ACE_epinephrine",nil,50],
+						["ACE_morphine",nil,50],
+						["ACE_atropine",nil,50],
+						//leichensack
+						["ACE_bodyBag",nil,10],
+						//Notarztkoffer
+						["ACE_personalAidKit",nil,20]
 					]
 				];
 			};
@@ -82,14 +123,28 @@ switch(_shop) do
 			{
 				["Oberarzt bis Chefarzt",
 					[
-						["SmokeShell","Verbandspäckchen",20],
-						["SmokeShellYellow","Notarztkoffer",250],
-						["SmokeShellRed","Injektionsbeutel",50],
-						["SmokeShellGreen","Nähkästchen",90],
-						["SmokeShellPurple","Salzlösung",15],
-						["SmokeShellBlue","Plasmabeutel",15],
-						["SmokeShellOrange","Bluttransfusion",15],
-						["Chemlight_green","Leichensack",10]
+						//Verbandspäckchen
+						["ACE_fieldDressing",nil,2],
+						["ACE_elasticBandage",nil,2],
+						["ACE_packingBandage",nil,2],
+						["ACE_quikclot",nil,2],
+						//Nähkästchen
+						["ACE_surgicalKit",nil,10],
+						["ACE_tourniquet",nil,5],
+						//Salzlösung
+						["ACE_salineIV",nil,15],
+						//Plasmabeutel
+						["ACE_plasmaIV",nil,50],
+						//Bluttransfusion
+						["ACE_bloodIV",nil,15],
+						//Injektionsbeutel
+						["ACE_epinephrine",nil,50],
+						["ACE_morphine",nil,50],
+						["ACE_atropine",nil,50],
+						//leichensack
+						["ACE_bodyBag",nil,10],
+						//Notarztkoffer
+						["ACE_personalAidKit",nil,20]
 					]
 				];
 			};
@@ -336,13 +391,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -386,13 +448,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -455,13 +524,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -543,13 +619,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -638,13 +721,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -735,13 +825,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -752,8 +849,8 @@ switch(_shop) do
 					[
 
 						//DEBUG TEST
-						//["ACE_salineIV","ACE DEBUG",10],
-						//["ACE_quikclot","ACE DEBUG2",10],
+						["ACE_salineIV",nil,10],
+						["ACE_quikclot",nil,10],
 
 						//HK417 16"
 						["R3F_HK417M",nil,1800],
@@ -841,13 +938,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",40],
-						["Chemlight_red","Kartenlampe (Rot)",60],
-						["HandGrenade_Stone","Kabelbinder",5],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -959,13 +1063,20 @@ switch(_shop) do
 						["Binocular",nil,10],
 						["ItemMap",nil,1],
 						["ItemCompass",nil,1],
-						["SmokeShell","Verbandspäckchen ",50],
-						["SmokeShellGreen","Abbindmaterial",500],
-						["SmokeShellRed","Injektionsbeutel",1500],
-						["Chemlight_yellow","Kartenlampe (Weiss)",80],
-						["Chemlight_red","Kartenlampe (Rot)",120],
-						["HandGrenade_Stone","Kabelbinder",50],
-						["Chemlight_blue","Ohrstöpsel",1]
+						//ACE Verbandspäckchen
+						["ACE_fieldDressing",nil,5],
+						["ACE_packingBandage",nil,5],
+						//ACE Abbindmaterial
+						["ACE_tourniquet",nil,120],
+						//ACE Injektionsbeutel
+						["ACE_epinephrine",nil,850],
+						["ACE_morphine",nil,850],
+						//ACE Lampe
+						["ACE_Flashlight_MX991",nil,40],
+						["ACE_Flashlight_XL50",nil,40],
+						//ACE Kabelbinder
+						["ACE_CableTie",nil,5],
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -1001,7 +1112,7 @@ switch(_shop) do
 						["RH_pmIR",nil,100],
 						["RH_8Rnd_9x18_Mak",nil,25],
 						["RH_M6X","Taschenlampe (klein)",50],
-						["Chemlight_blue","Ohrstöpsel",1]
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -1036,7 +1147,7 @@ switch(_shop) do
 						["RH_vp70",nil,1085],
 						["RH_vp70stock",nil,175],
 						["RH_18Rnd_9x19_VP",nil,40],
-						["Chemlight_blue","Ohrstöpsel",1]
+						["ACE_EarPlugs",nil,1]
 					]
 				];
 			};
@@ -1061,9 +1172,12 @@ switch(_shop) do
 				["A3L_sign",nil,100],
 				["A3L_sign2",nil,100],
 				["Tv_Camera",nil,185],
-				["SmokeShell","Verbandspäckchen ",50],
-				["Chemlight_yellow","Kartenlampe (Weiss)",40],
-				["Chemlight_blue","Ohrstöpsel",1]
+				//ACE Verbandspäckchen
+				["ACE_fieldDressing",nil,5],
+				["ACE_packingBandage",nil,5],
+				//ACE Kabelbinder
+				["ACE_CableTie",nil,5],
+				["ACE_EarPlugs",nil,1]
 			]
 		];
 	};

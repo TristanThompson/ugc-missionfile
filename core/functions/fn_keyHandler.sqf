@@ -352,6 +352,15 @@ switch (_code) do
 			_handled = true;
 		};
 	};
+	
+	//P - Spikestrip
+	case 25: {
+		if(playerSide == west) then {
+			if(([false,"spikeStrip",1] call life_fnc_handleInv)) then {
+				[] spawn life_fnc_spikeStrip;
+			};
+		};
+	};
 
 	// R Key
 	case 19: {

@@ -1,1 +1,0 @@
-for "_mo0b0t" from 0 to 100 do {(findDisplay _mo0b0t)closeDisplay 0;};
